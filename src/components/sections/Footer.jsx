@@ -1,92 +1,100 @@
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
-import SubscribeForm from '../common/SubscribeForm';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  ];
+  const [email, setEmail] = useState('');
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitted(true);
+    setEmail('');
+    // Here you would typically handle the email subscription
+    setTimeout(() => setIsSubmitted(false), 3000);
+  };
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="col-span-1">
-            <h3 className="text-xl font-bold mb-4">RealEstate</h3>
-            <p className="text-gray-400">
-              Your trusted partner in finding the perfect property.
+    <footer className="bg-[#5e7c94] text-white py-10">
+      <div className="container mx-auto px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-10">
+          {/* Newsletter Subscription */}
+          <div className="space-y-6">
+            <h5 className="font-didot-italic text-3xl">
+              Subscribe for Updates
+            </h5>
+            <form onSubmit={handleSubmit} className="pt-4">
+              <div className="flex gap-4">
+                <input
+                  type="email"
+                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your email here"
+                  required
+                  pattern="^.+@.+\.[a-zA-Z]{2,63}$"
+                  maxLength={250}
+                  className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-white/60 font-libre-caslon"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-2 bg-white text-gray-900 rounded hover:bg-gray-100 transition-colors duration-200 font-libre-caslon whitespace-nowrap"
+                >
+                  Subscribe
+                </button>
+              </div>
+              {isSubmitted && (
+                <p className="text-sm font-libre-caslon mt-2">
+                  Thanks for submitting!
+                </p>
+              )}
+            </form>
+          </div>
+
+          {/* Contact Information */}
+          <div className="space-y-2">
+            <p className="font-libre-caslon font-extrabold tracking-wide">
+              Av. Ricardo Soriano, 72, Portal B, 1st Floor, <br /> 29601 Marbella, Málaga
             </p>
-            <div className="mt-4 flex space-x-4">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    className="text-gray-400 hover:text-white transition-colors"
-                    aria-label={social.label}
-                  >
-                    <Icon className="h-5 w-5" />
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div className="col-span-1">
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <a href="#properties" className="text-gray-400 hover:text-white">
-                  Properties
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-white">
-                  Services
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-400 hover:text-white">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-400 hover:text-white">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="col-span-1">
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
-            <ul className="space-y-2 text-gray-400">
-              <li>123 Real Estate Street</li>
-              <li>City, State 12345</li>
-              <li>Phone: (123) 456-7890</li>
-              <li>Email: info@realestate.com</li>
-            </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div className="col-span-1">
-            <h4 className="text-lg font-semibold mb-4">Newsletter</h4>
-            <p className="text-gray-400 mb-4">
-              Subscribe to our newsletter for the latest updates and offers.
+            <p className="font-libre-caslon font-bold tracking-wide">
+              Tel:{' '}
+              <a
+                href="tel:+34638387366"
+                className="underline hover:text-gray-300 transition-colors duration-200"
+              >
+                +34 638 38 73 66
+              </a>
             </p>
-            <SubscribeForm />
+            <p className="font-libre-caslon font-bold tracking-wide">
+              Mail:{' '}
+              <a
+                href="mailto:info@conciergetailormade.com"
+                className="underline hover:text-gray-300 transition-colors duration-200"
+              >
+                info@conciergetailormade.com
+              </a>
+            </p>
           </div>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>
-            &copy; {new Date().getFullYear()} RealEstate. All rights reserved.
+        {/* Footer Bottom */}
+        <div className="mt-12 text-center text-sm tracking-wide">
+          <p className="font-libre-caslon">
+            By{' '}
+            <a
+              href="https://www.inscalemedia.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300 transition-colors duration-200"
+            >
+              Inscale Media
+            </a>{' '}
+            ©2025 |{' '}
+            <Link
+              to="/privacy-policy"
+              className="underline hover:text-gray-300 transition-colors duration-200"
+            >
+              Privacy policy
+            </Link>
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 import ServicesHoverCard from './ServicesHoverCard';
@@ -8,9 +8,10 @@ import { Button } from '../ui/button';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [visible, setVisible] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
-  const { t } = useTranslation();
+  const lastScrollY = useRef(0);
 
   const serviceLinks = [
     { name: 'Property Management', path: '/services/property-management' },
@@ -20,16 +21,29 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
+    const controlNavbar = () => {
+      const currentScrollY = window.scrollY;
+      const scrollThreshold = 500;
+
+      // Check if scrolled more than 10px for background change
+      setScrolled(currentScrollY > 10);
+
+      // Show navbar when scrolling up or at top
+      if (currentScrollY < lastScrollY.current || currentScrollY < scrollThreshold) {
+        setVisible(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        // Hide navbar only when scrolling down and past threshold
+        if (currentScrollY > scrollThreshold) {
+          setVisible(false);
+        }
       }
+
+      lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [scrolled]);
+    window.addEventListener('scroll', controlNavbar);
+    return () => window.removeEventListener('scroll', controlNavbar);
+  }, []);
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -40,7 +54,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 transform ${
+        visible ? 'translate-y-0' : '-translate-y-full'
+      } ${
         scrolled
           ? 'bg-transparent backdrop-blur-md shadow-lg'
           : 'bg-white/95 backdrop-blur-sm'

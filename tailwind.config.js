@@ -5,6 +5,11 @@ export default {
 
   theme: {
   	extend: {
+      fontFamily: {
+        'didot-italic': ['Didot W01 Italic', 'serif'],
+        'libre-baskerville': ['Libre Baskerville', 'serif'],
+        'libre-caslon': ['Libre Caslon Text', 'serif'],
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
