@@ -1,0 +1,18 @@
+/* Import Didot font */
+@font-face {
+  font-family: 'Didot W01 Italic';
+  src: url('../assets/fonts/DidotW01Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Define font families */
+:root {
+  --font-primary: 'Libre Baskerville', serif;
+  --font-secondary: 'Libre Caslon Text', serif;
+  --font-didot: 'Didot W01 Italic', serif;
+  --font-system: Arial, Helvetica, sans-serif;
+} 
