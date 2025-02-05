@@ -1,7 +1,9 @@
 import Hero from '../components/sections/Hero';
-import States from '../components/sections/States';
 import Services from '../components/sections/Services';
 import Contact from '../components/sections/Contact';
+import Experience from '../components/sections/Experience';
+import About from '../components/sections/About';
+import VillaRentals from '../components/sections/VillaRentals';
 import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
@@ -13,9 +15,11 @@ const Home = () => {
         <meta name="keywords" content="real estate, home page, properties" />
       </Helmet>
       <Hero />
-      <States />
-      <Services id="services" />
-      <Contact />
+      <Experience />
+      <About />
+      <VillaRentals />
+      {/* <Services id="services" /> */}
+      {/* <Contact /> */}
     </>
   );
 };
