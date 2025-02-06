@@ -7,6 +7,7 @@ import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
 import { Button } from '../ui/button';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,10 +15,10 @@ const Navbar = () => {
   const lastScrollY = useRef(0);
 
   const serviceLinks = [
-    { name: 'Property Management', path: '/services/property-management' },
-    { name: 'Real Estate Consulting', path: '/services/consulting' },
-    { name: 'Property Valuation', path: '/services/valuation' },
-    { name: 'Investment Advisory', path: '/services/investment' },
+    { name: t('navbar.serviceLinks.propertyManagement'), path: '/services/property-management' },
+    { name: t('navbar.serviceLinks.consulting'), path: '/services/consulting' },
+    { name: t('navbar.serviceLinks.valuation'), path: '/services/valuation' },
+    { name: t('navbar.serviceLinks.investment'), path: '/services/investment' },
   ];
 
   useEffect(() => {
@@ -46,10 +47,10 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', path: '/' },
+    { name: t('navbar.home'), path: '/' },
     { isServices: true },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' },
+    { name: t('navbar.blog'), path: '/blog' },
+    { name: t('navbar.contact'), path: '/contact' },
   ];
 
   return (
@@ -61,7 +62,6 @@ const Navbar = () => {
           ? 'bg-transparent backdrop-blur-md shadow-lg'
           : 'bg-white/95 backdrop-blur-sm'
       }`}
-
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="flex items-center justify-between h-28 space-x-10 ">
@@ -90,8 +90,6 @@ const Navbar = () => {
               ) : (
                 <Menu className="h-6 w-6" />
               )}
-
-
             </Button>
           </div>
 
@@ -104,7 +102,7 @@ const Navbar = () => {
                     <h1
                       className="relative text-gray-400 hover:text-indigo-600 font-medium transition-colors duration-200 group cursor-pointer"
                     >
-                      Services
+                      {t('navbar.services')}
                       <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-200 group-hover:w-full" />
                     </h1>
                   </ServicesHoverCard>
@@ -145,7 +143,7 @@ const Navbar = () => {
                   onClick={() => setServiceMenuOpen(!serviceMenuOpen)}
                   className="w-full flex items-center justify-between text-gray-400 hover:text-indigo-600 font-medium py-2"
                 >
-                  <span>Services</span>
+                  <span>{t('navbar.services')}</span>
                   {serviceMenuOpen ? (
                     <ChevronUp className="h-4 w-4" />
                   ) : (
@@ -182,7 +180,7 @@ const Navbar = () => {
                     }}
                     className="block w-full text-left text-sm text-gray-400 hover:text-indigo-600 py-1"
                   >
-                    View All Services
+                    {t('navbar.viewAllServices')}
                   </button>
                 </div>
               </div>

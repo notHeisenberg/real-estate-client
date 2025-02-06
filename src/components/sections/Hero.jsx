@@ -6,13 +6,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from 'embla-carousel-autoplay';
+import { villaImages } from '../../data/villas'
+
 
 const Hero = () => {
-  const images = [
-    '/images/estate_1.jpeg',
-    '/images/estate_2.jpeg',
-    '/images/estate_3.jpeg',
-  ];
+
 
   return (
     <section className="relative mt-32 lg:h-[calc(100vh-10rem)] overflow-hidden">
@@ -31,11 +29,12 @@ const Hero = () => {
         className="w-full h-full"
       >
         <CarouselContent className="-ml-0">
-          {images.map((image, index) => (
+          {villaImages.map((image, index) => (
             <CarouselItem key={index} className="pl-0 relative">
               <div className="h-full lg:h-[calc(100vh-8rem)] w-full">
                 <img
-                  src={image}
+
+                  src={image.src}
                   alt={`Slide ${index + 1}`}
                   className="w-full h-full object-cover"
 

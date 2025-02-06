@@ -1,73 +1,93 @@
-import { Home, Building2, Briefcase, Key, LineChart, Users } from 'lucide-react';
-
-const services = [
-  {
-    icon: Home,
-    title: 'Residential Sales',
-    description: 'Find your perfect home with our extensive collection of residential properties.',
-  },
-  {
-    icon: Building2,
-    title: 'Commercial Properties',
-    description: 'Premium office spaces and retail locations for your business needs.',
-  },
-  {
-    icon: Key,
-    title: 'Property Management',
-    description: 'Professional management services for property owners and investors.',
-  },
-  {
-    icon: LineChart,
-    title: 'Investment Advisory',
-    description: 'Expert guidance on real estate investments and market analysis.',
-  },
-  {
-    icon: Briefcase,
-    title: 'Legal Consultation',
-    description: 'Professional legal advice for all your real estate transactions.',
-  },
-  {
-    icon: Users,
-    title: 'Client Support',
-    description: '24/7 dedicated support for all your real estate needs.',
-  },
-];
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { servicesData } from '../../data/services';
+import { useTranslation } from 'react-i18next';
 
 const Services = () => {
+  const { t, i18n } = useTranslation();
+  const currentLanguageServices = servicesData[i18n.language] || servicesData.en;
+
   return (
-    <section id="services" className="py-16 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            We offer comprehensive real estate services to help you buy, sell, or invest in properties
-            with confidence.
-          </p>
+    <section id="services" className="bg-white">
+      <div className="w-full">
+        <div className="w-full bg-[#fefdf9] text-center py-14">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-3xl font-libre-caslon font-light max-w-lg mx-auto p-10 leading-relaxed">
+              {t('services.title', 'SERVICES DESIGNED AROUND YOU')}
+            </h3>
+            <p className="text-xl opacity-70 font-libre-caslon px-4 mx-auto mb-24">
+              {t('services.description', 'Thanks to our dedicated team we provide personalized assistance and tailored solutions to meet all your needs.')}
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => {
-            const IconComponent = service.icon;
-            return (
-              <div
-                key={index}
-                className="p-6 bg-gray-50 rounded-lg hover:shadow-md transition-shadow"
-              >
-                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <IconComponent className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="mt-12 text-center">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-semibold transition-colors">
-            Contact Us
-          </button>
-        </div>
+        {currentLanguageServices.map((service, index) => (
+          <div key={index} className={`w-full ${service.bgColor} py-10`}>
+            <div className="max-w-5xl mx-auto flex flex-col lg:flex-row h-[600px]">
+              {index % 2 === 0 ? (
+                <>
+                  <div className="lg:w-1/2 h-full">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className={`lg:w-1/2 p-16 space-y-6 ${service.cardBgColor} h-full`}>
+                    <h3 className="text-3xl font-libre-caslon font-light">{service.title}</h3>
+                    <p className="text-xl font-libre-caslon font-light">{service.description}</p>
+                    {service.extraText && (
+                      <p className="font-libre-caslon font-light">{service.extraText}</p>
+                    )}
+                    <ul className="space-y-1 font-libre-caslon font-semibold text-sm">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className='list-disc'>{feature}</li>
+                      ))}
+                    </ul>
+                    <div>
+                      <Link
+                        to={service.link}
+                        className="inline-block px-8 py-3 border-2 border-black hover:bg-black hover:text-white transition-colors"
+                      >
+                        {t('common.seeMore', 'See More')}
+                      </Link>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className={`lg:w-1/2 p-16 space-y-6 ${service.cardBgColor} h-full`}>
+                    <h3 className="text-3xl font-libre-caslon font-light">{service.title}</h3>
+                    <p className="text-xl font-libre-caslon font-light">{service.description}</p>
+                    {service.extraText && (
+                      <p className="font-libre-caslon font-light">{service.extraText}</p>
+                    )}
+                    <ul className="space-y-1 font-libre-caslon font-semibold text-sm">
+                      {service.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className='list-disc'>{feature}</li>
+                      ))}
+                    </ul>
+                    <div>
+                      <Link
+                        to={service.link}
+                        className="inline-block px-8 py-3 border-2 border-black hover:bg-black hover:text-white transition-colors"
+                      >
+                        {t('common.seeMore', 'See More')}
+                      </Link>
+                    </div>
+                  </div>
+                  <div className="lg:w-1/2 h-full">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

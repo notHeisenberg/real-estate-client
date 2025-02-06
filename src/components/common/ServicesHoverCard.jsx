@@ -4,13 +4,16 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const ServicesHoverCard = ({ children }) => {
+  const { t } = useTranslation();
+
   const serviceLinks = [
-    { name: 'Property Management', path: '/services/property-management' },
-    { name: 'Real Estate Consulting', path: '/services/consulting' },
-    { name: 'Property Valuation', path: '/services/valuation' },
-    { name: 'Investment Advisory', path: '/services/investment' },
+    { name: t('navbar.serviceLinks.propertyManagement'), path: '/services/property-management' },
+    { name: t('navbar.serviceLinks.consulting'), path: '/services/consulting' },
+    { name: t('navbar.serviceLinks.valuation'), path: '/services/valuation' },
+    { name: t('navbar.serviceLinks.investment'), path: '/services/investment' },
   ];
 
   const scrollToServices = (e) => {

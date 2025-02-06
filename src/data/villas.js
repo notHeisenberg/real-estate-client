@@ -1,0 +1,128 @@
+export const villaImages = [
+    {
+        src: '/images/estate_1.jpeg',
+        alt: 'Luxury Villa with Pool',
+        width: 1920,
+        height: 1080,
+        title: 'Luxury Villa with Pool',
+        description: 'Modern luxury villa with infinity pool and mountain views',
+    },
+    {
+        src: '/images/estate_2.jpeg',
+        alt: 'Villa Interior',
+        width: 1920,
+        height: 1080,
+        title: 'Villa Interior',
+        description: 'Elegant living space with modern amenities',
+    },
+
+    {
+        src: '/images/estate_3.jpeg',
+        width: 1920,
+        height: 1080,
+        title: 'Villa Exterior',
+        description: 'Beautiful garden and outdoor space',
+
+    },
+    {
+        src: '/images/estate_4.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+
+    },
+    {
+        src: '/images/estate_5.jpeg',
+        alt: 'Master Bedroom',
+        width: 1920,
+        height: 1080,
+        title: 'Master Bedroom',
+        description: 'Luxurious master bedroom suite',
+
+    },
+    {
+        src: '/images/estate_6.jpeg',
+        alt: 'Dining Area',
+        width: 1920,
+        height: 1080,
+        title: 'Dining Area',
+        description: 'Elegant dining space with views',
+
+    },
+    {
+        src: '/images/estate_7.jpeg',
+        alt: 'Kitchen',
+        width: 1920,
+        height: 1080,
+        title: 'Kitchen',
+        description: 'Modern fully equipped kitchen',
+
+
+    },
+    {
+        src: '/images/estate_8.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_9.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_10.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_11.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_12.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_13.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_14.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+    {
+        src: '/images/estate_15.jpeg',
+        alt: 'Pool Area',
+        width: 1920,
+        height: 1080,
+        title: 'Pool Area',
+        description: 'Stunning pool with lounge area',
+    },
+];

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,14 +16,13 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#5e7c94] text-white py-10">
+    <footer className="bg-gradient-to-r from-[#5e7c94] to-[#5e7c94]/80 text-white py-10">
       <div className="max-w-5xl mx-auto px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-10">
           {/* Newsletter Subscription */}
           <div className="space-y-1">
-
             <h5 className="font-didot-italic text-3xl">
-              Subscribe for Updates
+              {t('footer.subscribe.title')}
             </h5>
             <form onSubmit={handleSubmit} className="pt-4 flex flex-col md:flex-row gap-0 relative">
               <input
@@ -29,8 +30,7 @@ const Footer = () => {
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email here"
-
+                placeholder={t('footer.subscribe.placeholder')}
                 required
                 pattern="^.+@.+\.[a-zA-Z]{2,63}$"
                 maxLength={250}
@@ -38,16 +38,14 @@ const Footer = () => {
               />
               <button
                 type="submit"
-
-
                 className="px-6 py-2 text-white rounded-none hover:bg-black transition-colors duration-500 font-libre-caslon whitespace-nowrap bg-[var(--corvid-background-color)]"
               >
-                Subscribe
+                {t('footer.subscribe.button')}
               </button>
 
               {isSubmitted && (
                 <p className="text-sm font-libre-caslon mt-2">
-                  Thanks for submitting!
+                  {t('footer.subscribe.success')}
                 </p>
               )}
             </form>
@@ -56,10 +54,10 @@ const Footer = () => {
           {/* Contact Information */}
           <div className="space-y-2">
             <p className="font-libre-caslon font-extrabold tracking-wide">
-              Av. Ricardo Soriano, 72, Portal B, 1st Floor, <br /> 29601 Marbella, Málaga
+              {t('footer.contact.address')}
             </p>
             <p className="font-libre-caslon font-bold tracking-wide">
-              Tel:{' '}
+              {t('footer.contact.tel')}:{' '}
               <a
                 href="tel:+34638387366"
                 className="underline hover:text-gray-300 transition-colors duration-200"
@@ -68,7 +66,7 @@ const Footer = () => {
               </a>
             </p>
             <p className="font-libre-caslon font-bold tracking-wide">
-              Mail:{' '}
+              {t('footer.contact.mail')}:{' '}
               <a
                 href="mailto:info@conciergetailormade.com"
                 className="underline hover:text-gray-300 transition-colors duration-200"
@@ -82,21 +80,12 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="mt-12 text-center text-sm tracking-wide">
           <p className="font-libre-caslon">
-            By{' '}
-            <a
-              href="https://www.inscalemedia.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-gray-300 transition-colors duration-200"
-            >
-              Inscale Media
-            </a>{' '}
-            ©2025 |{' '}
+            {t('footer.contact.copyright')}{' '}|{' '}
             <Link
               to="/privacy-policy"
               className="underline hover:text-gray-300 transition-colors duration-200"
             >
-              Privacy policy
+              {t('footer.contact.privacyPolicy')}
             </Link>
           </p>
         </div>

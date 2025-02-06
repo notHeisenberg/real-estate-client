@@ -4,6 +4,8 @@ import Contact from '../components/sections/Contact';
 import Experience from '../components/sections/Experience';
 import About from '../components/sections/About';
 import VillaRentals from '../components/sections/VillaRentals';
+import MarbellaInsider from '../components/sections/MarbellaInsider';
+import Partners from '../components/sections/Partners';
 import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
@@ -18,8 +20,10 @@ const Home = () => {
       <Experience />
       <About />
       <VillaRentals />
-      {/* <Services id="services" /> */}
-      {/* <Contact /> */}
+      <Services id="services" />
+      <MarbellaInsider />
+      <Partners />
+      <Contact id="contact" />
     </>
   );
 };

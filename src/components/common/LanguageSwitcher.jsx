@@ -9,8 +9,21 @@ const LanguageSwitcher = () => {
   const dropdownRef = useRef(null);
 
   const languages = [
-    { code: 'en', label: 'English' },
-    { code: 'es', label: 'Español' }
+    { 
+      code: 'en', 
+      label: 'English',
+      flag: 'https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/GBR.png'
+    },
+    { 
+      code: 'es', 
+      label: 'Español',
+      flag: 'https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/ESP.png'
+    },
+    { 
+      code: 'ru', 
+      label: 'Русский',
+      flag: 'https://static.parastorage.com/services/linguist-flags/1.969.0/assets/flags/round/RUS.png'
+    }
   ];
 
   useEffect(() => {
@@ -20,16 +33,23 @@ const LanguageSwitcher = () => {
       }
     };
 
+    // Load saved language from localStorage
+    const savedLanguage = localStorage.getItem('i18nextLng');
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
+  }, [i18n]);
 
-  const getCurrentLanguageLabel = () => {
-    return languages.find(lang => lang.code === i18n.language)?.label || 'English';
+  const getCurrentLanguage = () => {
+    return languages.find(lang => lang.code === i18n.language) || languages[0];
   };
 
   const handleLanguageChange = (langCode) => {
     i18n.changeLanguage(langCode);
+    localStorage.setItem('i18nextLng', langCode);
     setIsOpen(false);
   };
 
@@ -40,9 +60,11 @@ const LanguageSwitcher = () => {
         variant="outline"
         className="flex items-center gap-2 px-4 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow"
       >
-        {getCurrentLanguageLabel()}
+        <img src={getCurrentLanguage().flag} alt={getCurrentLanguage().label} className="w-4 h-4 mr-2" />
+        {getCurrentLanguage().label}
         <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </Button>
+
       
       {isOpen && (
         <div className="absolute top-full right-0 mt-2 bg-white rounded-md shadow-lg border border-gray-200">
@@ -50,8 +72,9 @@ const LanguageSwitcher = () => {
             <button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
-              className="block w-full text-left px-4 py-2 hover:bg-gray-100 first:rounded-t-md last:rounded-b-md"
+              className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 first:rounded-t-md last:rounded-b-md"
             >
+              <img src={lang.flag} alt={lang.label} className="w-4 h-4 mr-2" />
               {lang.label}
             </button>
           ))}
