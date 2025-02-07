@@ -77,8 +77,6 @@ const Navbar = () => {
                 Aura Made
                 <span className="text-sm font-semibold mt-1">
                   Luxury consierge service
-
-
                 </span>
               </p>
             </Link>

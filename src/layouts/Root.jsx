@@ -7,11 +7,12 @@ import { Helmet } from 'react-helmet-async';
 const Root = () => {
   return (
     <>
-      <Helmet defaultTitle="RealEstate" titleTemplate="%s | RealEstate">
-        <meta name="description" content="Find your perfect home with RealEstate" />
-        <meta name="keywords" content="real estate, homes, properties" />
+      <Helmet defaultTitle="Aura Made" titleTemplate="%s | Aura Made">
+        <meta name="description" content="Welcome to Aura Made - Luxury consierge service" />
+        <meta name="keywords" content="Aura Made, luxury consierge service, luxury, consierge, service" />
       </Helmet>
       <div className="min-h-screen flex flex-col">
+
         <Navbar />
         <main className="flex-grow">
           <Outlet />

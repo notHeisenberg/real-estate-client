@@ -13,8 +13,8 @@ const Home = () => {
     <>
       <Helmet>
         <title>Home</title>
-        <meta name="description" content="Welcome to RealEstate - Find your dream home" />
-        <meta name="keywords" content="real estate, home page, properties" />
+        <meta name="description" content="Welcome to Aura Made - Luxury consierge service" />
+        <meta name="keywords" content="Aura Made, luxury consierge service, luxury, consierge, service" />
       </Helmet>
       <Hero />
       <Experience />
