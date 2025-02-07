@@ -42,10 +42,11 @@ const ServicesHoverCard = ({ children }) => {
             <Link
               key={service.name}
               to={service.path}
-              className="text-sm text-gray-600 hover:text-indigo-600 transition-colors duration-200"
+              className="text-sm text-gray-500 hover:text-[#034079] transition-colors duration-500"
             >
               {service.name}
             </Link>
+
           ))}
         </div>
       </HoverCardContent>

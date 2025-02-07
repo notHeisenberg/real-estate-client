@@ -62,10 +62,10 @@ const Footer = () => {
                 href="tel:+34638387366"
                 className="underline hover:text-gray-300 transition-colors duration-200"
               >
-                +34 638 38 73 66
+                +34 653 57 45 59
               </a>
             </p>
-            <p className="font-libre-caslon font-bold tracking-wide">
+            {/* <p className="font-libre-caslon font-bold tracking-wide">
               {t('footer.contact.mail')}:{' '}
               <a
                 href="mailto:info@conciergetailormade.com"
@@ -73,7 +73,7 @@ const Footer = () => {
               >
                 info@conciergetailormade.com
               </a>
-            </p>
+            </p> */}
           </div>
         </div>
 

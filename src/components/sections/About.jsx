@@ -19,20 +19,22 @@ const About = () => {
         </div>
         
         {/* Center Content */}
-        <div className="w-full md:w-1/3 lg:w-2/4 px-4 md:px-8 py-8 md:py-16 flex items-center justify-center">
+        <div className="w-full md:w-1/3 lg:w-2/4 px-4 md:px-8 py-12 md:py-0 flex items-center justify-center">
           <div className="w-full max-w-2xl text-center">
-            <h2 className="font-libre-baskerville text-2xl md:text-3xl tracking-[0.2em] text-gray-800 mb-8 md:mb-12 font-medium">
-              {t('about.title', 'ABOUT TAILOR MADE CONCIERGE')}
+
+            <h2 className="text-4xl font-libre-caslon font-light mb-8 max-w-lg mx-auto">
+              {t('about.title', 'ABOUT AURA MADE LUXURY CONCIERGE')}
             </h2>
-            <div className="space-y-6 md:space-y-8 flex flex-col items-center justify-center">
-              <p className="font-libre-caslon text-lg md:text-xl leading-relaxed tracking-wider text-gray-800 max-w-full md:max-w-[420px]">
-                {t('about.description_1', 'Tailor Made Concierge is a luxury and lifestyle services company operating in Marbella, Sotogrande, and Madrid.')}
+
+            <div className="space-y-6 text-lg max-w-md mx-auto">
+              <p>
+                {t('about.description_1', 'AURA MADE Luxury Concierge Service is a luxury and lifestyle services company operating in IBIZA.')}
               </p>
-              <p className="font-libre-caslon text-lg md:text-xl leading-relaxed tracking-wider text-gray-800 max-w-full md:max-w-[420px]">
-                {t('about.description_2', 'We specialize in delivering exclusive, fully personalized luxury services that guarantee unique experiences, seamless one-call problem solving, significant time savings, and 24/7 support for your daily needs.')}
+              <p>
+                {t('about.description_2')}
               </p>
-              <p className="font-libre-caslon text-lg md:text-xl leading-relaxed tracking-wider text-gray-800 max-w-full md:max-w-[420px]">
-                {t('about.description_3', 'At Tailor Made Concierge, we elevate lifestyle with meticulous attention to detail, discretion, and excellence.')}
+              <p>
+                {t('about.description_3', 'At AURA MADE, we elevate lifestyle with meticulous attention to detail, discretion, and excellence.')}
               </p>
             </div>
           </div>

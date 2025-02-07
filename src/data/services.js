@@ -1,71 +1,71 @@
 export const servicesData = {
     en: [
         {
-            title: "CONCIERGE SERVICES MARBELLA",
-            description: "Full availability services (24/7).",
+            title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
+            description: "24/7 full availability",
             image: "/images/estate_8.jpeg",
             link: "/concierge-services",
             bgColor: "bg-[#F8F4F1]",
             cardBgColor: "bg-[#E8D8D0]",
             features: [
                 "Exclusive villas",
-                "Private transfers & yachts rental",
+                "Private transfers and yacht rentals",
                 "Private chefs",
-                "Bookings in exclusive restaurants & VIP tickets",
-                "Massages and Spa",
-                "Butlers, waiters, housekeepers & nannies",
-                "Grocery shopping",
-                "Private Events"
+                "Reservations at luxury restaurants and VIP access",
+                "Spa and massage services",
+                "Household staff: butlers, waiters, housekeepers, and nannies",
+                "Personalized shopping",
+                "Private event organization"
             ]
         },
         {
             title: "CORPORATE EVENTS",
-            description: "Exclusive events creators for leading companies.",
+            description: "We create exclusive events for companies seeking unparalleled experiences.",
             image: "/images/estate_9.jpeg",
             link: "/corporate-events",
             bgColor: "bg-[#F1F5F8]",
             cardBgColor: "bg-[#D8E3ED]",
             features: [
-                "Personalized Event Coordination",
-                "Unique venues",
-                "Tailor-Made Itineraries",
-                "Team building experiences",
+                "Comprehensive event coordination",
+                "Exclusive locations",
+                "Tailor-made itineraries",
+                "Team-building experiences",
                 "Accommodation management"
             ]
         },
         {
             title: "TRAVEL MANAGEMENT",
-            description: "Your personalized journey begins with us.",
+            description: "Your dream trip starts with us. A dedicated team member will guide you through every step to ensure a flawless experience.",
             image: "/images/estate_10.jpeg",
             link: "/travel-management",
             bgColor: "bg-[#F4F8F1]",
             cardBgColor: "bg-[#DCE8D5]",
-            extraText: "You will have 24/7 support from a member of our team who will accompany and guide throughout the entire process. We will:",
+            extraText: "We take care of:",
             features: [
-                "Create and recommend the best tailor-made experiences for you based on your requests",
-                "Give you access to unique locations throughout the entire Spanish national territory",
-                "Take care of the organization, management and bookings of all accommodations, services, and experiences",
-                "Discover our travel categories: sun and beach, leisure, cultural, gastronomic, nature and ecotourism"
+                "Designing personalized experiences based on your preferences",
+                "Exclusive access to prime locations across Spain",
+                "Full organization and management of accommodations, services, and experiences",
+                "Discover our travel categories: sun & beach, leisure, culture, gastronomy, nature, and ecotourism"
             ]
         },
         {
-            title: "HUNTING & COUNTRYSIDE LIFESTYLE",
-            description: "Spain's Premier Countryside and Game Hunting Experience.",
+            title: "FISHING AND MARINE LIFESTYLE",
+            description: "The ultimate fishing and sailing experience in Ibiza and Barcelona.",
             image: "/images/estate_11.jpeg",
-            link: "/hunting-services",
+            link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
             features: [
-                "The best big and small game hunting estates in Spain",
-                "Personalized attention from the beginning to the end of the experience",
-                "Complementary leisure, culture, and nature activities"
+                "Access to the most exclusive boats",
+                "Personalized service from start to finish",
+                "Complementary leisure, cultural, and nature activities"
             ]
         }
     ],
     es: [
         {
-            title: "SERVICIOS DE CONSERJERÍA MARBELLA",
-            description: "Servicios con disponibilidad total (24/7).",
+            title: "SERVICIOS DE CONSERJERÍA EN IBIZA Y BARCELONA",
+            description: "Disponibilidad total 24/7",
             image: "/images/estate_8.jpeg",
             link: "/concierge-services",
             bgColor: "bg-[#F8F4F1]",
@@ -74,23 +74,23 @@ export const servicesData = {
                 "Villas exclusivas",
                 "Transfers privados y alquiler de yates",
                 "Chefs privados",
-                "Reservas en restaurantes exclusivos y entradas VIP",
-                "Masajes y Spa",
-                "Mayordomos, camareros, personal de limpieza y niñeras",
-                "Compra de comestibles",
-                "Eventos privados"
+                "Reservas en restaurantes de lujo y acceso VIP",
+                "Servicios de spa y masajes",
+                "Personal doméstico: mayordomos, camareros, personal de limpieza y niñeras",
+                "Compras personalizadas",
+                "Organización de eventos privados"
             ]
         },
         {
             title: "EVENTOS CORPORATIVOS",
-            description: "Creadores de eventos exclusivos para empresas líderes.",
+            description: "Creamos eventos exclusivos para empresas que buscan experiencias sin igual.",
             image: "/images/estate_9.jpeg",
             link: "/corporate-events",
             bgColor: "bg-[#F1F5F8]",
             cardBgColor: "bg-[#D8E3ED]",
             features: [
-                "Coordinación de eventos personalizada",
-                "Lugares únicos",
+                "Coordinación integral de eventos",
+                "Ubicaciones exclusivas",
                 "Itinerarios a medida",
                 "Experiencias de team building",
                 "Gestión de alojamiento"
@@ -98,37 +98,37 @@ export const servicesData = {
         },
         {
             title: "GESTIÓN DE VIAJES",
-            description: "Tu viaje personalizado comienza con nosotros.",
+            description: "Tu viaje soñado comienza con nosotros. Un miembro dedicado del equipo te guiará en cada paso para asegurar una experiencia perfecta.",
             image: "/images/estate_10.jpeg",
             link: "/travel-management",
             bgColor: "bg-[#F4F8F1]",
             cardBgColor: "bg-[#DCE8D5]",
-            extraText: "Tendrás soporte 24/7 de un miembro de nuestro equipo que te acompañará y guiará durante todo el proceso. Nosotros:",
+            extraText: "Nos encargamos de:",
             features: [
-                "Crearemos y recomendaremos las mejores experiencias a medida basadas en tus solicitudes",
-                "Te daremos acceso a ubicaciones únicas en todo el territorio nacional español",
-                "Nos encargaremos de la organización, gestión y reservas de todos los alojamientos, servicios y experiencias",
+                "Diseñar experiencias personalizadas basadas en tus preferencias",
+                "Acceso exclusivo a ubicaciones privilegiadas en toda España",
+                "Organización y gestión completa de alojamientos, servicios y experiencias",
                 "Descubre nuestras categorías de viaje: sol y playa, ocio, cultura, gastronomía, naturaleza y ecoturismo"
             ]
         },
         {
-            title: "CAZA Y ESTILO DE VIDA RURAL",
-            description: "La mejor experiencia de caza y campo en España.",
+            title: "PESCA Y ESTILO DE VIDA MARINO",
+            description: "La mejor experiencia de pesca y navegación en Ibiza y Barcelona.",
             image: "/images/estate_11.jpeg",
-            link: "/hunting-services",
+            link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
             features: [
-                "Los mejores cotos de caza mayor y menor en España",
-                "Atención personalizada desde el inicio hasta el final de la experiencia",
+                "Acceso a los barcos más exclusivos",
+                "Servicio personalizado de principio a fin",
                 "Actividades complementarias de ocio, cultura y naturaleza"
             ]
         }
     ],
     ru: [
         {
-            title: "КОНСЬЕРЖ-СЕРВИС МАРБЕЛЬЯ",
-            description: "Полная доступность услуг (24/7).",
+            title: "КОНСЬЕРЖ-СЕРВИС В ИБИЦЕ И БАРСЕЛОНЕ",
+            description: "Полная доступность 24/7",
             image: "/images/estate_8.jpeg",
             link: "/concierge-services",
             bgColor: "bg-[#F8F4F1]",
@@ -137,53 +137,53 @@ export const servicesData = {
                 "Эксклюзивные виллы",
                 "Частные трансферы и аренда яхт",
                 "Частные повара",
-                "Бронирование в эксклюзивных ресторанах и VIP-билеты",
-                "Массаж и СПА",
-                "Дворецкие, официанты, горничные и няни",
-                "Доставка продуктов",
-                "Частные мероприятия"
+                "Бронирование в роскошных ресторанах и VIP-доступ",
+                "Спа и массажные услуги",
+                "Домашний персонал: дворецкие, официанты, горничные и няни",
+                "Персонализированный шопинг",
+                "Организация частных мероприятий"
             ]
         },
         {
             title: "КОРПОРАТИВНЫЕ МЕРОПРИЯТИЯ",
-            description: "Создатели эксклюзивных мероприятий для ведущих компаний.",
+            description: "Мы создаем эксклюзивные мероприятия для компаний, ищущих непревзойденные впечатления.",
             image: "/images/estate_9.jpeg",
             link: "/corporate-events",
             bgColor: "bg-[#F1F5F8]",
             cardBgColor: "bg-[#D8E3ED]",
             features: [
-                "Персонализированная координация мероприятий",
-                "Уникальные места проведения",
+                "Комплексная координация мероприятий",
+                "Эксклюзивные локации",
                 "Индивидуальные маршруты",
-                "Командообразующие мероприятия",
+                "Тимбилдинг",
                 "Управление размещением"
             ]
         },
         {
             title: "УПРАВЛЕНИЕ ПУТЕШЕСТВИЯМИ",
-            description: "Ваше персонализированное путешествие начинается с нас.",
+            description: "Ваше путешествие мечты начинается с нас. Персональный менеджер проведет вас через каждый этап для обеспечения безупречного опыта.",
             image: "/images/estate_10.jpeg",
             link: "/travel-management",
             bgColor: "bg-[#F4F8F1]",
             cardBgColor: "bg-[#DCE8D5]",
-            extraText: "Вы получите круглосуточную поддержку от члена нашей команды, который будет сопровождать и направлять вас на протяжении всего процесса. Мы:",
+            extraText: "Мы заботимся о:",
             features: [
-                "Создадим и порекомендуем лучшие индивидуальные впечатления на основе ваших пожеланий",
-                "Предоставим доступ к уникальным местам по всей территории Испании",
-                "Позаботимся об организации, управлении и бронировании всех мест проживания, услуг и впечатлений",
+                "Разработке персонализированных впечатлений на основе ваших предпочтений",
+                "Эксклюзивном доступе к лучшим локациям по всей Испании",
+                "Полной организации и управлении размещением, услугами и впечатлениями",
                 "Откройте для себя наши категории путешествий: пляжный отдых, досуг, культура, гастрономия, природа и экотуризм"
             ]
         },
         {
-            title: "ОХОТА И ЗАГОРОДНЫЙ ОБРАЗ ЖИЗНИ",
-            description: "Лучший опыт охоты и сельской жизни в Испании.",
+            title: "РЫБАЛКА И МОРСКОЙ ОБРАЗ ЖИЗНИ",
+            description: "Лучший опыт рыбалки и мореплавания в Ибице и Барселоне.",
             image: "/images/estate_11.jpeg",
-            link: "/hunting-services",
+            link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
             features: [
-                "Лучшие охотничьи угодья для крупной и мелкой дичи в Испании",
-                "Персональное внимание от начала до конца",
+                "Доступ к самым эксклюзивным лодкам",
+                "Персонализированный сервис от начала до конца",
                 "Дополнительные мероприятия: досуг, культура и природа"
             ]
         }

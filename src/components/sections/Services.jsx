@@ -23,31 +23,31 @@ const Services = () => {
 
         {currentLanguageServices.map((service, index) => (
           <div key={index} className={`w-full ${service.bgColor} py-10`}>
-            <div className="max-w-5xl mx-auto flex flex-col lg:flex-row h-[600px]">
+            <div className="max-w-5xl mx-auto flex flex-col lg:flex-row min-h-[600px] lg:h-[600px]">
               {index % 2 === 0 ? (
                 <>
-                  <div className="lg:w-1/2 h-full">
+                  <div className="lg:w-1/2 h-[300px] lg:h-full">
                     <img
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className={`lg:w-1/2 p-16 space-y-6 ${service.cardBgColor} h-full`}>
-                    <h3 className="text-3xl font-libre-caslon font-light">{service.title}</h3>
-                    <p className="text-xl font-libre-caslon font-light">{service.description}</p>
+                  <div className={`lg:w-1/2 p-8 lg:p-16 space-y-4 lg:space-y-6 ${service.cardBgColor}`}>
+                    <h3 className="text-2xl lg:text-3xl font-libre-caslon font-light">{service.title}</h3>
+                    <p className="text-lg lg:text-xl font-libre-caslon font-light">{service.description}</p>
                     {service.extraText && (
                       <p className="font-libre-caslon font-light">{service.extraText}</p>
                     )}
-                    <ul className="space-y-1 font-libre-caslon font-semibold text-sm">
+                    <ul className="space-y-1 font-libre-caslon font-semibold text-sm pl-4">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className='list-disc'>{feature}</li>
                       ))}
                     </ul>
-                    <div>
+                    <div className="pt-4">
                       <Link
                         to={service.link}
-                        className="inline-block px-8 py-3 border-2 border-black hover:bg-black hover:text-white transition-colors"
+                        className="inline-block px-6 lg:px-8 py-2 lg:py-3 border-2 border-black hover:bg-black hover:text-white transition-colors"
                       >
                         {t('common.seeMore', 'See More')}
                       </Link>
@@ -56,27 +56,27 @@ const Services = () => {
                 </>
               ) : (
                 <>
-                  <div className={`lg:w-1/2 p-16 space-y-6 ${service.cardBgColor} h-full`}>
-                    <h3 className="text-3xl font-libre-caslon font-light">{service.title}</h3>
-                    <p className="text-xl font-libre-caslon font-light">{service.description}</p>
+                  <div className={`lg:w-1/2 p-8 lg:p-16 space-y-4 lg:space-y-6 ${service.cardBgColor}`}>
+                    <h3 className="text-2xl lg:text-3xl font-libre-caslon font-light">{service.title}</h3>
+                    <p className="text-lg lg:text-xl font-libre-caslon font-light">{service.description}</p>
                     {service.extraText && (
                       <p className="font-libre-caslon font-light">{service.extraText}</p>
                     )}
-                    <ul className="space-y-1 font-libre-caslon font-semibold text-sm">
+                    <ul className="space-y-1 font-libre-caslon font-semibold text-sm pl-4">
                       {service.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className='list-disc'>{feature}</li>
                       ))}
                     </ul>
-                    <div>
+                    <div className="pt-4">
                       <Link
                         to={service.link}
-                        className="inline-block px-8 py-3 border-2 border-black hover:bg-black hover:text-white transition-colors"
+                        className="inline-block px-6 lg:px-8 py-2 lg:py-3 border-2 border-black hover:bg-black hover:text-white transition-colors"
                       >
                         {t('common.seeMore', 'See More')}
                       </Link>
                     </div>
                   </div>
-                  <div className="lg:w-1/2 h-full">
+                  <div className="lg:w-1/2 h-[300px] lg:h-full">
                     <img
                       src={service.image}
                       alt={service.title}

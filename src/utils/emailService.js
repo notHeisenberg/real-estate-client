@@ -1,19 +1,19 @@
 import emailjs from '@emailjs/browser';
 
 // Initialize EmailJS with your user ID
-emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 export const subscribeToNewsletter = async (email) => {
   try {
     const templateParams = {
       to_email: email,
       reply_to: email,
-      to_name: email.split('@')[0], // Using the part before @ as name
+      to_name: email.split('@')[0],
     };
 
     const response = await emailjs.send(
-      "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-      "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID_NEWSLETTER,
       templateParams
     );
 
@@ -36,10 +36,19 @@ export const subscribeToNewsletter = async (email) => {
 
 export const sendContactForm = async (formData) => {
   try {
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      phone: formData.phone || 'Not provided',
+      subject: formData.subject || 'Contact Form Submission',
+      message: formData.message,
+      reply_to: formData.email,
+    };
+
     const response = await emailjs.send(
-      "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-      "YOUR_CONTACT_TEMPLATE_ID", // Replace with your EmailJS template ID for contact form
-      formData
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID_CONTACT,
+      templateParams
     );
 
     if (response.status === 200) {

@@ -29,7 +29,7 @@ const resources = {
           success: "Thanks for submitting!"
         },
         contact: {
-          address: "Av. Ricardo Soriano, 72, Portal B, 1st Floor, 29601 Marbella, Málaga",
+          address: "Pl / Eusebi Güell, 12 B, 08034, Barcelona (España)",
           tel: "Tel",
           mail: "Mail",
           copyright: "By Inscale Media ©2025",
@@ -37,44 +37,48 @@ const resources = {
         }
       },
       services: {
-        title: "SERVICES DESIGNED AROUND YOU",
-        description: "Thanks to our dedicated team we provide personalized assistance and tailored solutions to meet all your needs."
+        title: "SERVICES TAILORED TO YOU",
+        description: "Our team is always available to provide personalized assistance and solutions that meet your highest expectations."
       },
       experience: {
         title: "ENJOY A UNIQUE EXPERIENCE",
-        description: "We are passionate about providing luxury services and meeting all your demands with excellent and dedicated services.",
+        description: "We are passionate about offering luxury services and making all your needs a reality with excellence and dedication.",
         viewMore: "View More"
       },
       about: {
-        title: "ABOUT TAILOR MADE CONCIERGE",
-        description_1: "Tailor Made Concierge is a luxury and lifestyle services company operating in Marbella, Sotogrande, and Madrid.",
-        description_2: "We specialize in delivering exclusive, fully personalized luxury services that guarantee unique experiences, seamless one-call problem solving, significant time savings, and 24/7 support for your daily needs.",
-        description_3: "At Tailor Made Concierge, we elevate lifestyle with meticulous attention to detail, discretion, and excellence.",
+        title: "ABOUT AURA MADE CONCIERGE",
+        description_1: "Aura Made Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
+        description_2: "We specialize in exclusive, fully personalized services, ensuring unique experiences, quick solutions with just one call, significant time savings, and 24/7 support for all your daily needs.",
+        description_3: "At Aura Made Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
         image_left_alt: "Luxury Estate Left",
         image_right_alt: "Luxury Estate Right"
       },
       villaRentals: {
-        title: "LUXURY VILLA RENTALS",
-        description: "Rediscover luxury with our curated selection of premium Villa Rentals in Marbella, Sotogrande and Madrid."
+        title: "YOUR LIFESTYLE, HASSLE-FREE",
+        subtitle: "Dreaming of a stunning villa for your vacation?",
+        description: "Discover our exclusive selection of premium villas in Ibiza, Barcelona, and Marbella, where luxury and comfort meet in every detail.",
+        serviceDescription: "Our concierge service is designed to exceed expectations, offering personalized, efficient, and top-quality support so you can enjoy your experience without worries.",
+        serviceDescription2: "We take care of every detail of your stay, allowing you to make the most of your time without stress or inconvenience.",
+        seeMore: "See More"
       },
-      marbellaInsider: {
-        title: "Marbella Insider",
-        description: "Monthly Tips and Referrals for Embracing the Luxury Lifestyle of the city.",
+      ibizaInsider: {
+        title: "IBIZA INSIDER",
+        description: "Monthly Tips and Referrals for Embracing the Luxury Lifestyle in IBIZA. Discover the Island's Most Exclusive Experiences.",
         seeMore: "See More",
-        imageAlt: "Marbella Luxury Lifestyle"
+        imageAlt: "IBIZA Luxury Lifestyle"
       },
       partners: {
         title: "Our Partners",
-        logoAlt: "{{partner}} - Partner of Tailor Made Concierge"
+        logoAlt: "{{partner}} - Partner of AURA MADE"
       },
       contact: {
         title: "CONTACT US",
         backgroundAlt: "Luxury Lifestyle Background",
         address: {
-          line1: "Av. Ricardo Soriano, 72, Portal B, 1st Floor,",
-          line2: "29601 Marbella, Málaga",
+          line1: "Pl / Eusebi Güell, 12 B,",
+          line2: "08034, Barcelona (España)",
           email: "info@conciergetailormade.com",
-          tel: "Tel: +34 638 38 73 66"
+          tel: "Tel. y Whatsapp: +34 653 57 45 59"
         },
         social: {
           facebook: "Follow us on Facebook",
@@ -87,8 +91,25 @@ const resources = {
           subject: "Subject",
           message: "Message",
           send: "Send",
-          success: "Success! Message received."
+          sending: "Sending...",
+          success: "Success! Message received.",
+          error: "Failed to send message. Please try again."
         }
+      },
+      conciergeServices: {
+        title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
+        description: "24/7 full availability",
+        features: [
+          "Exclusive villas",
+          "Private transfers and yacht rentals",
+          "Private chefs",
+          "Reservations at luxury restaurants and VIP access",
+          "Spa and massage services",
+          "Household staff: butlers, waiters, housekeepers, and nannies",
+          "Personalized shopping",
+          "Private event organization"
+        ],
+        footer: "A fully customized concierge service for you."
       }
     }
   },
@@ -118,7 +139,7 @@ const resources = {
           success: "¡Gracias por suscribirte!"
         },
         contact: {
-          address: "Av. Ricardo Soriano, 72, Portal B, 1ª Planta, 29601 Marbella, Málaga",
+          address: "Pl / Eusebi Güell, 12 B, 08034, Barcelona (España)",
           tel: "Tel",
           mail: "Correo",
           copyright: "Por Inscale Media ©2025",
@@ -127,30 +148,34 @@ const resources = {
       },
       services: {
         title: "SERVICIOS DISEÑADOS PARA TI",
-        description: "Gracias a nuestro equipo dedicado, brindamos asistencia personalizada y soluciones a medida para satisfacer todas tus necesidades."
+        description: "Nuestro equipo está siempre disponible para brindarte asistencia personalizada y soluciones que cumplan con tus más altas expectativas."
       },
       experience: {
         title: "DISFRUTA DE UNA EXPERIENCIA ÚNICA",
-        description: "Nos apasiona brindar servicios de lujo y satisfacer todas tus demandas con servicios excelentes y dedicados.",
+        description: "Nos apasiona ofrecer servicios de lujo y hacer realidad todas tus necesidades con excelencia y dedicación.",
         viewMore: "Ver Más"
       },
       about: {
-        title: "SOBRE TAILOR MADE CONCIERGE",
-        description_1: "Tailor Made Concierge es una empresa de servicios de lujo y estilo de vida que opera en Marbella, Sotogrande y Madrid.",
-        description_2: "Nos especializamos en brindar servicios de lujo exclusivos y totalmente personalizados que garantizan experiencias únicas, resolución de problemas con una sola llamada, ahorro significativo de tiempo y soporte 24/7 para sus necesidades diarias.",
-        description_3: "En Tailor Made Concierge, elevamos el estilo de vida con meticulosa atención al detalle, discreción y excelencia.",
+        title: "SOBRE AURA MADE CONCIERGE",
+        description_1: "Aura Made Concierge es tu socio de confianza en experiencias de lujo y estilo de vida en Ibiza y Barcelona.",
+        description_2: "Nos especializamos en servicios exclusivos y totalmente personalizados, garantizando experiencias únicas, soluciones rápidas con una sola llamada, ahorro significativo de tiempo y soporte 24/7 para todas tus necesidades diarias.",
+        description_3: "En Aura Made Concierge, elevamos el concepto de lujo con meticulosa atención al detalle, discreción y excelencia.",
         image_left_alt: "Propiedad de Lujo Izquierda",
         image_right_alt: "Propiedad de Lujo Derecha"
       },
       villaRentals: {
-        title: "ALQUILER DE VILLAS DE LUJO",
-        description: "Redescubre el lujo con nuestra selección de Villas premium en Marbella, Sotogrande y Madrid."
+        title: "TU ESTILO DE VIDA, SIN COMPLICACIONES",
+        subtitle: "¿Sueñas con una villa impresionante para tus vacaciones?",
+        description: "Descubre nuestra selección exclusiva de villas premium en Ibiza, Barcelona y Marbella, donde el lujo y el confort se encuentran en cada detalle.",
+        serviceDescription: "Nuestro servicio de conserjería está diseñado para superar expectativas, ofreciendo soporte personalizado, eficiente y de máxima calidad para que disfrutes de tu experiencia sin preocupaciones.",
+        serviceDescription2: "Nos ocupamos de cada detalle de tu estancia, permitiéndote aprovechar al máximo tu tiempo sin estrés ni inconvenientes.",
+        seeMore: "Ver Más"
       },
-      marbellaInsider: {
-        title: "Marbella Insider",
-        description: "Consejos y Referencias Mensuales para Disfrutar del Estilo de Vida de Lujo de la ciudad.",
+      ibizaInsider: {
+        title: "IBIZA INSIDER",
+        description: "Consejos y Referencias Mensuales para Disfrutar del Estilo de Vida de Lujo en IBIZA. Descubre las Experiencias Más Exclusivas de la Isla.",
         seeMore: "Ver Más",
-        imageAlt: "Estilo de Vida de Lujo en Marbella"
+        imageAlt: "Estilo de Vida de Lujo en IBIZA"
       },
       partners: {
         title: "Nuestros Colaboradores",
@@ -160,8 +185,8 @@ const resources = {
         title: "CONTÁCTENOS",
         backgroundAlt: "Fondo de Estilo de Vida de Lujo",
         address: {
-          line1: "Av. Ricardo Soriano, 72, Portal B, 1ª Planta,",
-          line2: "29601 Marbella, Málaga",
+          line1: "Pl / Eusebi Güell, 12 B,",
+          line2: "08034, Barcelona (España)",
           email: "info@conciergetailormade.com",
           tel: "Tel: +34 638 38 73 66"
         },
@@ -176,8 +201,25 @@ const resources = {
           subject: "Asunto",
           message: "Mensaje",
           send: "Enviar",
-          success: "¡Éxito! Mensaje recibido."
+          sending: "Enviando...",
+          success: "¡Éxito! Mensaje recibido.",
+          error: "Error al enviar el mensaje. Por favor, inténtelo de nuevo."
         }
+      },
+      conciergeServices: {
+        title: "SERVICIOS DE CONSERJERÍA EN IBIZA Y BARCELONA",
+        description: "Disponibilidad total 24/7",
+        features: [
+          "Villas exclusivas",
+          "Transfers privados y alquiler de yates",
+          "Chefs privados",
+          "Reservas en restaurantes de lujo y acceso VIP",
+          "Servicios de spa y masajes",
+          "Personal doméstico: mayordomos, camareros, personal de limpieza y niñeras",
+          "Compras personalizadas",
+          "Organización de eventos privados"
+        ],
+        footer: "Un servicio de conserjería totalmente personalizado para ti."
       }
     }
   },
@@ -220,26 +262,29 @@ const resources = {
       },
       experience: {
         title: "НАСЛАДИТЕСЬ УНИКАЛЬНЫМ ОПЫТОМ",
-        description: "Мы увлечены предоставлением роскошных услуг и удовлетворением всех ваших требований с превосходным и преданным сервисом.",
+        description: "Мы увлечены предоставлением роскошных услуг и воплощением всех ваших потребностей в реальность с превосходством и самоотдачей.",
         viewMore: "Подробнее"
       },
       about: {
-        title: "О TAILOR MADE CONCIERGE",
-        description_1: "Tailor Made Concierge - это компания, предоставляющая услуги класса люкс и лайфстайл в Марбелье, Сотогранде и Мадриде.",
-        description_2: "Мы специализируемся на предоставлении эксклюзивных, полностью персонализированных услуг класса люкс, которые гарантируют уникальный опыт, решение проблем одним звонком, значительную экономию времени и поддержку 24/7 для ваших ежедневных потребностей.",
-        description_3: "В Tailor Made Concierge мы поднимаем стиль жизни на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
+        title: "О AURA MADE CONCIERGE",
+        description_1: "Aura Made Concierge - ваш надежный партнер в сфере роскошных впечатлений и образа жизни в Ибице и Барселоне.",
+        description_2: "Мы специализируемся на эксклюзивных, полностью персонализированных услугах, обеспечивая уникальные впечатления, быстрые решения одним звонком, значительную экономию времени и поддержку 24/7 для всех ваших повседневных потребностей.",
+        description_3: "В Aura Made Concierge мы поднимаем концепцию роскоши на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
         image_left_alt: "Роскошная Недвижимость Слева",
         image_right_alt: "Роскошная Недвижимость Справа"
       },
       villaRentals: {
         title: "АРЕНДА РОСКОШНЫХ ВИЛЛ",
-        description: "Откройте для себя роскошь заново с нашей тщательно подобранной коллекцией премиальных вилл в Марбелье, Сотогранде и Мадриде."
+        description: "Откройте для себя роскошь заново с нашей тщательно подобранной коллекцией премиальных вилл в IBIZA.",
+        serviceDescription: "Наш консьерж-сервис разработан для удовлетворения самых высоких ожиданий, предлагая персонализированную, эффективную и первоклассную поддержку для обеспечения беззаботного и незабываемого опыта.",
+        serviceDescription2: "Мы заботимся о каждой детали вашего пребывания, позволяя вам полностью наслаждаться временем без стресса и неудобств.",
+        seeMore: "Подробнее"
       },
-      marbellaInsider: {
-        title: "Марбелья Инсайдер",
-        description: "Ежемесячные советы и рекомендации для погружения в роскошный образ жизни города.",
+      ibizaInsider: {
+        title: "IBIZA INSIDER",
+        description: "Ежемесячные советы и рекомендации для погружения в роскошный образ жизни IBIZA. Откройте для себя самые эксклюзивные впечатления острова.",
         seeMore: "Подробнее",
-        imageAlt: "Роскошный Образ Жизни в Марбелье"
+        imageAlt: "Роскошный Образ Жизни в IBIZA"
       },
       partners: {
         title: "Наши Партнеры",
@@ -265,7 +310,9 @@ const resources = {
           subject: "Тема",
           message: "Сообщение",
           send: "Отправить",
-          success: "Успех! Сообщение получено."
+          sending: "Отправка...",
+          success: "Успех! Сообщение получено.",
+          error: "Ошибка при отправке сообщения. Пожалуйста, попробуйте еще раз."
         }
       }
     }

@@ -28,15 +28,16 @@ const VillaRentals = () => {
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-8">
                     <h2 className="text-3xl font-libre-baskerville my-6 font-medium">
-                        {t('villaRentals.title', 'LUXURY VILLA RENTALS')}
+                        {t('villaRentals.title', 'YOUR LIFESTYLE, HASSLE-FREE')}
                     </h2>
 
+                    <p className="text-2xl font-didot text-gray-700 font-extrabold mb-4">
+                        {t('villaRentals.subtitle')}
+                    </p>
+
+
                     <p className="text-lg font-didot text-gray-700 font-bold">
-                        {t('villaRentals.description', 'Rediscover luxury with our curated selection of premium ')}
-                        <span className="text-gray-700 italic font-bold">
-                            Villa Rentals in Marbella {" , "}
-                        </span>
-                        {t('villaRentals.description', 'Sotogrande and Madrid.')}
+                        {t('villaRentals.description')}
                     </p>
                 </div>
 
@@ -155,15 +156,14 @@ const VillaRentals = () => {
                 {/* Service Description */}
                 <div className="text-center max-w-4xl mx-auto space-y-6">
                     <p className="text-lg text-gray-800">
-                        Our Concierge Service is designed to meet the highest expectations, offering personalized, efficient, and
-                        premium-quality support to ensure an effortless and unforgettable experience.
+                        {t('villaRentals.serviceDescription')}
                     </p>
                     <p className="text-lg text-gray-800 pb-12">
-                        We handle every detail of your stay, allowing you to fully enjoy your time without stress or inconvenience.
+                        {t('villaRentals.serviceDescription2')}
                     </p>
 
                     <button className="mt-8 bg-[#54728a] text-white px-10 py-2 rounded-none hover:bg-opacity-80 transition-colors">
-                        See More
+                        {t('villaRentals.seeMore')}
                     </button>
                 </div>
             </div>

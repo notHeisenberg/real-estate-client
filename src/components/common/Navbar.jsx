@@ -66,17 +66,24 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
         <div className="flex items-center justify-between h-28 space-x-10 ">
           {/* Logo and Website Name */}
-          <div className="flex items-center gap-2 flex-shrink-0">
+          <div className="flex items-center gap-1 flex-shrink-0">
             <img
-              src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=64&h=64&fit=crop&auto=format"
+              src="/images/Logo_cccc.svg"
               alt="Logo"
-              className="h-14 w-14 rounded-lg object-cover"
+              className="h-24 w-24 rounded-full object-cover hover:scale-110 transition-all duration-300"
             />
-            <Link to="/" className="flex items-center space-x-3">
-              <span className="text-xl uppercase font-semibold">
-                RealEstate
-              </span>
+            <Link to="/" className="flex items-center space-x-3 text-[#034079] hover:text-[#034079]/60 transition-all duration-500 font-system">
+              <p className="flex flex-col items-center text-2xl font-semibold w-44 text-center">
+                Aura Made
+                <span className="text-sm font-semibold mt-1">
+                  Luxury consierge service
+
+
+                </span>
+              </p>
             </Link>
+
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,20 +107,20 @@ const Navbar = () => {
                 item.isServices ? (
                   <ServicesHoverCard key="services">
                     <h1
-                      className="relative text-gray-400 hover:text-indigo-600 font-medium transition-colors duration-200 group cursor-pointer"
+                      className="relative text-gray-400 hover:text-[#034079] font-medium transition-colors duration-500 group cursor-pointer"
                     >
                       {t('navbar.services')}
-                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-200 group-hover:w-full" />
+                      <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#034079] transition-all duration-500 group-hover:w-full" />
                     </h1>
                   </ServicesHoverCard>
                 ) : (
                   <Link
                     key={item.name}
                     to={item.path}
-                    className="relative text-gray-400 hover:text-indigo-600 font-medium transition-colors duration-200 group"
+                    className="relative text-gray-400 hover:text-[#034079] font-medium transition-colors duration-500 group"
                   >
                     {item.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-200 group-hover:w-full" />
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#034079] transition-all duration-500 group-hover:w-full" />
                   </Link>
                 )
               ))}
@@ -141,7 +148,7 @@ const Navbar = () => {
               <div key="services" className="block">
                 <button
                   onClick={() => setServiceMenuOpen(!serviceMenuOpen)}
-                  className="w-full flex items-center justify-between text-gray-400 hover:text-indigo-600 font-medium py-2"
+                  className="w-full flex items-center justify-between text-gray-400 hover:text-[#034079] font-medium py-2"
                 >
                   <span>{t('navbar.services')}</span>
                   {serviceMenuOpen ? (
@@ -164,10 +171,11 @@ const Navbar = () => {
                         setServiceMenuOpen(false);
                         setMobileMenuOpen(false);
                       }}
-                      className="block text-sm text-gray-400 hover:text-indigo-600 py-1"
+                      className="block text-sm text-gray-400 hover:text-[#034079] py-1"
                     >
                       {service.name}
                     </Link>
+
                   ))}
                   <button
                     onClick={() => {
@@ -178,9 +186,10 @@ const Navbar = () => {
                         setMobileMenuOpen(false);
                       }
                     }}
-                    className="block w-full text-left text-sm text-gray-400 hover:text-indigo-600 py-1"
+                    className="block w-full text-left text-sm text-gray-400 hover:text-[#034079] py-1"
                   >
                     {t('navbar.viewAllServices')}
+
                   </button>
                 </div>
               </div>
@@ -189,7 +198,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-400 hover:text-indigo-600 font-medium py-2"
+                className="block text-gray-400 hover:text-[#034079] font-medium py-2"
               >
                 {item.name}
               </Link>
