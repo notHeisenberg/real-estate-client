@@ -51,7 +51,7 @@ export const servicesData = {
         {
             title: "FISHING AND MARINE LIFESTYLE",
             description: "The ultimate fishing and sailing experience in Ibiza and Barcelona.",
-            image: "/images/estate_11.jpeg",
+            image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
@@ -114,10 +114,11 @@ export const servicesData = {
         {
             title: "PESCA Y ESTILO DE VIDA MARINO",
             description: "La mejor experiencia de pesca y navegación en Ibiza y Barcelona.",
-            image: "/images/estate_11.jpeg",
+            image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
+
             features: [
                 "Acceso a los barcos más exclusivos",
                 "Servicio personalizado de principio a fin",
@@ -177,10 +178,11 @@ export const servicesData = {
         {
             title: "РЫБАЛКА И МОРСКОЙ ОБРАЗ ЖИЗНИ",
             description: "Лучший опыт рыбалки и мореплавания в Ибице и Барселоне.",
-            image: "/images/estate_11.jpeg",
+            image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
+
             features: [
                 "Доступ к самым эксклюзивным лодкам",
                 "Персонализированный сервис от начала до конца",

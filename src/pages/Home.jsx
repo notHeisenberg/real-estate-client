@@ -5,7 +5,7 @@ import Experience from '../components/sections/Experience';
 import About from '../components/sections/About';
 import VillaRentals from '../components/sections/VillaRentals';
 import IbizaInsider from '../components/sections/IbizaInsider';
-import Partners from '../components/sections/Partners';
+import LuxuryExperiences from '../components/sections/LuxuryExperiences';
 import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
@@ -22,7 +22,7 @@ const Home = () => {
       <VillaRentals />
       <Services id="services" />
       <IbizaInsider />
-      <Partners />
+      <LuxuryExperiences />
       <Contact id="contact" />
     </>
   );

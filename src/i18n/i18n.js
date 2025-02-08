@@ -188,7 +188,7 @@ const resources = {
           line1: "Pl / Eusebi Güell, 12 B,",
           line2: "08034, Barcelona (España)",
           email: "info@conciergetailormade.com",
-          tel: "Tel: +34 638 38 73 66"
+          tel: "Tel: +34 653 57 45 59"
         },
         social: {
           facebook: "Síguenos en Facebook",
