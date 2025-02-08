@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { servicesData } from '../../data/services';
 import { useTranslation } from 'react-i18next';
 
@@ -22,7 +21,11 @@ const Services = () => {
         </div>
 
         {currentLanguageServices.map((service, index) => (
-          <div key={index} className={`w-full ${service.bgColor} py-10`}>
+          <div 
+            key={index} 
+            id={service.id} 
+            className={`w-full ${service.bgColor} py-10`}
+          >
             <div className="max-w-5xl mx-auto flex flex-col lg:flex-row min-h-[600px] lg:h-auto">
               {index % 2 === 0 ? (
                 <>
@@ -47,12 +50,11 @@ const Services = () => {
                       </ul>
                     </div>
                     <div className="pt-6">
-                      <Link
-                        to={service.link}
-                        className="inline-block px-4 lg:px-6 py-2 border-2 border-black hover:bg-black hover:text-white transition-colors text-sm lg:text-base"
+                      <button
+                        className="inline-block px-6 py-2 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-colors duration-500"
                       >
                         {t('common.seeMore', 'See More')}
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 </>
@@ -72,12 +74,12 @@ const Services = () => {
                       </ul>
                     </div>
                     <div className="pt-6">
-                      <Link
-                        to={service.link}
-                        className="inline-block px-4 lg:px-6 py-2 border-2 border-black hover:bg-black hover:text-white transition-colors text-sm lg:text-base"
+                      <button
+                        className="inline-block px-6 py-2 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-colors duration-500"
                       >
                         {t('common.seeMore', 'See More')}
-                      </Link>
+                      </button>
+
                     </div>
                   </div>
                   <div className="lg:w-1/2 h-[300px] lg:h-[600px]">

@@ -110,6 +110,44 @@ const resources = {
           "Private event organization"
         ],
         footer: "A fully customized concierge service for you."
+      },
+      yacht: {
+        overview: "Overview",
+        features: "Features",
+        gallery: "Gallery",
+        specifications: "Specifications",
+        length: "Length",
+        capacity: "Capacity",
+        crew: "Crew",
+        speed: "Speed",
+        backToYachts: "Back to Yachts",
+        imageAlt: "{{title}} - Image {{number}}",
+        details: {
+          inspiration: {
+            title: "Inspiration Yacht",
+            description: "Experience luxury at sea with our flagship yacht"
+          },
+          majestic: {
+            title: "Majestic Yacht",
+            description: "Elegance and comfort combined in perfect harmony"
+          },
+          manbero: {
+            title: "Manbero Yacht",
+            description: "Modern sophistication meets maritime excellence"
+          },
+          seanfinity: {
+            title: "Seanfinity Yacht",
+            description: "Where luxury meets infinite possibilities"
+          },
+          autumn: {
+            title: "Autumn Yacht",
+            description: "Modern sophistication on the water"
+          },
+          ella: {
+            title: "Ella Yacht",
+            description: "Classic design with contemporary comfort"
+          }
+        }
       }
     }
   },
@@ -220,6 +258,44 @@ const resources = {
           "Organización de eventos privados"
         ],
         footer: "Un servicio de conserjería totalmente personalizado para ti."
+      },
+      yacht: {
+        overview: "Descripción General",
+        features: "Características",
+        gallery: "Galería",
+        specifications: "Especificaciones",
+        length: "Longitud",
+        capacity: "Capacidad",
+        crew: "Tripulación",
+        speed: "Velocidad",
+        backToYachts: "Volver a Yates",
+        imageAlt: "{{title}} - Imagen {{number}}",
+        details: {
+          inspiration: {
+            title: "Yate Inspiration",
+            description: "Experimenta el lujo en el mar con nuestro yate insignia"
+          },
+          majestic: {
+            title: "Yate Majestic",
+            description: "Elegancia y comodidad combinadas en perfecta armonía"
+          },
+          manbero: {
+            title: "Yate Manbero",
+            description: "Sofisticación moderna y excelencia marítima"
+          },
+          seanfinity: {
+            title: "Yate Seanfinity",
+            description: "Donde el lujo se encuentra con las posibilidades infinitas"
+          },
+          autumn: {
+            title: "Yate Autumn",
+            description: "Sofisticación moderna en el agua"
+          },
+          ella: {
+            title: "Yate Ella",
+            description: "Diseño clásico con comodidad contemporánea"
+          }
+        }
       }
     }
   },
@@ -313,6 +389,59 @@ const resources = {
           sending: "Отправка...",
           success: "Успех! Сообщение получено.",
           error: "Ошибка при отправке сообщения. Пожалуйста, попробуйте еще раз."
+        }
+      },
+      conciergeServices: {
+        title: "SERVICIOS DE CONSERJERÍA EN IBIZA Y BARCELONA",
+        description: "Disponibilidad total 24/7",
+        features: [
+          "Villas exclusivas",
+          "Transfers privados y alquiler de yates",
+          "Chefs privados",
+          "Reservas en restaurantes de lujo y acceso VIP",
+          "Servicios de spa y masajes",
+          "Personal doméstico: mayordomos, camareros, personal de limpieza y niñeras",
+          "Compras personalizadas",
+          "Organización de eventos privados"
+        ],
+        footer: "Un servicio de conserjería totalmente personalizado para ti."
+      },
+      yacht: {
+        overview: "Обзор",
+        features: "Особенности",
+        gallery: "Галерея",
+        specifications: "Характеристики",
+        length: "Длина",
+        capacity: "Вместимость",
+        crew: "Экипаж",
+        speed: "Скорость",
+        backToYachts: "Назад к Яхтам",
+        imageAlt: "{{title}} - Изображение {{number}}",
+        details: {
+          inspiration: {
+            title: "Яхта Inspiration",
+            description: "Испытайте роскошь на море с нашей флагманской яхтой"
+          },
+          majestic: {
+            title: "Яхта Majestic",
+            description: "Элегантность и комфорт в идеальной гармонии"
+          },
+          manbero: {
+            title: "Яхта Manbero",
+            description: "Современная изысканность и морское совершенство"
+          },
+          seanfinity: {
+            title: "Яхта Seanfinity",
+            description: "Где роскошь встречается с безграничными возможностями"
+          },
+          autumn: {
+            title: "Яхта Autumn",
+            description: "Современная изысканность на воде"
+          },
+          ella: {
+            title: "Яхта Ella",
+            description: "Классический дизайн с современным комфортом"
+          }
         }
       }
     }

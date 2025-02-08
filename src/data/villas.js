@@ -1,6 +1,6 @@
 export const villaImages = [
     {
-        src: '/images/estate_1.jpeg',
+        src: '/images/estates/estate_1.jpeg',
         alt: 'Luxury Villa with Pool',
         width: 1920,
         height: 1080,
@@ -8,7 +8,7 @@ export const villaImages = [
         description: 'Modern luxury villa with infinity pool and mountain views',
     },
     {
-        src: '/images/estate_2.jpeg',
+        src: '/images/estates/estate_2.jpeg',
         alt: 'Villa Interior',
         width: 1920,
         height: 1080,
@@ -17,7 +17,7 @@ export const villaImages = [
     },
 
     {
-        src: '/images/estate_3.jpeg',
+        src: '/images/estates/estate_3.jpeg',
         width: 1920,
         height: 1080,
         title: 'Villa Exterior',
@@ -25,7 +25,7 @@ export const villaImages = [
 
     },
     {
-        src: '/images/estate_4.jpeg',
+        src: '/images/estates/estate_4.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -34,7 +34,7 @@ export const villaImages = [
 
     },
     {
-        src: '/images/estate_5.jpeg',
+        src: '/images/estates/estate_5.jpeg',
         alt: 'Master Bedroom',
         width: 1920,
         height: 1080,
@@ -43,7 +43,7 @@ export const villaImages = [
 
     },
     {
-        src: '/images/estate_6.jpeg',
+        src: '/images/estates/estate_6.jpeg',
         alt: 'Dining Area',
         width: 1920,
         height: 1080,
@@ -52,7 +52,7 @@ export const villaImages = [
 
     },
     {
-        src: '/images/estate_7.jpeg',
+        src: '/images/estates/estate_7.jpeg',
         alt: 'Kitchen',
         width: 1920,
         height: 1080,
@@ -62,7 +62,7 @@ export const villaImages = [
 
     },
     {
-        src: '/images/estate_8.jpeg',
+        src: '/images/estates/estate_8.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -70,7 +70,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_9.jpeg',
+        src: '/images/estates/estate_9.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -78,7 +78,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_10.jpeg',
+        src: '/images/estates/estate_10.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -86,7 +86,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_11.jpeg',
+        src: '/images/estates/estate_11.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -94,7 +94,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_12.jpeg',
+        src: '/images/estates/estate_12.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -102,7 +102,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_13.jpeg',
+        src: '/images/estates/estate_13.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -110,7 +110,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_14.jpeg',
+        src: '/images/estates/estate_14.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,
@@ -118,7 +118,7 @@ export const villaImages = [
         description: 'Stunning pool with lounge area',
     },
     {
-        src: '/images/estate_15.jpeg',
+        src: '/images/estates/estate_15.jpeg',
         alt: 'Pool Area',
         width: 1920,
         height: 1080,

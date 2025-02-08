@@ -161,10 +161,6 @@ const VillaRentals = () => {
                     <p className="text-lg text-gray-800 pb-12">
                         {t('villaRentals.serviceDescription2')}
                     </p>
-
-                    <button className="mt-8 bg-[#54728a] text-white px-10 py-2 rounded-none hover:bg-opacity-80 transition-colors">
-                        {t('villaRentals.seeMore')}
-                    </button>
                 </div>
             </div>
         </section>

@@ -63,7 +63,7 @@ const Contact = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/images/estate_11.jpeg"
+          src="/images/estates/estate_11.jpeg"
           alt={t('contact.backgroundAlt')}
           className="w-full h-full object-cover"
         />

@@ -1,9 +1,10 @@
 export const servicesData = {
     en: [
         {
+            id: 'property-management',
             title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
             description: "24/7 full availability",
-            image: "/images/estate_8.jpeg",
+            image: "/images/estates/estate_8.jpeg",
             link: "/concierge-services",
             bgColor: "bg-[#F8F4F1]",
             cardBgColor: "bg-[#E8D8D0]",
@@ -19,9 +20,10 @@ export const servicesData = {
             ]
         },
         {
+            id: 'consulting',
             title: "CORPORATE EVENTS",
             description: "We create exclusive events for companies seeking unparalleled experiences.",
-            image: "/images/estate_9.jpeg",
+            image: "/images/estates/estate_9.jpeg",
             link: "/corporate-events",
             bgColor: "bg-[#F1F5F8]",
             cardBgColor: "bg-[#D8E3ED]",
@@ -34,9 +36,10 @@ export const servicesData = {
             ]
         },
         {
+            id: 'valuation',
             title: "TRAVEL MANAGEMENT",
             description: "Your dream trip starts with us. A dedicated team member will guide you through every step to ensure a flawless experience.",
-            image: "/images/estate_10.jpeg",
+            image: "/images/estates/estate_10.jpeg",
             link: "/travel-management",
             bgColor: "bg-[#F4F8F1]",
             cardBgColor: "bg-[#DCE8D5]",
@@ -49,6 +52,7 @@ export const servicesData = {
             ]
         },
         {
+            id: 'investment',
             title: "FISHING AND MARINE LIFESTYLE",
             description: "The ultimate fishing and sailing experience in Ibiza and Barcelona.",
             image: "/images/Fishing/fishing_1.jpeg",
@@ -64,9 +68,10 @@ export const servicesData = {
     ],
     es: [
         {
+            id: 'property-management',
             title: "SERVICIOS DE CONSERJERÍA EN IBIZA Y BARCELONA",
             description: "Disponibilidad total 24/7",
-            image: "/images/estate_8.jpeg",
+            image: "/images/estates/estate_8.jpeg",
             link: "/concierge-services",
             bgColor: "bg-[#F8F4F1]",
             cardBgColor: "bg-[#E8D8D0]",
@@ -82,9 +87,10 @@ export const servicesData = {
             ]
         },
         {
+            id: 'consulting',
             title: "EVENTOS CORPORATIVOS",
             description: "Creamos eventos exclusivos para empresas que buscan experiencias sin igual.",
-            image: "/images/estate_9.jpeg",
+            image: "/images/estates/estate_9.jpeg",
             link: "/corporate-events",
             bgColor: "bg-[#F1F5F8]",
             cardBgColor: "bg-[#D8E3ED]",
@@ -97,9 +103,10 @@ export const servicesData = {
             ]
         },
         {
+            id: 'valuation',
             title: "GESTIÓN DE VIAJES",
             description: "Tu viaje soñado comienza con nosotros. Un miembro dedicado del equipo te guiará en cada paso para asegurar una experiencia perfecta.",
-            image: "/images/estate_10.jpeg",
+            image: "/images/estates/estate_10.jpeg",
             link: "/travel-management",
             bgColor: "bg-[#F4F8F1]",
             cardBgColor: "bg-[#DCE8D5]",
@@ -112,13 +119,13 @@ export const servicesData = {
             ]
         },
         {
+            id: 'investment',
             title: "PESCA Y ESTILO DE VIDA MARINO",
             description: "La mejor experiencia de pesca y navegación en Ibiza y Barcelona.",
             image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
-
             features: [
                 "Acceso a los barcos más exclusivos",
                 "Servicio personalizado de principio a fin",
@@ -128,9 +135,10 @@ export const servicesData = {
     ],
     ru: [
         {
+            id: 'property-management',
             title: "КОНСЬЕРЖ-СЕРВИС В ИБИЦЕ И БАРСЕЛОНЕ",
             description: "Полная доступность 24/7",
-            image: "/images/estate_8.jpeg",
+            image: "/images/estates/estate_8.jpeg",
             link: "/concierge-services",
             bgColor: "bg-[#F8F4F1]",
             cardBgColor: "bg-[#E8D8D0]",
@@ -146,9 +154,10 @@ export const servicesData = {
             ]
         },
         {
+            id: 'consulting',
             title: "КОРПОРАТИВНЫЕ МЕРОПРИЯТИЯ",
             description: "Мы создаем эксклюзивные мероприятия для компаний, ищущих непревзойденные впечатления.",
-            image: "/images/estate_9.jpeg",
+            image: "/images/estates/estate_9.jpeg",
             link: "/corporate-events",
             bgColor: "bg-[#F1F5F8]",
             cardBgColor: "bg-[#D8E3ED]",
@@ -161,9 +170,10 @@ export const servicesData = {
             ]
         },
         {
+            id: 'valuation',
             title: "УПРАВЛЕНИЕ ПУТЕШЕСТВИЯМИ",
             description: "Ваше путешествие мечты начинается с нас. Персональный менеджер проведет вас через каждый этап для обеспечения безупречного опыта.",
-            image: "/images/estate_10.jpeg",
+            image: "/images/estates/estate_10.jpeg",
             link: "/travel-management",
             bgColor: "bg-[#F4F8F1]",
             cardBgColor: "bg-[#DCE8D5]",
@@ -176,13 +186,13 @@ export const servicesData = {
             ]
         },
         {
+            id: 'investment',
             title: "РЫБАЛКА И МОРСКОЙ ОБРАЗ ЖИЗНИ",
             description: "Лучший опыт рыбалки и мореплавания в Ибице и Барселоне.",
             image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",
             bgColor: "bg-[#F8F1F1]",
             cardBgColor: "bg-[#E8D5D5]",
-
             features: [
                 "Доступ к самым эксклюзивным лодкам",
                 "Персонализированный сервис от начала до конца",

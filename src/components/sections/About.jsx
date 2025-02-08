@@ -11,7 +11,7 @@ const About = () => {
         <div className="hidden md:block md:w-1/3 lg:w-1/3 min-h-[600px] lg:min-h-[800px]">
           <div className="w-full h-full sticky top-0">
             <img 
-              src="/images/estate_1.jpeg" 
+              src="/images/estates/estate_1.jpeg" 
               alt={t('about.image_left_alt', 'Luxury Estate Left')} 
               className="w-full h-full object-cover"
             />
@@ -44,7 +44,7 @@ const About = () => {
         <div className="hidden md:block md:w-1/3 lg:w-1/3 min-h-[600px] lg:min-h-[800px]">
           <div className="w-full h-full sticky top-0">
             <img 
-              src="/images/estate_2.jpeg" 
+              src="/images/estates/estate_2.jpeg" 
               alt={t('about.image_right_alt', 'Luxury Estate Right')} 
               className="w-full h-full object-cover"
             />
@@ -54,7 +54,7 @@ const About = () => {
         {/* Mobile Image - Below Content */}
         <div className="md:hidden w-full h-[300px] mt-4">
           <img 
-            src="/images/estate_2.jpeg" 
+            src="/images/estates/estate_2.jpeg" 
             alt={t('about.image_right_alt', 'Luxury Estate Right')} 
             className="w-full h-full object-cover"
           />

@@ -3,17 +3,16 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const ServicesHoverCard = ({ children }) => {
   const { t } = useTranslation();
 
   const serviceLinks = [
-    { name: t('navbar.serviceLinks.propertyManagement'), path: '/services/property-management' },
-    { name: t('navbar.serviceLinks.consulting'), path: '/services/consulting' },
-    { name: t('navbar.serviceLinks.valuation'), path: '/services/valuation' },
-    { name: t('navbar.serviceLinks.investment'), path: '/services/investment' },
+    t('navbar.serviceLinks.propertyManagement'),
+    t('navbar.serviceLinks.consulting'),
+    t('navbar.serviceLinks.valuation'),
+    t('navbar.serviceLinks.investment'),
   ];
 
   const scrollToServices = (e) => {
@@ -39,14 +38,12 @@ const ServicesHoverCard = ({ children }) => {
       <HoverCardContent className="w-64">
         <div className="flex flex-col space-y-2">
           {serviceLinks.map((service) => (
-            <Link
-              key={service.name}
-              to={service.path}
-              className="text-sm text-gray-500 hover:text-[#034079] transition-colors duration-500"
+            <span
+              key={service}
+              className="text-sm text-gray-500 hover:text-[#034079] transition-colors duration-500 cursor-default"
             >
-              {service.name}
-            </Link>
-
+              {service}
+            </span>
           ))}
         </div>
       </HoverCardContent>

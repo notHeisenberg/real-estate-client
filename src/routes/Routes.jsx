@@ -1,10 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Root from '../layouts/Root';
 import Home from '../pages/Home';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
 import ErrorPage from '../pages/ErrorPage';
-import Services from '../pages/Services';
+import YachtDetail from '../pages/YachtDetail';
+import Contact from '../components/sections/Contact';
 
 export const router = createBrowserRouter([
   {
@@ -17,17 +16,13 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/about',
-        element: <About />,
+        path: '/yachts/:id',
+        element: <YachtDetail />,
       },
       {
         path: '/contact',
         element: <Contact />,
-      },
-      {
-        path: '/services',
-        element: <Services />,
-      },
+      }
     ],
   },
 ]); 
