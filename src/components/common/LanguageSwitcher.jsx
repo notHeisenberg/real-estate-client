@@ -68,14 +68,14 @@ const LanguageSwitcher = () => {
       {isOpen && (
         <div className="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 z-50">
           {languages.map((lang) => (
-            <button
+            <Button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
-              className="flex items-center w-full text-left px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-md last:rounded-b-md"
+              className="flex items-center w-full text-left px-4 py-2 text-gray-900 bg-white dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-md last:rounded-b-md"
             >
               <img src={lang.flag} alt={lang.label} className="w-4 h-4 mr-2" />
               {lang.label}
-            </button>
+            </Button>
           ))}
         </div>
       )}
