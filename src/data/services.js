@@ -69,7 +69,7 @@ export const servicesData = {
     es: [
         {
             id: 'property-management',
-            title: "SERVICIOS DE CONSERJERÍA EN IBIZA Y BARCELONA",
+            title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
             description: "Disponibilidad total 24/7",
             image: "/images/estates/estate_8.jpeg",
             link: "/concierge-services",
@@ -88,7 +88,7 @@ export const servicesData = {
         },
         {
             id: 'consulting',
-            title: "EVENTOS CORPORATIVOS",
+            title: "CORPORATE EVENTS",
             description: "Creamos eventos exclusivos para empresas que buscan experiencias sin igual.",
             image: "/images/estates/estate_9.jpeg",
             link: "/corporate-events",
@@ -104,7 +104,7 @@ export const servicesData = {
         },
         {
             id: 'valuation',
-            title: "GESTIÓN DE VIAJES",
+            title: "TRAVEL MANAGEMENT",
             description: "Tu viaje soñado comienza con nosotros. Un miembro dedicado del equipo te guiará en cada paso para asegurar una experiencia perfecta.",
             image: "/images/estates/estate_10.jpeg",
             link: "/travel-management",
@@ -120,7 +120,7 @@ export const servicesData = {
         },
         {
             id: 'investment',
-            title: "PESCA Y ESTILO DE VIDA MARINO",
+            title: "FISHING AND MARINE LIFESTYLE",
             description: "La mejor experiencia de pesca y navegación en Ibiza y Barcelona.",
             image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",
@@ -136,7 +136,7 @@ export const servicesData = {
     ru: [
         {
             id: 'property-management',
-            title: "КОНСЬЕРЖ-СЕРВИС В ИБИЦЕ И БАРСЕЛОНЕ",
+            title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
             description: "Полная доступность 24/7",
             image: "/images/estates/estate_8.jpeg",
             link: "/concierge-services",
@@ -155,7 +155,7 @@ export const servicesData = {
         },
         {
             id: 'consulting',
-            title: "КОРПОРАТИВНЫЕ МЕРОПРИЯТИЯ",
+            title: "CORPORATE EVENTS",
             description: "Мы создаем эксклюзивные мероприятия для компаний, ищущих непревзойденные впечатления.",
             image: "/images/estates/estate_9.jpeg",
             link: "/corporate-events",
@@ -171,7 +171,7 @@ export const servicesData = {
         },
         {
             id: 'valuation',
-            title: "УПРАВЛЕНИЕ ПУТЕШЕСТВИЯМИ",
+            title: "TRAVEL MANAGEMENT",
             description: "Ваше путешествие мечты начинается с нас. Персональный менеджер проведет вас через каждый этап для обеспечения безупречного опыта.",
             image: "/images/estates/estate_10.jpeg",
             link: "/travel-management",
@@ -187,7 +187,7 @@ export const servicesData = {
         },
         {
             id: 'investment',
-            title: "РЫБАЛКА И МОРСКОЙ ОБРАЗ ЖИЗНИ",
+            title: "FISHING AND MARINE LIFESTYLE",
             description: "Лучший опыт рыбалки и мореплавания в Ибице и Барселоне.",
             image: "/images/Fishing/fishing_1.jpeg",
             link: "/fishing-services",

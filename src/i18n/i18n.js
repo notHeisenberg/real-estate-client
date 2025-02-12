@@ -29,9 +29,9 @@ const resources = {
           success: "Thanks for submitting!"
         },
         contact: {
-          address: "Pl / Eusebi Güell, 12 B, 08034, Barcelona (España)",
-          tel: "Tel",
-          mail: "Mail",
+          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
+          tel: "+34 653 57 45 59",
+          mail: "infoauramade@gmail.com",
           copyright: "By Inscale Media ©2025",
           privacyPolicy: "Privacy policy"
         }
@@ -75,9 +75,9 @@ const resources = {
         title: "CONTACT US",
         backgroundAlt: "Luxury Lifestyle Background",
         address: {
-          line1: "Pl / Eusebi Güell, 12 B,",
-          line2: "08034, Barcelona (España)",
-          email: "info@conciergetailormade.com",
+          line1: "Ctra. Cala Llonga, s/n,",
+          line2: "07849 Cala Llonga, Ibiza",
+          email: "infoauramade@gmail.com",
           tel: "Tel. y Whatsapp: +34 653 57 45 59"
         },
         social: {
@@ -177,24 +177,24 @@ const resources = {
           success: "¡Gracias por suscribirte!"
         },
         contact: {
-          address: "Pl / Eusebi Güell, 12 B, 08034, Barcelona (España)",
-          tel: "Tel",
-          mail: "Correo",
+          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
+          tel: "+34 653 57 45 59",
+          mail: "infoauramade@gmail.com",
           copyright: "Por Inscale Media ©2025",
           privacyPolicy: "Política de privacidad"
         }
       },
       services: {
-        title: "SERVICIOS DISEÑADOS PARA TI",
+        title: "SERVICES TAILORED TO YOU",
         description: "Nuestro equipo está siempre disponible para brindarte asistencia personalizada y soluciones que cumplan con tus más altas expectativas."
       },
       experience: {
-        title: "DISFRUTA DE UNA EXPERIENCIA ÚNICA",
+        title: "ENJOY A UNIQUE EXPERIENCE",
         description: "Nos apasiona ofrecer servicios de lujo y hacer realidad todas tus necesidades con excelencia y dedicación.",
         viewMore: "Ver Más"
       },
       about: {
-        title: "SOBRE AURA MADE CONCIERGE",
+        title: "ABOUT AURA MADE CONCIERGE",
         description_1: "Aura Made Concierge es tu socio de confianza en experiencias de lujo y estilo de vida en Ibiza y Barcelona.",
         description_2: "Nos especializamos en servicios exclusivos y totalmente personalizados, garantizando experiencias únicas, soluciones rápidas con una sola llamada, ahorro significativo de tiempo y soporte 24/7 para todas tus necesidades diarias.",
         description_3: "En Aura Made Concierge, elevamos el concepto de lujo con meticulosa atención al detalle, discreción y excelencia.",
@@ -202,7 +202,7 @@ const resources = {
         image_right_alt: "Propiedad de Lujo Derecha"
       },
       villaRentals: {
-        title: "TU ESTILO DE VIDA, SIN COMPLICACIONES",
+        title: "YOUR LIFESTYLE, HASSLE-FREE",
         subtitle: "¿Sueñas con una villa impresionante para tus vacaciones?",
         description: "Descubre nuestra selección exclusiva de villas premium en Ibiza, Barcelona y Marbella, donde el lujo y el confort se encuentran en cada detalle.",
         serviceDescription: "Nuestro servicio de conserjería está diseñado para superar expectativas, ofreciendo soporte personalizado, eficiente y de máxima calidad para que disfrutes de tu experiencia sin preocupaciones.",
@@ -223,9 +223,9 @@ const resources = {
         title: "CONTÁCTENOS",
         backgroundAlt: "Fondo de Estilo de Vida de Lujo",
         address: {
-          line1: "Pl / Eusebi Güell, 12 B,",
-          line2: "08034, Barcelona (España)",
-          email: "info@conciergetailormade.com",
+          line1: "Ctra. Cala Llonga, s/n,",
+          line2: "07849 Cala Llonga, Ibiza",
+          email: "infoauramade@gmail.com",
           tel: "Tel: +34 653 57 45 59"
         },
         social: {
@@ -296,6 +296,16 @@ const resources = {
             description: "Diseño clásico con comodidad contemporánea"
           }
         }
+      },
+      luxuryExperiences: {
+        title: "LUXURY EXPERIENCES",
+        subtitle: "Descubre nuestra colección exclusiva de experiencias de lujo",
+        yachts: {
+          title: "LUXURY YACHTS"
+        },
+        vehicles: {
+          title: "LUXURY VEHICLES"
+        }
       }
     }
   },
@@ -325,24 +335,24 @@ const resources = {
           success: "Спасибо за подписку!"
         },
         contact: {
-          address: "Av. Ricardo Soriano, 72, Portal B, 1-й этаж, 29601 Марбелья, Малага",
-          tel: "Тел",
-          mail: "Почта",
+          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
+          tel: "+34 653 57 45 59",
+          mail: "infoauramade@gmail.com",
           copyright: "От Inscale Media ©2025",
           privacyPolicy: "Политика конфиденциальности"
         }
       },
       services: {
-        title: "УСЛУГИ, СОЗДАННЫЕ ДЛЯ ВАС",
-        description: "Благодаря нашей преданной команде мы предоставляем персонализированную помощь и индивидуальные решения для удовлетворения всех ваших потребностей."
+        title: "SERVICES TAILORED TO YOU",
+        description: "Наша команда всегда готова предоставить персонализированную помощь и решения, соответствующие вашим самым высоким ожиданиям."
       },
       experience: {
-        title: "НАСЛАДИТЕСЬ УНИКАЛЬНЫМ ОПЫТОМ",
+        title: "ENJOY A UNIQUE EXPERIENCE",
         description: "Мы увлечены предоставлением роскошных услуг и воплощением всех ваших потребностей в реальность с превосходством и самоотдачей.",
         viewMore: "Подробнее"
       },
       about: {
-        title: "О AURA MADE CONCIERGE",
+        title: "ABOUT AURA MADE CONCIERGE",
         description_1: "Aura Made Concierge - ваш надежный партнер в сфере роскошных впечатлений и образа жизни в Ибице и Барселоне.",
         description_2: "Мы специализируемся на эксклюзивных, полностью персонализированных услугах, обеспечивая уникальные впечатления, быстрые решения одним звонком, значительную экономию времени и поддержку 24/7 для всех ваших повседневных потребностей.",
         description_3: "В Aura Made Concierge мы поднимаем концепцию роскоши на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
@@ -350,17 +360,13 @@ const resources = {
         image_right_alt: "Роскошная Недвижимость Справа"
       },
       villaRentals: {
-        title: "АРЕНДА РОСКОШНЫХ ВИЛЛ",
-        description: "Откройте для себя роскошь заново с нашей тщательно подобранной коллекцией премиальных вилл в IBIZA.",
-        serviceDescription: "Наш консьерж-сервис разработан для удовлетворения самых высоких ожиданий, предлагая персонализированную, эффективную и первоклассную поддержку для обеспечения беззаботного и незабываемого опыта.",
-        serviceDescription2: "Мы заботимся о каждой детали вашего пребывания, позволяя вам полностью наслаждаться временем без стресса и неудобств.",
-        seeMore: "Подробнее"
+        title: "YOUR LIFESTYLE, HASSLE-FREE",
+        subtitle: "Мечтаете о потрясающей вилле для отдыха?",
+        description: "Откройте для себя наш эксклюзивный выбор премиальных вилл в Ибице, Барселоне и Марбелье, где роскошь и комфорт встречаются в каждой детали."
       },
       ibizaInsider: {
         title: "IBIZA INSIDER",
-        description: "Ежемесячные советы и рекомендации для погружения в роскошный образ жизни IBIZA. Откройте для себя самые эксклюзивные впечатления острова.",
-        seeMore: "Подробнее",
-        imageAlt: "Роскошный Образ Жизни в IBIZA"
+        description: "Ежемесячные советы и рекомендации для погружения в роскошный образ жизни IBIZA. Откройте для себя самые эксклюзивные впечатления острова."
       },
       partners: {
         title: "Наши Партнеры",
@@ -370,10 +376,10 @@ const resources = {
         title: "СВЯЖИТЕСЬ С НАМИ",
         backgroundAlt: "Фон Роскошного Образа Жизни",
         address: {
-          line1: "Av. Ricardo Soriano, 72, Portal B, 1-й этаж,",
-          line2: "29601 Марбелья, Малага",
-          email: "info@conciergetailormade.com",
-          tel: "Тел: +34 638 38 73 66"
+          line1: "Ctra. Cala Llonga, s/n,",
+          line2: "07849 Cala Llonga, Ibiza",
+          email: "infoauramade@gmail.com",
+          tel: "Тел: +34 653 57 45 59"
         },
         social: {
           facebook: "Следите за нами на Facebook",
@@ -404,7 +410,7 @@ const resources = {
           "Compras personalizadas",
           "Organización de eventos privados"
         ],
-        footer: "Un servicio de conserjería totalmente personalizado para ti."
+        footer: "Un servicio de conserjería totalmente personalizado для ti."
       },
       yacht: {
         overview: "Обзор",
@@ -442,6 +448,16 @@ const resources = {
             title: "Яхта Ella",
             description: "Классический дизайн с современным комфортом"
           }
+        }
+      },
+      luxuryExperiences: {
+        title: "LUXURY EXPERIENCES",
+        subtitle: "Откройте для себя нашу эксклюзивную коллекцию роскошных впечатлений",
+        yachts: {
+          title: "LUXURY YACHTS"
+        },
+        vehicles: {
+          title: "LUXURY VEHICLES"
         }
       }
     }

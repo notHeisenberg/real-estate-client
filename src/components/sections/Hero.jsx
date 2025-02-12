@@ -31,13 +31,12 @@ const Hero = () => {
         <CarouselContent className="-ml-0">
           {villaImages.map((image, index) => (
             <CarouselItem key={index} className="pl-0 relative">
-              <div className="h-full lg:h-[calc(100vh-8rem)] w-full">
+              <div className="relative h-full lg:h-[calc(100vh-8rem)] w-full overflow-hidden">
                 <img
-
                   src={image.src}
                   alt={`Slide ${index + 1}`}
-                  className="w-full h-full object-cover"
-
+                  className="w-full h-full object-contain md:object-cover transition-transform duration-500"
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
               </div>
             </CarouselItem>

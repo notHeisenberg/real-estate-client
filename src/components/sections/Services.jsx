@@ -1,6 +1,7 @@
 import React from 'react';
 import { servicesData } from '../../data/services';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const { t, i18n } = useTranslation();
@@ -50,11 +51,12 @@ const Services = () => {
                       </ul>
                     </div>
                     <div className="pt-6">
-                      <button
+                      <Link
+                        to={`/services/${service.id}`}
                         className="inline-block px-6 py-2 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-colors duration-500"
                       >
                         {t('common.seeMore', 'See More')}
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </>
@@ -74,12 +76,12 @@ const Services = () => {
                       </ul>
                     </div>
                     <div className="pt-6">
-                      <button
+                      <Link
+                        to={`/services/${service.id}`}
                         className="inline-block px-6 py-2 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-colors duration-500"
                       >
                         {t('common.seeMore', 'See More')}
-                      </button>
-
+                      </Link>
                     </div>
                   </div>
                   <div className="lg:w-1/2 h-[300px] lg:h-[600px]">

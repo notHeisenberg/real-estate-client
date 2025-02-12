@@ -3,6 +3,7 @@ import Root from '../layouts/Root';
 import Home from '../pages/Home';
 import ErrorPage from '../pages/ErrorPage';
 import YachtDetail from '../pages/YachtDetail';
+import ServiceDetail from '../pages/ServiceDetail';
 import Contact from '../components/sections/Contact';
 
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: '/yachts/:id',
         element: <YachtDetail />,
+      },
+      {
+        path: '/services/:id',
+        element: <ServiceDetail />,
       },
       {
         path: '/contact',

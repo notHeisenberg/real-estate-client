@@ -238,8 +238,8 @@ export const yachtData = {
     {
       id: 'inspiration',
       src: "/images/yatches/2.INSPIRATION_4-4_yatch.jpg",
-      alt: "Yate Inspiration",
-      title: "Yate Inspiration",
+      alt: "Inspiration Yacht",
+      title: "Inspiration Yacht",
       description: "Experimente un lujo sin igual en el Mediterráneo",
       route: "/yachts/inspiration",
       details: {
@@ -283,7 +283,7 @@ export const yachtData = {
       src: "/images/yatches/15.MAJESTIC_4-4_yatch.jpg",
       alt: "Majestic Yacht",
       title: "Majestic Yacht",
-      description: "The perfect blend of luxury and performance",
+      description: "El mejor equilibrio entre lujo y rendimiento",
       route: "/yachts/majestic",
 
       details: {
@@ -317,7 +317,7 @@ export const yachtData = {
       src: "/images/yatches/13.MANBERO_1-1_yatch.jpg",
       alt: "Manbero Yacht",
       title: "Manbero Yacht",
-      description: "Classic elegance meets modern luxury",
+      description: "El mejor equilibrio entre lujo y rendimiento",
       route: "/yachts/manbero",
 
       details: {
@@ -349,7 +349,7 @@ export const yachtData = {
       src: "/images/yatches/14.SEANFINITY_3-3_yatch.jpg",
       alt: "Seanfinity Yacht",
       title: "Seanfinity Yacht",
-      description: "Ultimate luxury for extended cruising",
+      description: "El mejor equilibrio entre lujo y rendimiento",
       route: "/yachts/seanfinity",
 
       details: {
@@ -377,7 +377,7 @@ export const yachtData = {
           "Helipad",
           "Extended range capabilities"
         ],
-        description: "Seanfinity is designed for those who seek the ultimate in luxury yachting. With her extended range and comprehensive amenities, she's perfect for long-range cruising in absolute comfort."
+        description: "Seanfinity es diseñada para aquellos que buscan el lujo máximo en la navegación. Con su alcance extendido y sus comodidades completas, es perfecta para el cruce en condiciones de absoluta comodidad."
       }
     },
     {
@@ -411,7 +411,7 @@ export const yachtData = {
           "Water sports center",
           "Advanced sound system"
         ],
-        description: "Autumn represents modern yachting at its finest. Her contemporary design and state-of-the-art technology create the perfect environment for sophisticated entertaining and relaxation."
+        description: "Autumn representa el yate de lujo moderno en su mejor momento. Su diseño contemporáneo y tecnología de vanguardia crean el entorno perfecto para entretenimiento sofisticado y relajación."
       }
     },
     {
@@ -465,7 +465,7 @@ export const yachtData = {
           "Stabilized for comfort",
           "Intimate gathering spaces"
         ],
-        description: "Ella combines timeless elegance with modern comfort. Her well-appointed spaces and attentive crew ensure an intimate and luxurious yachting experience."
+        description: "Ella combina el encanto del pasado con el confort moderno. Sus espacios bien equipados y el personal atento garantizan una experiencia de yate inolvidable y de lujo."
       }
     }
   ],
@@ -473,8 +473,8 @@ export const yachtData = {
     {
       id: 'inspiration',
       src: "/images/yatches/2.INSPIRATION_4-4_yatch.jpg",
-      alt: "Яхта Inspiration",
-      title: "Яхта Inspiration",
+      alt: "Inspiration Yacht",
+      title: "Inspiration Yacht",
       description: "Испытайте непревзойденную роскошь в Средиземном море",
       route: "/yachts/inspiration",
       details: {
@@ -777,6 +777,13 @@ export const vehicleData = {
       alt: "Luxury Convertible",
       title: "Luxury Convertibles",
       description: "Enjoy the perfect blend of open-air freedom and luxury with our premium convertible collection."
+    },
+    {
+      id: 'premium-suv',
+      src: "/images/vehicles/vehicel_11.jpeg",
+      alt: "Premium SUV",
+      title: "Premium SUV",
+      description: "Experience ultimate comfort and style with our latest addition to the premium SUV collection."
     }
   ],
   es: [
@@ -849,6 +856,13 @@ export const vehicleData = {
       alt: "Convertible de Lujo",
       title: "Convertibles de Lujo",
       description: "Disfrute de la perfecta combinación de libertad al aire libre y lujo con nuestra colección de convertibles premium."
+    },
+    {
+      id: 'premium-suv',
+      src: "/images/vehicles/vehicel_11.jpeg",
+      alt: "SUV Premium",
+      title: "SUV Premium",
+      description: "Experimente el máximo confort y estilo con nuestra última incorporación a la colección de SUV premium."
     }
   ],
   ru: [
@@ -921,6 +935,13 @@ export const vehicleData = {
       alt: "Люксовый Кабриолет",
       title: "Люксовые Кабриолеты",
       description: "Наслаждайтесь идеальным сочетанием свободы под открытым небом и роскоши с нашей коллекцией премиальных кабриолетов."
+    },
+    {
+      id: 'premium-suv',
+      src: "/images/vehicles/vehicel_11.jpeg",
+      alt: "Премиум SUV",
+      title: "Премиум SUV",
+      description: "Испытайте непревзойденный комфорт и стиль с нашим новым дополнением к коллекции премиальных внедорожников."
     }
   ]
 }; 

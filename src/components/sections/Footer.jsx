@@ -65,15 +65,15 @@ const Footer = () => {
                 +34 653 57 45 59
               </a>
             </p>
-            {/* <p className="font-libre-caslon font-bold tracking-wide">
-              {t('footer.contact.mail')}:{' '}
+            <p className="font-libre-caslon font-bold tracking-wide">
+              Email: {' '}
               <a
-                href="mailto:info@conciergetailormade.com"
+                href="mailto:infoauramade@gmail.com"
                 className="underline hover:text-gray-300 transition-colors duration-200"
               >
-                info@conciergetailormade.com
+                infoauramade@gmail.com
               </a>
-            </p> */}
+            </p>
           </div>
         </div>
 
@@ -82,7 +82,7 @@ const Footer = () => {
           <p className="font-libre-caslon">
             {t('footer.contact.copyright')}{' '}|{' '}
             <Link
-              to="/privacy-policy"
+              to="/"
               className="underline hover:text-gray-300 transition-colors duration-200"
             >
               {t('footer.contact.privacyPolicy')}

@@ -53,17 +53,17 @@ const VillaRentals = () => {
                         <CarouselContent>
                             {villaImages.slice(0, 5).map((image, index) => (
                                 <CarouselItem key={index} className="cursor-pointer" onClick={() => handleImageClick(index)}>
-                                    <div className="relative aspect-[16/9] w-full overflow-hidden group">
+                                    <div className="relative aspect-[12/8] w-full overflow-hidden group">
                                         <img
                                             src={image.src}
                                             alt={image.alt}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                            className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
                                         />
-                                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300 flex items-center justify-center">
-                                            <div className="transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-500 flex items-center justify-center">
+                                            <div className="transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 flex items-center justify-center w-full h-full">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    className="h-12 w-12 text-white"
+                                                    className="h-8 w-8 md:h-12 md:w-12 text-white"
                                                     fill="none"
                                                     viewBox="0 0 24 24"
                                                     stroke="currentColor"
@@ -100,17 +100,17 @@ const VillaRentals = () => {
                     >
                         <CarouselContent className="-ml-4">
                             {villaImages.slice(1).map((image, index) => (
-                                <CarouselItem key={index} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/6">
+                                <CarouselItem key={index} className="pl-2 basis-1/2 md:basis-1/3 lg:basis-1/6">
                                     <div
-                                        className="aspect-square cursor-pointer overflow-hidden rounded-none group relative"
+                                        className="aspect-[16/12] cursor-pointer overflow-hidden rounded-none group relative"
                                         onClick={() => handleImageClick(index + 1)}
                                     >
                                         <img
                                             src={image.src}
                                             alt={image.alt}
-                                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                            className="absolute inset-0 w-full h-full object-contain hover:object-cover transition-transform duration-500 group-hover:scale-110"
                                         />
-                                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-opacity duration-300" />
+                                        <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     </div>
                                 </CarouselItem>
                             ))}

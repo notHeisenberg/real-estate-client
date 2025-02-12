@@ -56,7 +56,7 @@ const About = () => {
           <img 
             src="/images/estates/estate_2.jpeg" 
             alt={t('about.image_right_alt', 'Luxury Estate Right')} 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>

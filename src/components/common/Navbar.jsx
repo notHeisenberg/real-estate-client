@@ -41,10 +41,8 @@ const Navbar = () => {
     const servicesSection = document.getElementById('services');
     const serviceElement = document.getElementById(serviceId);
     if (servicesSection && serviceElement) {
-      const navHeight = 112; // height of navbar
-      const servicesPosition = servicesSection.getBoundingClientRect().top;
-      const servicePosition = serviceElement.getBoundingClientRect().top;
-      const offsetPosition = servicePosition + window.pageYOffset - navHeight;
+      const navHeight = 128; // height of navbar (32px * 4)
+      const offsetPosition = serviceElement.offsetTop - navHeight;
       
       window.scrollTo({
         top: offsetPosition,
@@ -58,9 +56,8 @@ const Navbar = () => {
   const scrollToContact = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      const navHeight = 112;
-      const elementPosition = contactSection.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+      const navHeight = 128;
+      const offsetPosition = contactSection.offsetTop - navHeight;
       
       window.scrollTo({
         top: offsetPosition,
@@ -107,7 +104,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full h-32 z-50 transition-all duration-500 transform ${
+      className={`fixed top-0 w-full h-28 lg:h-32 z-50 transition-all duration-500 transform ${
         visible ? 'translate-y-0' : '-translate-y-full'
       } ${
         scrolled
@@ -117,7 +114,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
 
-        <div className="flex items-center justify-between h-28 space-x-10 ">
+        <div className="flex items-center justify-between h-28 lg:h-32 space-x-10 ">
           {/* Logo and Website Name */}
           <div className="flex items-center gap-1 flex-shrink-0">
             <img
@@ -141,7 +138,7 @@ const Navbar = () => {
           <div className="flex md:hidden bg-transparent">
             <Button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 bg-transparent rounded-md hover:text-indigo-600 hover:bg-transparent transition-colors"
+              className="text-[#034079] bg-transparent rounded-md hover:text-[#034079]/60 hover:bg-transparent transition-colors"
             >
               {mobileMenuOpen ? (
                 <X className="h-6 w-6" />
@@ -169,7 +166,7 @@ const Navbar = () => {
                   <h1
                     key={item.name}
                     onClick={item.onClick}
-                    className={item.className}
+                    className={`${item.className} cursor-pointer`}
                   >
                     {item.name}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#034079] transition-all duration-500 group-hover:w-full" />
@@ -203,13 +200,13 @@ const Navbar = () => {
             : 'max-h-0 opacity-0 invisible'
         }`}
       >
-        <div className="px-4 pt-2 pb-6 space-y-4 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div className="px-4 pt-2 pb-4 space-y-2 bg-white/95 backdrop-blur-sm shadow-lg">
           {navItems.map((item) => (
             item.isServices ? (
               <div key="services" className="block">
-                <button
+                <h1
                   onClick={() => setServiceMenuOpen(!serviceMenuOpen)}
-                  className="w-full flex items-center justify-between text-gray-400 hover:text-[#034079] font-medium py-2"
+                  className="w-full flex items-center justify-between text-gray-400 hover:text-[#034079] transition-all duration-500  font-medium py-1.5"
                 >
                   <span>{t('navbar.services')}</span>
                   {serviceMenuOpen ? (
@@ -217,66 +214,45 @@ const Navbar = () => {
                   ) : (
                     <ChevronDown className="h-4 w-4" />
                   )}
-                </button>
+                </h1>
                 {/* Service Links Dropdown */}
                 <div
-                  className={`pl-4 space-y-2 overflow-hidden transition-all duration-300 ${
-                    serviceMenuOpen ? 'max-h-48 mt-2' : 'max-h-0'
+                  className={`pl-4 space-y-1 overflow-hidden transition-all duration-300 ${
+                    serviceMenuOpen ? 'max-h-36 mt-1' : 'max-h-0'
                   }`}
                 >
                   {serviceLinks.map((service) => (
-                    <button
+                    <h1
                       key={service.name}
                       onClick={service.onClick}
-                      className="block w-full text-left text-sm text-gray-400 hover:text-[#034079] py-1"
+                      className="block w-full text-left text-sm text-gray-400 hover:text-[#034079] transition-all duration-500 py-2"
                     >
                       {service.name}
-                    </button>
+                    </h1>
                   ))}
-                  <button
-                    onClick={() => {
-                      const servicesSection = document.getElementById('services');
-                      if (servicesSection) {
-                        const navHeight = 112;
-                        const elementPosition = servicesSection.getBoundingClientRect().top;
-                        const offsetPosition = elementPosition + window.pageYOffset - navHeight;
-                        
-                        window.scrollTo({
-                          top: offsetPosition,
-                          behavior: 'smooth'
-                        });
-                      }
-                      setServiceMenuOpen(false);
-                      setMobileMenuOpen(false);
-                    }}
-                    className="block w-full text-left text-sm text-gray-400 hover:text-[#034079] py-1"
-                  >
-                    {t('navbar.viewAllServices')}
-                  </button>
                 </div>
               </div>
             ) : item.onClick ? (
-              <button
+              <h1
                 key={item.name}
                 onClick={item.onClick}
-                className={item.className}
+                className="block w-full text-left text-gray-400 hover:text-[#034079] transition-all duration-500 font-medium py-1.5"
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#034079] transition-all duration-500 group-hover:w-full" />
-              </button>
+              </h1>
             ) : (
               <Link
                 key={item.name}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-400 hover:text-[#034079] font-medium py-2"
+                className="block text-gray-400 hover:text-[#034079] transition-all duration-500 font-medium py-1.5"
               >
                 {item.name}
               </Link>
             )
           ))}
           {/* Language Switcher in Mobile Menu */}
-          <div className="pt-2 border-t border-gray-200">
+          <div className="pt-1 border-t border-gray-200">
             <LanguageSwitcher />
           </div>
         </div>

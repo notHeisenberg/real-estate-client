@@ -91,7 +91,7 @@ const Contact = () => {
           {/* Social Media Links */}
           <div className="flex justify-center gap-2 py-6">
             <a
-              href="https://www.facebook.com/TailorMadeConcierge"
+              href="https://www.facebook.com/profile.php?id=61572981633022"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent p-2 rounded-full transition-colors"
@@ -100,7 +100,7 @@ const Contact = () => {
               <FaFacebook className="w-6 h-6 text-white hover:text-blue-300 transition-colors" />
             </a>
             <a
-              href="https://www.instagram.com/conciergetailormade"
+              href="https://www.instagram.com/aura_made_ibiza/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-transparent p-2 rounded-full transition-colors"
