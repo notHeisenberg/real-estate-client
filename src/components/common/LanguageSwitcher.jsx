@@ -58,21 +58,20 @@ const LanguageSwitcher = () => {
       <Button
         onClick={() => setIsOpen(!isOpen)}
         variant="outline"
-        className="flex items-center gap-2 px-4 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow bg-white text-gray-900"
+        className="flex items-center gap-2 px-4 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
       >
         <img src={getCurrentLanguage().flag} alt={getCurrentLanguage().label} className="w-4 h-4 mr-2" />
         {getCurrentLanguage().label}
         <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </Button>
 
-      
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 bg-white rounded-md shadow-lg border border-gray-200 z-50">
+        <div className="absolute top-full right-0 mt-2 bg-white dark:bg-gray-800 rounded-md shadow-lg border border-gray-200 dark:border-gray-700 z-50">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
-              className="flex items-center w-full text-left px-4 py-2 text-gray-900 hover:bg-gray-100 first:rounded-t-md last:rounded-b-md"
+              className="flex items-center w-full text-left px-4 py-2 text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 first:rounded-t-md last:rounded-b-md"
             >
               <img src={lang.flag} alt={lang.label} className="w-4 h-4 mr-2" />
               {lang.label}
