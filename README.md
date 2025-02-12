@@ -107,7 +107,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any inquiries, please reach out to:
-- Email: info@conciergetailormade.com
+- Email: infoauramade@gmail.com
 - Website: [www.auramade.com](https://www.auramade.com)
 
 ## Acknowledgments
