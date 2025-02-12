@@ -3,13 +3,13 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { yachtData, vehicleData } from '../../data/luxury-experiences';
 
-const LuxuryExperiences = () => {
+const LuxuryExperiences = ({ id }) => {
     const { t, i18n } = useTranslation();
   const currentLanguageVehicles = vehicleData[i18n.language] || vehicleData.en;
   const currentLanguageYachts = yachtData[i18n.language] || yachtData.en;
 
   return (
-    <section className="py-20 bg-white">
+    <section id={id} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-libre-baskerville font-light text-gray-900 mb-6">

@@ -22,7 +22,7 @@ const Home = () => {
       <VillaRentals />
       <Services id="services" />
       <IbizaInsider />
-      <LuxuryExperiences />
+      <LuxuryExperiences id="luxury-experiences" />
       <Contact id="contact" />
     </>
   );

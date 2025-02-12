@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { yachtData } from '../data/luxury-experiences';
@@ -13,6 +13,11 @@ const YachtDetail = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const currentLanguageYachts = yachtData[i18n.language] || yachtData.en;
   const yacht = currentLanguageYachts.find(y => y.id === id);
 
@@ -25,6 +30,22 @@ const YachtDetail = () => {
     setIsOpen(true);
   };
 
+  const handleBackClick = () => {
+    navigate('/');
+
+    setTimeout(() => {
+      const yachtsSection = document.querySelector('#luxury-experiences');
+      if (yachtsSection) {
+        const navHeight = 128; // height of navbar
+        const offsetPosition = yachtsSection.offsetTop - navHeight;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    }, 200);
+  };
+
   return (
     <div className="pt-32 pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
@@ -34,11 +55,11 @@ const YachtDetail = () => {
 
         {/* Main Image */}
         <div className="mb-12">
-          <div className="relative h-[600px] overflow-hidden group cursor-pointer" onClick={() => handleImageClick(0)}>
+          <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden group cursor-pointer" onClick={() => handleImageClick(0)}>
             <img
               src={yacht.src}
               alt={yacht.alt}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              className="w-full h-full object-contain md:object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
           </div>
@@ -85,17 +106,30 @@ const YachtDetail = () => {
             {t('yacht.gallery', 'Gallery')}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {/* Main Image First */}
+            <div
+              className="relative aspect-[4/3] cursor-pointer group overflow-hidden bg-gray-100"
+              onClick={() => handleImageClick(0)}
+            >
+              <img
+                src={yacht.src}
+                alt={yacht.alt}
+                className="absolute inset-0 w-full h-full object-contain hover:object-cover transition-all duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            </div>
+            {/* Other Images */}
             {yacht.details.images.map((image, index) => (
               <div
                 key={index}
                 className="relative aspect-[4/3] cursor-pointer group overflow-hidden bg-gray-100"
-                onClick={() => handleImageClick(index)}
+                onClick={() => handleImageClick(index + 1)}
               >
                 <img
                   src={image}
                   alt={t('yacht.imageAlt', '{{title}} - Image {{number}}', {
                     title: yacht.title,
-                    number: index + 1
+                    number: index + 2
                   })}
                   className="absolute inset-0 w-full h-full object-contain hover:object-cover transition-all duration-500 group-hover:scale-105"
                 />
@@ -108,8 +142,8 @@ const YachtDetail = () => {
         {/* Back to Yachts Button */}
         <div className="mt-12 text-center">
           <button
-            onClick={() => navigate('/')}
-            className="inline-block px-6 py-3 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-colors rounded-sm"
+            onClick={handleBackClick}
+            className="inline-block px-6 py-3 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-all duration-300"
           >
             {t('yacht.backToYachts', 'Back to Yachts')}
           </button>
@@ -120,7 +154,7 @@ const YachtDetail = () => {
           open={isOpen}
           close={() => setIsOpen(false)}
           index={photoIndex}
-          slides={yacht.details.images.map(src => ({ src }))}
+          slides={[{ src: yacht.src }, ...yacht.details.images.map(src => ({ src }))]}
           plugins={[Zoom]}
           animation={{ zoom: 500 }}
           zoom={{

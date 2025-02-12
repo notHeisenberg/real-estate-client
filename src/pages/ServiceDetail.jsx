@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { servicesData } from '../data/services';
@@ -8,6 +8,10 @@ const ServiceDetail = () => {
   const { t, i18n } = useTranslation();
   const currentLanguageServices = servicesData[i18n.language] || servicesData.en;
   const service = currentLanguageServices.find(s => s.id === id);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!service) {
     return <div>Service not found</div>;
@@ -66,7 +70,7 @@ const ServiceDetail = () => {
                 {t('services.contact.description', 'Contact us to learn more about how we can help you.')}
               </p>
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-block px-8 py-3 bg-transparent border-2 border-[#506B84] text-[#506B84] hover:bg-[#506B84] hover:text-white transition-colors duration-500"
               >
                 {t('services.contact.button', 'Contact Us')}
