@@ -784,6 +784,13 @@ export const vehicleData = {
       alt: "Premium SUV",
       title: "Premium SUV",
       description: "Experience ultimate comfort and style with our latest addition to the premium SUV collection."
+    },
+    {
+      id: 'luxury-sports',
+      src: "/images/vehicles/vehicel_12.jpg",
+      alt: "Luxury Sports Car",
+      title: "Luxury Sports Car",
+      description: "Experience the perfect fusion of power and elegance with our latest luxury sports car addition."
     }
   ],
   es: [
@@ -863,6 +870,13 @@ export const vehicleData = {
       alt: "SUV Premium",
       title: "SUV Premium",
       description: "Experimente el máximo confort y estilo con nuestra última incorporación a la colección de SUV premium."
+    },
+    {
+      id: 'luxury-sports',
+      src: "/images/vehicles/vehicel_12.jpg",
+      alt: "Coche Deportivo de Lujo",
+      title: "Coche Deportivo de Lujo",
+      description: "Experimente la perfecta fusión de potencia y elegancia con nuestra última incorporación de coches deportivos de lujo."
     }
   ],
   ru: [
@@ -942,6 +956,13 @@ export const vehicleData = {
       alt: "Премиум SUV",
       title: "Премиум SUV",
       description: "Испытайте непревзойденный комфорт и стиль с нашим новым дополнением к коллекции премиальных внедорожников."
+    },
+    {
+      id: 'luxury-sports',
+      src: "/images/vehicles/vehicel_12.jpg",
+      alt: "Люксовый Спортивный Автомобиль",
+      title: "Люксовый Спортивный Автомобиль",
+      description: "Испытайте идеальное сочетание мощности и элегантности с нашим новым люксовым спортивным автомобилем."
     }
   ]
 }; 

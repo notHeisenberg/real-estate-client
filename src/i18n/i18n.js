@@ -78,7 +78,7 @@ const resources = {
           line1: "Ctra. Cala Llonga, s/n,",
           line2: "07849 Cala Llonga, Ibiza",
           email: "infoauramade@gmail.com",
-          tel: "Tel. y Whatsapp: +34 653 57 45 59"
+          tel: "Tel. | Whatsapp: +34 653 57 45 59"
         },
         social: {
           facebook: "Follow us on Facebook",
@@ -226,7 +226,7 @@ const resources = {
           line1: "Ctra. Cala Llonga, s/n,",
           line2: "07849 Cala Llonga, Ibiza",
           email: "infoauramade@gmail.com",
-          tel: "Tel: +34 653 57 45 59"
+          tel: "Tel. | Whatsapp: +34 653 57 45 59"
         },
         social: {
           facebook: "Síguenos en Facebook",
@@ -379,7 +379,7 @@ const resources = {
           line1: "Ctra. Cala Llonga, s/n,",
           line2: "07849 Cala Llonga, Ibiza",
           email: "infoauramade@gmail.com",
-          tel: "Тел: +34 653 57 45 59"
+          tel: "Тел. | Whatsapp: +34 653 57 45 59"
         },
         social: {
           facebook: "Следите за нами на Facebook",

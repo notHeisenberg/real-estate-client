@@ -57,12 +57,12 @@ const Footer = () => {
               {t('footer.contact.address')}
             </p>
             <p className="font-libre-caslon font-bold tracking-wide">
-              {t('footer.contact.tel')}:{' '}
+              Tel. | Whatsapp: {' '}
               <a
-                href="tel:+34638387366"
+                href="tel:+34653574559"
                 className="underline hover:text-gray-300 transition-colors duration-200"
               >
-                +34 653 57 45 59
+                {t('footer.contact.tel')}
               </a>
             </p>
             <p className="font-libre-caslon font-bold tracking-wide">

@@ -58,7 +58,7 @@ const LanguageSwitcher = () => {
       <Button
         onClick={() => setIsOpen(!isOpen)}
         variant="outline"
-        className="flex items-center gap-2 px-4 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow"
+        className="flex items-center gap-2 px-4 py-2 rounded-md shadow-md hover:shadow-lg transition-shadow bg-white text-gray-900"
       >
         <img src={getCurrentLanguage().flag} alt={getCurrentLanguage().label} className="w-4 h-4 mr-2" />
         {getCurrentLanguage().label}
@@ -67,12 +67,12 @@ const LanguageSwitcher = () => {
 
       
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 bg-white rounded-md shadow-lg border border-gray-200">
+        <div className="absolute top-full right-0 mt-2 bg-white rounded-md shadow-lg border border-gray-200 z-50">
           {languages.map((lang) => (
             <button
               key={lang.code}
               onClick={() => handleLanguageChange(lang.code)}
-              className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 first:rounded-t-md last:rounded-b-md"
+              className="flex items-center w-full text-left px-4 py-2 text-gray-900 hover:bg-gray-100 first:rounded-t-md last:rounded-b-md"
             >
               <img src={lang.flag} alt={lang.label} className="w-4 h-4 mr-2" />
               {lang.label}

@@ -80,11 +80,12 @@ const Contact = () => {
           <div className="text-white space-y-2 font-libre-baskerville mb-8">
             <p>{t('contact.address.line1')}</p>
             <p>{t('contact.address.line2')}</p>
-            {/* <p>
-              <a href="mailto:info@conciergetailormade.com" className="hover:underline">
+            <p>
+              Email: {' '}
+              <a href="mailto:infoauramade@gmail.com" className="hover:underline">
                 {t('contact.address.email')}
               </a>
-            </p> */}
+            </p>
             <p>{t('contact.address.tel')}</p>
           </div>
 
@@ -122,7 +123,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.name')}
                 required
-                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500"
+                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 bg-white/90 text-gray-900 placeholder-gray-500"
               />
             </div>
             <div>
@@ -133,7 +134,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder={t('contact.form.email')}
                 required
-                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500"
+                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 bg-white/90 text-gray-900 placeholder-gray-500"
               />
             </div>
             <div>
@@ -143,7 +144,7 @@ const Contact = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={t('contact.form.phone')}
-                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500"
+                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 bg-white/90 text-gray-900 placeholder-gray-500"
               />
             </div>
             <div>
@@ -153,7 +154,7 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder={t('contact.form.subject')}
-                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500"
+                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 bg-white/90 text-gray-900 placeholder-gray-500"
               />
             </div>
             <div>
@@ -164,7 +165,7 @@ const Contact = () => {
                 placeholder={t('contact.form.message')}
                 rows="4"
                 required
-                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500"
+                className="w-full p-3 border border-gray-300 rounded-sm focus:outline-none focus:border-gray-500 bg-white/90 text-gray-900 placeholder-gray-500"
               ></textarea>
             </div>
             <div className="flex justify-center">
