@@ -5,7 +5,8 @@ import ErrorPage from '../pages/ErrorPage';
 import YachtDetail from '../pages/YachtDetail';
 import ServiceDetail from '../pages/ServiceDetail';
 import Contact from '../components/sections/Contact';
-
+import CarRental from '../pages/CarRental';
+import ServiceContract from '../pages/ServiceContract';
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -27,6 +28,14 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/car-rental',
+        element: <CarRental />,
+      },
+      {
+        path: '/contract',
+        element: <ServiceContract />,
       }
     ],
   },

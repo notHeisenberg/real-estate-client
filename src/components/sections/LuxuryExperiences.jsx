@@ -1,12 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { yachtData, vehicleData } from '../../data/luxury-experiences';
+import { yachtData } from '../../data/luxury-experiences';
+import CarGallery from './CarGallery';
+import { getAllCars } from '../../data/cars';
 
 const LuxuryExperiences = ({ id }) => {
-    const { t, i18n } = useTranslation();
-  const currentLanguageVehicles = vehicleData[i18n.language] || vehicleData.en;
+  const { t, i18n } = useTranslation();
   const currentLanguageYachts = yachtData[i18n.language] || yachtData.en;
+  const cars = getAllCars();
 
   return (
     <section id={id} className="py-20 bg-white">
@@ -64,35 +66,14 @@ const LuxuryExperiences = ({ id }) => {
           <h3 className="text-3xl font-libre-baskerville font-light text-gray-900 mb-8 text-center">
             {t('luxuryExperiences.vehicles.title', 'Luxury Vehicles')}
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
-            {currentLanguageVehicles.map((vehicle) => (
-              <div 
-                key={vehicle.id}
-                className="relative group cursor-pointer aspect-square"
-              >
-                <div className="absolute inset-0 overflow-hidden">
-                  {/* Image Container */}
-                  <div className="w-full h-full flex items-center justify-center">
-                    <img
-                      src={vehicle.src}
-                      alt={vehicle.alt}
-                      className="min-w-full min-h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-                
-                {/* Glass Overlay with Content - Only visible on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-4">
-                  <h3 className="text-lg font-libre-baskerville font-light mb-2 text-white translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-100">
-                    {vehicle.title}
-                  </h3>
-                  <p className="text-white/90 text-sm transform-gpu translate-y-4 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 delay-200 line-clamp-2">
-                    {vehicle.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+          <CarGallery cars={cars} />
+          <div className="text-center mt-8">
+            <Link
+              to="/car-rental"
+              className="inline-block px-6 py-2 bg-transparent border-2 border-black text-black hover:bg-black hover:text-white transition-all duration-500"
+            >
+              {t('luxuryExperiences.seeAllVehicles', 'See All Vehicles')}
+            </Link>
           </div>
         </div>
       </div>

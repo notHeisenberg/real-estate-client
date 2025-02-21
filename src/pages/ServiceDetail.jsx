@@ -41,6 +41,19 @@ const ServiceDetail = () => {
               {service.description}
             </p>
 
+            {/* Rates Image for Drivers Service */}
+            {service.id === 'drivers' && service.ratesImage && (
+              <div className="my-12">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img
+                    src={service.ratesImage}
+                    alt="Driver Service Rates"
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            )}
+
             {service.extraText && (
               <h2 className="text-2xl font-libre-baskerville font-light mb-6">
                 {service.extraText}
@@ -60,6 +73,49 @@ const ServiceDetail = () => {
                 ))}
               </ul>
             </div>
+
+            {/* Medical Service Specific Content */}
+            {service.id === 'medical' && service.treatments && (
+              <div className="mt-12">
+                {/* IV Drips Section */}
+                <div className="mb-16">
+                  <h2 className="text-4xl font-libre-baskerville font-light mb-8">IV Drip Treatments</h2>
+                  <div className="space-y-6">
+                    {service.treatments.ivDrips.map((drip, index) => (
+                      <div key={index} className="border-b border-gray-200 pb-6">
+                        <div className="flex justify-between items-start">
+                          <h3 className="text-xl font-bold">{drip.name}</h3>
+                          <span className="text-xl">{drip.price}</span>
+                        </div>
+                        <p className="text-gray-600 mt-2">{drip.components}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Shots Section */}
+                <div className="mb-16">
+                  <h2 className="text-4xl font-libre-baskerville font-light mb-8">Vitamin Shots</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {service.treatments.shots.map((shot, index) => (
+                      <div key={index} className="flex justify-between items-center p-4 bg-gray-50">
+                        <span className="text-lg">{shot.name}</span>
+                        <span className="text-lg font-semibold">{shot.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Notes Section */}
+                {service.treatments.notes && (
+                  <div className="mt-8 p-4 bg-gray-50">
+                    {service.treatments.notes.map((note, index) => (
+                      <p key={index} className="text-sm text-gray-600">{note}</p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Contact Section */}
             <div className="text-center mt-12">

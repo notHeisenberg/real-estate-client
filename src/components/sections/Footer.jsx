@@ -82,10 +82,10 @@ const Footer = () => {
           <p className="font-libre-caslon">
             {t('footer.contact.copyright')}{' '}|{' '}
             <Link
-              to="/"
+              to="/contract"
               className="underline hover:text-gray-300 transition-colors duration-200"
             >
-              {t('footer.contact.privacyPolicy')}
+              {t('footer.contact.serviceContract')}
             </Link>
           </p>
         </div>

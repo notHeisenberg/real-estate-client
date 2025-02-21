@@ -3,154 +3,6 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
-  en: {
-    translation: {
-      navbar: {
-        home: "Home",
-        services: "Services",
-        blog: "Blog",
-        contact: "Contact",
-        viewAllServices: "View All Services",
-        serviceLinks: {
-          propertyManagement: "Property Management",
-          consulting: "Real Estate Consulting",
-          valuation: "Property Valuation",
-          investment: "Investment Advisory"
-        }
-      },
-      common: {
-        seeMore: "See More"
-      },
-      footer: {
-        subscribe: {
-          title: "Subscribe for Updates",
-          placeholder: "Enter your email here",
-          button: "Subscribe",
-          success: "Thanks for submitting!"
-        },
-        contact: {
-          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
-          tel: "+34 653 57 45 59",
-          mail: "infoauramade@gmail.com",
-          copyright: "By Inscale Media ©2025",
-          privacyPolicy: "Privacy policy"
-        }
-      },
-      services: {
-        title: "SERVICES TAILORED TO YOU",
-        description: "Our team is always available to provide personalized assistance and solutions that meet your highest expectations."
-      },
-      experience: {
-        title: "ENJOY A UNIQUE EXPERIENCE",
-        description: "We are passionate about offering luxury services and making all your needs a reality with excellence and dedication.",
-        viewMore: "View More"
-      },
-      about: {
-        title: "ABOUT AURA MADE CONCIERGE",
-        description_1: "Aura Made Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
-        description_2: "We specialize in exclusive, fully personalized services, ensuring unique experiences, quick solutions with just one call, significant time savings, and 24/7 support for all your daily needs.",
-        description_3: "At Aura Made Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
-        image_left_alt: "Luxury Estate Left",
-        image_right_alt: "Luxury Estate Right"
-      },
-      villaRentals: {
-        title: "YOUR LIFESTYLE, HASSLE-FREE",
-        subtitle: "Dreaming of a stunning villa for your vacation?",
-        description: "Discover our exclusive selection of premium villas in Ibiza, Barcelona, and Marbella, where luxury and comfort meet in every detail.",
-        serviceDescription: "Our concierge service is designed to exceed expectations, offering personalized, efficient, and top-quality support so you can enjoy your experience without worries.",
-        serviceDescription2: "We take care of every detail of your stay, allowing you to make the most of your time without stress or inconvenience.",
-        seeMore: "See More"
-      },
-      ibizaInsider: {
-        title: "IBIZA INSIDER",
-        description: "Monthly Tips and Referrals for Embracing the Luxury Lifestyle in IBIZA. Discover the Island's Most Exclusive Experiences.",
-        seeMore: "See More",
-        imageAlt: "IBIZA Luxury Lifestyle"
-      },
-      partners: {
-        title: "Our Partners",
-        logoAlt: "{{partner}} - Partner of AURA MADE"
-      },
-      contact: {
-        title: "CONTACT US",
-        backgroundAlt: "Luxury Lifestyle Background",
-        address: {
-          line1: "Ctra. Cala Llonga, s/n,",
-          line2: "07849 Cala Llonga, Ibiza",
-          email: "infoauramade@gmail.com",
-          tel: "Tel. | Whatsapp: +34 653 57 45 59"
-        },
-        social: {
-          facebook: "Follow us on Facebook",
-          instagram: "Follow us on Instagram"
-        },
-        form: {
-          name: "Name *",
-          email: "Email *",
-          phone: "Phone",
-          subject: "Subject",
-          message: "Message",
-          send: "Send",
-          sending: "Sending...",
-          success: "Success! Message received.",
-          error: "Failed to send message. Please try again."
-        }
-      },
-      conciergeServices: {
-        title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
-        description: "24/7 full availability",
-        features: [
-          "Exclusive villas",
-          "Private transfers and yacht rentals",
-          "Private chefs",
-          "Reservations at luxury restaurants and VIP access",
-          "Spa and massage services",
-          "Household staff: butlers, waiters, housekeepers, and nannies",
-          "Personalized shopping",
-          "Private event organization"
-        ],
-        footer: "A fully customized concierge service for you."
-      },
-      yacht: {
-        overview: "Overview",
-        features: "Features",
-        gallery: "Gallery",
-        specifications: "Specifications",
-        length: "Length",
-        capacity: "Capacity",
-        crew: "Crew",
-        speed: "Speed",
-        backToYachts: "Back to Yachts",
-        imageAlt: "{{title}} - Image {{number}}",
-        details: {
-          inspiration: {
-            title: "Inspiration Yacht",
-            description: "Experience luxury at sea with our flagship yacht"
-          },
-          majestic: {
-            title: "Majestic Yacht",
-            description: "Elegance and comfort combined in perfect harmony"
-          },
-          manbero: {
-            title: "Manbero Yacht",
-            description: "Modern sophistication meets maritime excellence"
-          },
-          seanfinity: {
-            title: "Seanfinity Yacht",
-            description: "Where luxury meets infinite possibilities"
-          },
-          autumn: {
-            title: "Autumn Yacht",
-            description: "Modern sophistication on the water"
-          },
-          ella: {
-            title: "Ella Yacht",
-            description: "Classic design with contemporary comfort"
-          }
-        }
-      }
-    }
-  },
   es: {
     translation: {
       navbar: {
@@ -177,24 +29,25 @@ const resources = {
           success: "¡Gracias por suscribirte!"
         },
         contact: {
-          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
-          tel: "+34 653 57 45 59",
+          address: "Su dirección, C/ Colon, 12, 46004 Valencia, España",
+          tel: "+34 657 20 68 01",
           mail: "infoauramade@gmail.com",
           copyright: "Por Inscale Media ©2025",
-          privacyPolicy: "Política de privacidad"
+          privacyPolicy: "Política de privacidad",
+          serviceContract: "Contrato de Servicios"
         }
       },
       services: {
-        title: "SERVICES TAILORED TO YOU",
+        title: "SERVICIOS A TU MEDIDA",
         description: "Nuestro equipo está siempre disponible para brindarte asistencia personalizada y soluciones que cumplan con tus más altas expectativas."
       },
       experience: {
-        title: "ENJOY A UNIQUE EXPERIENCE",
+        title: "DISFRUTA DE UNA EXPERIENCIA ÚNICA",
         description: "Nos apasiona ofrecer servicios de lujo y hacer realidad todas tus necesidades con excelencia y dedicación.",
         viewMore: "Ver Más"
       },
       about: {
-        title: "ABOUT AURA MADE CONCIERGE",
+        title: "SOBRE AURA MADE CONCIERGE",
         description_1: "Aura Made Concierge es tu socio de confianza en experiencias de lujo y estilo de vida en Ibiza y Barcelona.",
         description_2: "Nos especializamos en servicios exclusivos y totalmente personalizados, garantizando experiencias únicas, soluciones rápidas con una sola llamada, ahorro significativo de tiempo y soporte 24/7 para todas tus necesidades diarias.",
         description_3: "En Aura Made Concierge, elevamos el concepto de lujo con meticulosa atención al detalle, discreción y excelencia.",
@@ -202,7 +55,7 @@ const resources = {
         image_right_alt: "Propiedad de Lujo Derecha"
       },
       villaRentals: {
-        title: "YOUR LIFESTYLE, HASSLE-FREE",
+        title: "TU ESTILO DE VIDA, SIN PREOCUPACIONES",
         subtitle: "¿Sueñas con una villa impresionante para tus vacaciones?",
         description: "Descubre nuestra selección exclusiva de villas premium en Ibiza, Barcelona y Marbella, donde el lujo y el confort se encuentran en cada detalle.",
         serviceDescription: "Nuestro servicio de conserjería está diseñado para superar expectativas, ofreciendo soporte personalizado, eficiente y de máxima calidad para que disfrutes de tu experiencia sin preocupaciones.",
@@ -217,16 +70,16 @@ const resources = {
       },
       partners: {
         title: "Nuestros Colaboradores",
-        logoAlt: "{{partner}} - Colaborador de Tailor Made Concierge"
+        logoAlt: "{{partner}} - Colaborador de AURA MADE"
       },
       contact: {
-        title: "CONTÁCTENOS",
+        title: "CONTÁCTANOS",
         backgroundAlt: "Fondo de Estilo de Vida de Lujo",
         address: {
-          line1: "Ctra. Cala Llonga, s/n,",
-          line2: "07849 Cala Llonga, Ibiza",
+          line1: "Su dirección, C/ Colon, 12,",
+          line2: "46004 Valencia, España",
           email: "infoauramade@gmail.com",
-          tel: "Tel. | Whatsapp: +34 653 57 45 59"
+          tel: "Tel. | Whatsapp: +34 657 20 68 01"
         },
         social: {
           facebook: "Síguenos en Facebook",
@@ -298,14 +151,309 @@ const resources = {
         }
       },
       luxuryExperiences: {
-        title: "LUXURY EXPERIENCES",
+        title: "EXPERIENCIAS DE LUJO",
         subtitle: "Descubre nuestra colección exclusiva de experiencias de lujo",
+        yachts: {
+          title: "YATES DE LUJO"
+        },
+        vehicles: {
+          title: "VEHÍCULOS DE LUJO"
+        }
+      },
+      medical: {
+        ivDripTitle: "Tratamientos de Suero IV",
+        vitaminShotsTitle: "Inyecciones de Vitaminas",
+        servicesInclude: "Nuestros Servicios Incluyen"
+      },
+      contract: {
+        title: "CONTRATO DE COMISIÓN DE SERVICIOS",
+        between: "Entre",
+        and: "Y",
+        providerParty: "De una parte, {{name}}, con domicilio en {{address}}, y con NIF/CIF {{nif}}, en adelante, el PROVEEDOR.",
+        beneficiaryParty: "De otra parte, {{name}}, con domicilio en {{address}}, y con NIF {{nif}}, en adelante, el BENEFICIARIO.",
+        agreement: "Ambas partes acuerdan celebrar el presente Contrato de Comisión de Servicios, que se regirá por las siguientes cláusulas:",
+        clausesTitle: "CLÁUSULAS",
+        firstClause: {
+          title: "Primera. Objeto del Contrato",
+          content: "El PROVEEDOR encarga al BENEFICIARIO la prestación de servicios de intermediación y promoción en la contratación de servicios vacacionales, tales como alquiler de coches, barcos, viviendas vacacionales y otros servicios relacionados."
+        },
+        secondClause: {
+          title: "Segunda. Duración del Contrato",
+          content: "Este contrato entrará en vigor el día {{date}} y tendrá una duración de {{duration}} renovable automáticamente, salvo que cualquiera de las partes notifique por escrito su voluntad de no renovar con una antelación mínima de {{noticeDays}} días antes de la finalización del mismo."
+        },
+        thirdClause: {
+          title: "Tercera. Obligaciones del Beneficiario",
+          intro: "El BENEFICIARIO se compromete a:",
+          obligations: {
+            first: "Promover los servicios vacacionales ofrecidos por el PROVEEDOR a potenciales clientes.",
+            second: "Facilitar el cierre de acuerdos entre los clientes y el PROVEEDOR para el alquiler de los bienes o servicios vacacionales.",
+            third: "Informar al PROVEEDOR de las contrataciones y ventas realizadas, proporcionando los datos necesarios para su correcta facturación."
+          }
+        },
+        fourthClause: {
+          title: "Cuarta. Obligaciones del Proveedor",
+          intro: "El PROVEEDOR se compromete a:",
+          obligations: {
+            first: "Facilitar al BENEFICIARIO toda la información y recursos necesarios para la promoción de los servicios vacacionales.",
+            second: "Aceptar y cumplir los contratos de servicios vacacionales gestionados por el BENEFICIARIO.",
+            third: "Pagar la comisión correspondiente según lo pactado en este contrato."
+          }
+        },
+        fifthClause: {
+          title: "Quinta. Comisión",
+          commission: "El BENEFICIARIO recibirá una comisión por cada contrato de alquiler de servicios vacacionales gestionado con éxito. El porcentaje de la comisión será del {{percentage}}% sobre el valor total de cada contrato o transacción efectuada con éxito.",
+          payment: "El pago de la comisión se realizará en un plazo de {{days}} días desde la fecha de la transacción, mediante transferencia bancaria a la cuenta indicada por el BENEFICIARIO."
+        },
+        sixthClause: {
+          title: "Sexta. Confidencialidad",
+          content: "Ambas partes se comprometen a mantener la confidencialidad de la información proporcionada por la otra parte en virtud de este contrato y a no divulgarla a terceros sin el consentimiento expreso por escrito."
+        },
+        seventhClause: {
+          title: "Séptima. Resolución",
+          intro: "Este contrato podrá ser resuelto en los siguientes casos:",
+          reasons: {
+            first: "Por mutuo acuerdo entre las partes.",
+            second: "Por incumplimiento de cualquiera de las partes de las obligaciones establecidas en el presente contrato.",
+            third: "Por imposibilidad sobrevenida de cumplir el objeto del contrato."
+          }
+        },
+        eighthClause: {
+          title: "Octava. Jurisdicción",
+          content: "Para la resolución de cualquier controversia derivada de este contrato, las partes se someten a los juzgados y tribunales de {{location}}, renunciando expresamente a cualquier otro fuero que pudiera corresponderles."
+        },
+        closing: "Y en prueba de conformidad, firman ambas partes el presente contrato en dos ejemplares y a un solo efecto, en {{location}}, a {{date}}.",
+        signatures: "FIRMAS:",
+        providerName: "{{name}}",
+        providerTitle: "(PROVEEDOR)",
+        beneficiaryName: "{{name}}",
+        beneficiaryTitle: "(BENEFICIARIO)"
+      }
+    }
+  },
+  en: {
+    translation: {
+      navbar: {
+        home: "Home",
+        services: "Services",
+        blog: "Blog",
+        contact: "Contact",
+        viewAllServices: "View All Services",
+        serviceLinks: {
+          propertyManagement: "Property Management",
+          consulting: "Real Estate Consulting",
+          valuation: "Property Valuation",
+          investment: "Investment Advisory"
+        }
+      },
+      common: {
+        seeMore: "See More"
+      },
+      footer: {
+        subscribe: {
+          title: "Subscribe for Updates",
+          placeholder: "Enter your email here",
+          button: "Subscribe",
+          success: "Thanks for submitting!"
+        },
+        contact: {
+          address: "Su dirección, C/ Colon, 12, 46004 Valencia, España",
+          tel: "+34 657 20 68 01",
+          mail: "infoauramade@gmail.com",
+          copyright: "By Inscale Media ©2025",
+          privacyPolicy: "Privacy policy",
+          serviceContract: "Service Contract"
+        }
+      },
+      services: {
+        title: "SERVICES TAILORED TO YOU",
+        description: "Our team is always available to provide personalized assistance and solutions that meet your highest expectations."
+      },
+      experience: {
+        title: "ENJOY A UNIQUE EXPERIENCE",
+        description: "We are passionate about offering luxury services and making all your needs a reality with excellence and dedication.",
+        viewMore: "View More"
+      },
+      about: {
+        title: "ABOUT AURA MADE CONCIERGE",
+        description_1: "Aura Made Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
+        description_2: "We specialize in exclusive, fully personalized services, ensuring unique experiences, quick solutions with just one call, significant time savings, and 24/7 support for all your daily needs.",
+        description_3: "At Aura Made Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
+        image_left_alt: "Luxury Estate Left",
+        image_right_alt: "Luxury Estate Right"
+      },
+      villaRentals: {
+        title: "YOUR LIFESTYLE, HASSLE-FREE",
+        subtitle: "Dreaming of a stunning villa for your vacation?",
+        description: "Discover our exclusive selection of premium villas in Ibiza, Barcelona, and Marbella, where luxury and comfort meet in every detail.",
+        serviceDescription: "Our concierge service is designed to exceed expectations, offering personalized, efficient, and top-quality support so you can enjoy your experience without worries.",
+        serviceDescription2: "We take care of every detail of your stay, allowing you to make the most of your time without stress or inconvenience.",
+        seeMore: "See More"
+      },
+      ibizaInsider: {
+        title: "IBIZA INSIDER",
+        description: "Monthly Tips and Referrals for Embracing the Luxury Lifestyle in IBIZA. Discover the Island's Most Exclusive Experiences.",
+        seeMore: "See More",
+        imageAlt: "IBIZA Luxury Lifestyle"
+      },
+      partners: {
+        title: "Our Partners",
+        logoAlt: "{{partner}} - Partner of AURA MADE"
+      },
+      contact: {
+        title: "CONTACT US",
+        backgroundAlt: "Luxury Lifestyle Background",
+        address: {
+          line1: "Su dirección, C/ Colon, 12,",
+          line2: "46004 Valencia, España",
+          email: "infoauramade@gmail.com",
+          tel: "Tel. | Whatsapp: +34 657 20 68 01"
+        },
+        social: {
+          facebook: "Follow us on Facebook",
+          instagram: "Follow us on Instagram"
+        },
+        form: {
+          name: "Name *",
+          email: "Email *",
+          phone: "Phone",
+          subject: "Subject",
+          message: "Message",
+          send: "Send",
+          sending: "Sending...",
+          success: "Success! Message received.",
+          error: "Failed to send message. Please try again."
+        }
+      },
+      conciergeServices: {
+        title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
+        description: "24/7 full availability",
+        features: [
+          "Exclusive villas",
+          "Private transfers and yacht rentals",
+          "Private chefs",
+          "Reservations at luxury restaurants and VIP access",
+          "Spa and massage services",
+          "Household staff: butlers, waiters, housekeepers, and nannies",
+          "Personalized shopping",
+          "Private event organization"
+        ],
+        footer: "A fully customized concierge service for you."
+      },
+      yacht: {
+        overview: "Overview",
+        features: "Features",
+        gallery: "Gallery",
+        specifications: "Specifications",
+        length: "Length",
+        capacity: "Capacity",
+        crew: "Crew",
+        speed: "Speed",
+        backToYachts: "Back to Yachts",
+        imageAlt: "{{title}} - Image {{number}}",
+        details: {
+          inspiration: {
+            title: "Inspiration Yacht",
+            description: "Experience luxury at sea with our flagship yacht"
+          },
+          majestic: {
+            title: "Majestic Yacht",
+            description: "Elegance and comfort combined in perfect harmony"
+          },
+          manbero: {
+            title: "Manbero Yacht",
+            description: "Modern sophistication meets maritime excellence"
+          },
+          seanfinity: {
+            title: "Seanfinity Yacht",
+            description: "Where luxury meets infinite possibilities"
+          },
+          autumn: {
+            title: "Autumn Yacht",
+            description: "Modern sophistication on the water"
+          },
+          ella: {
+            title: "Ella Yacht",
+            description: "Classic design with contemporary comfort"
+          }
+        }
+      },
+      luxuryExperiences: {
+        title: "LUXURY EXPERIENCES",
+        subtitle: "Discover our exclusive collection of luxury experiences",
         yachts: {
           title: "LUXURY YACHTS"
         },
         vehicles: {
           title: "LUXURY VEHICLES"
         }
+      },
+      medical: {
+        ivDripTitle: "IV Drip Treatments",
+        vitaminShotsTitle: "Vitamin Shots",
+        servicesInclude: "Our Services Include"
+      },
+      contract: {
+        title: "SERVICE COMMISSION CONTRACT",
+        between: "Between",
+        and: "And",
+        providerParty: "On one part, {{name}}, with address at {{address}}, and Tax ID/CIF {{nif}}, hereinafter referred to as the PROVIDER.",
+        beneficiaryParty: "On the other part, {{name}}, with address at {{address}}, and Tax ID {{nif}}, hereinafter referred to as the BENEFICIARY.",
+        agreement: "Both parties agree to enter into this Service Commission Contract, which shall be governed by the following clauses:",
+        clausesTitle: "CLAUSES",
+        firstClause: {
+          title: "First. Purpose of the Contract",
+          content: "The PROVIDER entrusts the BENEFICIARY with the provision of intermediation and promotion services in the contracting of vacation services, such as car rentals, boats, vacation homes, and other related services."
+        },
+        secondClause: {
+          title: "Second. Duration of the Contract",
+          content: "This contract shall come into effect on {{date}} and shall have a duration of {{duration}}, automatically renewable unless either party notifies in writing their intention not to renew with a minimum notice of {{noticeDays}} days before its termination."
+        },
+        thirdClause: {
+          title: "Third. Obligations of the Beneficiary",
+          intro: "The BENEFICIARY commits to:",
+          obligations: {
+            first: "Promote the vacation services offered by the PROVIDER to potential clients.",
+            second: "Facilitate the closing of agreements between clients and the PROVIDER for the rental of goods or vacation services.",
+            third: "Inform the PROVIDER of the contracts and sales made, providing the necessary data for proper invoicing."
+          }
+        },
+        fourthClause: {
+          title: "Fourth. Obligations of the Provider",
+          intro: "The PROVIDER commits to:",
+          obligations: {
+            first: "Provide the BENEFICIARY with all the information and resources necessary for the promotion of vacation services.",
+            second: "Accept and fulfill the vacation service contracts managed by the BENEFICIARY.",
+            third: "Pay the corresponding commission as agreed in this contract."
+          }
+        },
+        fifthClause: {
+          title: "Fifth. Commission",
+          commission: "The BENEFICIARY shall receive a commission for each successfully managed vacation service rental contract. The commission percentage will be {{percentage}}% of the total value of each successfully completed contract or transaction.",
+          payment: "The commission payment will be made within {{days}} days from the transaction date, via bank transfer to the account indicated by the BENEFICIARY."
+        },
+        sixthClause: {
+          title: "Sixth. Confidentiality",
+          content: "Both parties commit to maintaining the confidentiality of information provided by the other party under this contract and not to disclose it to third parties without express written consent."
+        },
+        seventhClause: {
+          title: "Seventh. Termination",
+          intro: "This contract may be terminated in the following cases:",
+          reasons: {
+            first: "By mutual agreement between the parties.",
+            second: "Due to breach by either party of the obligations established in this contract.",
+            third: "Due to supervening impossibility to fulfill the purpose of the contract."
+          }
+        },
+        eighthClause: {
+          title: "Eighth. Jurisdiction",
+          content: "For the resolution of any controversy arising from this contract, the parties submit to the courts and tribunals of {{location}}, expressly waiving any other jurisdiction that may correspond to them."
+        },
+        closing: "In witness whereof, both parties sign this contract in duplicate and to one effect, in {{location}}, on {{date}}.",
+        signatures: "SIGNATURES:",
+        providerName: "{{name}}",
+        providerTitle: "(PROVIDER)",
+        beneficiaryName: "{{name}}",
+        beneficiaryTitle: "(BENEFICIARY)"
       }
     }
   },
@@ -335,11 +483,12 @@ const resources = {
           success: "Спасибо за подписку!"
         },
         contact: {
-          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
-          tel: "+34 653 57 45 59",
+          address: "Su dirección, C/ Colon, 12, 46004 Valencia, España",
+          tel: "+34 657 20 68 01",
           mail: "infoauramade@gmail.com",
           copyright: "От Inscale Media ©2025",
-          privacyPolicy: "Политика конфиденциальности"
+          privacyPolicy: "Политика конфиденциальности",
+          serviceContract: "Договор на Услуги"
         }
       },
       services: {
@@ -376,10 +525,10 @@ const resources = {
         title: "СВЯЖИТЕСЬ С НАМИ",
         backgroundAlt: "Фон Роскошного Образа Жизни",
         address: {
-          line1: "Ctra. Cala Llonga, s/n,",
-          line2: "07849 Cala Llonga, Ibiza",
+          line1: "Su dirección, C/ Colon, 12,",
+          line2: "46004 Valencia, España",
           email: "infoauramade@gmail.com",
-          tel: "Тел. | Whatsapp: +34 653 57 45 59"
+          tel: "Тел. | Whatsapp: +34 657 20 68 01"
         },
         social: {
           facebook: "Следите за нами на Facebook",
@@ -459,6 +608,74 @@ const resources = {
         vehicles: {
           title: "LUXURY VEHICLES"
         }
+      },
+      medical: {
+        ivDripTitle: "IV-Капельницы",
+        vitaminShotsTitle: "Витаминные Инъекции",
+        servicesInclude: "Наши Услуги Включают"
+      },
+      contract: {
+        title: "ДОГОВОР КОМИССИИ НА УСЛУГИ",
+        between: "Между",
+        and: "И",
+        providerParty: "С одной стороны, {{name}}, с юридическим адресом {{address}}, и ИНН {{nif}}, далее именуемый ПОСТАВЩИК.",
+        beneficiaryParty: "С другой стороны, {{name}}, с адресом {{address}}, и ИНН {{nif}}, далее именуемый БЕНЕФИЦИАР.",
+        agreement: "Обе стороны соглашаются заключить настоящий Договор Комиссии на Услуги, который будет регулироваться следующими положениями:",
+        clausesTitle: "ПОЛОЖЕНИЯ",
+        firstClause: {
+          title: "Первое. Предмет Договора",
+          content: "ПОСТАВЩИК поручает БЕНЕФИЦИАРУ оказание посреднических и рекламных услуг при заключении договоров на отпускные услуги, такие как аренда автомобилей, лодок, отпускного жилья и других связанных услуг."
+        },
+        secondClause: {
+          title: "Второе. Срок Действия Договора",
+          content: "Настоящий договор вступает в силу {{date}} и имеет срок действия {{duration}}, автоматически продлеваемый, если одна из сторон не уведомит в письменной форме о своем намерении не продлевать его не менее чем за {{noticeDays}} дней до его окончания."
+        },
+        thirdClause: {
+          title: "Третье. Обязательства Бенефициара",
+          intro: "БЕНЕФИЦИАР обязуется:",
+          obligations: {
+            first: "Продвигать отпускные услуги, предлагаемые ПОСТАВЩИКОМ, потенциальным клиентам.",
+            second: "Способствовать заключению соглашений между клиентами и ПОСТАВЩИКОМ на аренду имущества или отпускных услуг.",
+            third: "Информировать ПОСТАВЩИКА о заключенных договорах и совершенных продажах, предоставляя необходимые данные для правильного выставления счетов."
+          }
+        },
+        fourthClause: {
+          title: "Четвертое. Обязательства Поставщика",
+          intro: "ПОСТАВЩИК обязуется:",
+          obligations: {
+            first: "Предоставлять БЕНЕФИЦИАРУ всю информацию и ресурсы, необходимые для продвижения отпускных услуг.",
+            second: "Принимать и выполнять договоры на отпускные услуги, оформленные БЕНЕФИЦИАРОМ.",
+            third: "Выплачивать комиссионное вознаграждение согласно условиям настоящего договора."
+          }
+        },
+        fifthClause: {
+          title: "Пятое. Комиссионное Вознаграждение",
+          commission: "БЕНЕФИЦИАР получает комиссионное вознаграждение за каждый успешно оформленный договор аренды отпускных услуг. Размер комиссии составляет {{percentage}}% от общей стоимости каждого успешно заключенного договора или транзакции.",
+          payment: "Выплата комиссионного вознаграждения производится в течение {{days}} дней с даты транзакции путем банковского перевода на счет, указанный БЕНЕФИЦИАРОМ."
+        },
+        sixthClause: {
+          title: "Шестое. Конфиденциальность",
+          content: "Обе стороны обязуются сохранять конфиденциальность информации, предоставленной другой стороной в рамках настоящего договора, и не разглашать ее третьим лицам без письменного согласия."
+        },
+        seventhClause: {
+          title: "Седьмое. Расторжение",
+          intro: "Настоящий договор может быть расторгнут в следующих случаях:",
+          reasons: {
+            first: "По взаимному согласию сторон.",
+            second: "В случае нарушения любой из сторон обязательств, установленных в настоящем договоре.",
+            third: "В случае невозможности выполнения предмета договора."
+          }
+        },
+        eighthClause: {
+          title: "Восьмое. Юрисдикция",
+          content: "Для разрешения любых споров, вытекающих из настоящего договора, стороны подчиняются судам и трибуналам {{location}}, прямо отказываясь от любой другой юрисдикции, которая может им соответствовать."
+        },
+        closing: "В подтверждение чего обе стороны подписывают настоящий договор в двух экземплярах и с одинаковым эффектом, в {{location}}, {{date}}.",
+        signatures: "ПОДПИСИ:",
+        providerName: "{{name}}",
+        providerTitle: "(ПОСТАВЩИК)",
+        beneficiaryName: "{{name}}",
+        beneficiaryTitle: "(БЕНЕФИЦИАР)"
       }
     }
   }
@@ -469,9 +686,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'es',
     interpolation: {
-      escapeValue: false,
+      escapeValue: false
     },
     detection: {
       order: ['localStorage', 'navigator'],
