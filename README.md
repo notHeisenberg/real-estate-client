@@ -1,37 +1,42 @@
 # Aura Made Luxury Concierge Website
 
-A modern, multilingual luxury concierge website built with React, offering high-end services including yacht rentals, luxury vehicles, and exclusive experiences in Ibiza and Barcelona.
+A modern, multilingual luxury concierge website built with React, offering high-end services including yacht rentals, luxury vehicles, and exclusive experiences in Ibiza and Barcelona. Experience luxury at its finest with our curated selection of premium services.
 
-## Features
+## ✨ Features
 
 - 🌐 Multilingual support (English, Spanish, Russian)
-- 🛥️ Luxury yacht showcase with detailed views
-- 🚗 Premium vehicle fleet presentation
-- 🏠 Villa rentals section with image gallery
-- 📱 Fully responsive design
-- 🎨 Modern UI with smooth animations
-- 📧 Contact form with email integration
-- 🔄 Language switcher with automatic detection
-- 🖼️ Image lightbox for galleries
-- 🎯 SEO optimized
+- 🛥️ Luxury yacht showcase with detailed views and booking system
+- 🚗 Premium vehicle fleet presentation with real-time availability
+- 🏠 Villa rentals section with immersive 3D tours and image gallery
+- 📱 Fully responsive design optimized for all devices
+- 🎨 Modern UI with smooth animations and transitions
+- 📧 Advanced contact form with automated email responses
+- 🔄 Smart language switcher with geo-based detection
+- 🖼️ High-performance image gallery with lazy loading
+- 🎯 SEO optimized with structured data
+- 🔒 Secure payment integration
+- 📊 Analytics dashboard for administrators
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- React 18
-- React Router v6
+- React 18 with TypeScript
+- React Router v6 for navigation
 - i18next for internationalization
-- Tailwind CSS
-- Vite
-- React Helmet for SEO
-- Yet Another React Lightbox
+- Tailwind CSS for styling
+- Vite for build tooling
+- React Helmet for SEO optimization
+- Yet Another React Lightbox for galleries
+- React Query for data fetching
+- Framer Motion for animations
+- Jest and React Testing Library for testing
 
-## Prerequisites
+## 📋 Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js (v18 or higher)
+- npm (v8+) or yarn (v1.22+)
 - Git
 
-## Installation
+## 🚀 Installation
 
 1. Clone the repository:
 ```bash
@@ -62,11 +67,16 @@ yarn dev
 
 The application will be available at `http://localhost:5173`
 
-## Environment Variables
+## 🔧 Environment Variables
 
-See `.env.example` for required environment variables.
+Required environment variables:
+```env
+VITE_API_URL=your_api_url
+VITE_GOOGLE_MAPS_KEY=your_google_maps_key
+VITE_EMAIL_SERVICE_KEY=your_email_service_key
+```
 
-## Building for Production
+## 📦 Building for Production
 
 ```bash
 npm run build
@@ -76,23 +86,43 @@ yarn build
 
 The built files will be in the `dist` directory.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 src/
 ├── components/         # Reusable components
-│   ├── common/        # Common components like Navbar, Footer
+│   ├── common/        # Common components (Navbar, Footer)
 │   ├── sections/      # Page sections
-│   └── ui/           # UI components
+│   └── ui/            # UI components
+├── hooks/             # Custom React hooks
 ├── data/             # Static data and content
 ├── i18n/             # Internationalization files
 ├── layouts/          # Layout components
-├── pages/           # Page components
-├── routes/          # Route configurations
-└── utils/           # Utility functions
+├── pages/            # Page components
+├── routes/           # Route configurations
+├── services/         # API services
+├── store/            # State management
+├── styles/           # Global styles
+├── types/            # TypeScript types
+└── utils/            # Utility functions
+
+## 🧪 Testing
+
+Run the test suite:
+```bash
+npm run test
+# or
+yarn test
 ```
 
-## Contributing
+Run tests with coverage:
+```bash
+npm run test:coverage
+# or
+yarn test:coverage
+```
+
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -100,18 +130,31 @@ src/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
+## 📞 Contact
 
-For any inquiries, please reach out to:
+For inquiries and support:
 - Email: infoauramade@gmail.com
 - Website: [www.auramade.com](https://www.auramade.com)
+- Instagram: [@auramadeluxury](https://instagram.com/auramadeluxury)
+- LinkedIn: [Aura Made Luxury](https://linkedin.com/company/auramade)
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- Design inspiration from luxury concierge services
-- Icons from Lucide Icons
-- Images sourced from project assets
+- Design inspiration from leading luxury concierge services
+- Icons provided by [Lucide Icons](https://lucide.dev)
+- Images sourced from our premium asset collection
+- Special thanks to our development and design team
+
+## 🔄 Updates & Changelog
+
+### Latest Release (v1.0.0)
+- Initial public release
+- Multi-language support
+- Integrated booking system
+- Responsive design implementation
+
+Check [CHANGELOG.md](CHANGELOG.md) for full version history.
