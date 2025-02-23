@@ -1,4 +1,4 @@
-# Aura Made Luxury Concierge Website
+# Caviar Concierge Website
 
 A modern, multilingual luxury concierge website built with React, offering high-end services including yacht rentals, luxury vehicles, and exclusive experiences in Ibiza and Barcelona. Experience luxury at its finest with our curated selection of premium services.
 
@@ -137,10 +137,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 For inquiries and support:
-- Email: infoauramade@gmail.com
-- Website: [www.auramade.com](https://www.auramade.com)
-- Instagram: [@auramadeluxury](https://instagram.com/auramadeluxury)
-- LinkedIn: [Aura Made Luxury](https://linkedin.com/company/auramade)
+- Facebook: [Caviar Concierge](https://www.facebook.com/share/18ZTa39KMG/)
+- Instagram: [@caviarconcierge2025](https://www.instagram.com/caviarconcierge2025?utm_source=qr&igsh=MTQwbXl5MnkwMjVsOA==)
 
 ## 🙏 Acknowledgments
 

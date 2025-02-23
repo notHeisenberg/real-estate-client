@@ -232,6 +232,126 @@ export const yachtData = {
         ],
         description: "Ella combines timeless elegance with modern comfort. Her well-appointed spaces and attentive crew ensure an intimate and luxurious yachting experience."
       }
+    },
+    {
+      id: 'mintaka',
+      src: "/Productos/Yates/Fotos Yates/MINTAKA - BAIA 80-2/MINTAKA - BAIA 80-2-1.jpg",
+      alt: "Mintaka Yacht",
+      title: "Mintaka - Baia 80",
+      description: "Luxurious Italian-built yacht combining speed and elegance",
+      details: {
+        images: Array.from({ length: 22 }, (_, i) => `/Productos/Yates/Fotos Yates/MINTAKA - BAIA 80-2/MINTAKA - BAIA 80-2-${i + 1}.jpg`),
+        specs: {
+          length: "24m",
+          capacity: "12 guests",
+          crew: "2 professional crew",
+          cabins: "3 luxury cabins"
+        },
+        features: [
+          "High-performance engines",
+          "Spacious sun deck",
+          "Modern entertainment system",
+          "Water sports equipment",
+          "Elegant Italian design"
+        ],
+        description: "Mintaka is a stunning Baia 80 that perfectly combines Italian style with high performance. Her sleek design and powerful engines make her perfect for day trips and coastal cruising in luxury."
+      }
+    },
+    {
+      id: 'nona',
+      src: "/Productos/Yates/Fotos Yates/PERSHING 45 - NONA/PERSHING 45 - NONA-images-0.jpg",
+      alt: "Nona Yacht",
+      title: "Nona - Pershing 45",
+      description: "Sporty and elegant Pershing yacht for thrilling experiences",
+      details: {
+        images: Array.from({ length: 10 }, (_, i) => `/Productos/Yates/Fotos Yates/PERSHING 45 - NONA/PERSHING 45 - NONA-images-${i + 1}.jpg`),
+        specs: {
+          length: "14m",
+          capacity: "8 guests",
+          crew: "1 professional crew",
+          cabins: "2 luxury cabins"
+        },
+        features: [
+          "High-speed performance",
+          "Stylish interior",
+          "Sunbathing area",
+          "Swimming platform",
+          "Day cruising comfort"
+        ],
+        description: "Nona is a sporty Pershing 45 that delivers an exciting and comfortable experience. Perfect for day trips and coastal adventures, she combines speed with Italian luxury."
+      }
+    },
+    {
+      id: 'bewitched',
+      src: "/Productos/Yates/Fotos Yates/NUMARINE 55 - BEWITCHED/NUMARINE 55 - BEWITCHED-images-0.jpg",
+      alt: "Bewitched Yacht",
+      title: "Bewitched - Numarine 55",
+      description: "Contemporary luxury yacht with exceptional comfort",
+      details: {
+        images: Array.from({ length: 8 }, (_, i) => `/Productos/Yates/Fotos Yates/NUMARINE 55 - BEWITCHED/NUMARINE 55 - BEWITCHED-images-${i + 1}.jpg`),
+        specs: {
+          length: "17m",
+          capacity: "10 guests",
+          crew: "2 professional crew",
+          cabins: "3 luxury cabins"
+        },
+        features: [
+          "Modern design",
+          "Spacious flybridge",
+          "Full entertainment system",
+          "Large swimming platform",
+          "Comfortable lounge areas"
+        ],
+        description: "Bewitched is a stunning Numarine 55 that offers the perfect blend of style and comfort. Her modern design and spacious layout make her ideal for both day trips and extended cruising."
+      }
+    },
+    {
+      id: 'byron',
+      src: "/Productos/Yates/Fotos Yates/LEOPARD 27 - BYRON/LEOPARD 27 - BYRON-images-0.jpg",
+      alt: "Byron Yacht",
+      title: "Byron - Leopard 27",
+      description: "High-performance luxury yacht with exceptional speed",
+      details: {
+        images: Array.from({ length: 14 }, (_, i) => `/Productos/Yates/Fotos Yates/LEOPARD 27 - BYRON/LEOPARD 27 - BYRON-images-${i + 1}.jpg`),
+        specs: {
+          length: "27m",
+          capacity: "10 guests",
+          crew: "3 professional crew",
+          cabins: "4 luxury cabins"
+        },
+        features: [
+          "High-speed performance",
+          "Luxurious interior",
+          "Multiple sun decks",
+          "State-of-the-art navigation",
+          "Premium audio system"
+        ],
+        description: "Byron is an impressive Leopard 27 that combines exceptional performance with luxury comfort. Her powerful engines and sophisticated design make her perfect for those seeking both speed and style."
+      }
+    },
+    {
+      id: 'surreal',
+      src: "/Productos/Yates/Fotos Yates/BAIA 54 - SURREAL/BAIA 54 - SURREAL-images-0.jpg",
+      alt: "Surreal Yacht",
+      title: "Surreal - Baia 54",
+      description: "Elegant Italian-built yacht with superior comfort",
+      details: {
+        images: Array.from({ length: 9 }, (_, i) => `/Productos/Yates/Fotos Yates/BAIA 54 - SURREAL/BAIA 54 - SURREAL-images-${i + 1}.jpg`),
+        specs: {
+          length: "16m",
+          capacity: "8 guests",
+          crew: "2 professional crew",
+          cabins: "2 luxury cabins"
+        },
+        features: [
+          "Italian craftsmanship",
+          "Elegant interior design",
+          "Spacious cockpit",
+          "Advanced sound system",
+          "Perfect day cruiser"
+        ],
+        description: "Surreal is a beautiful Baia 54 that exemplifies Italian excellence in yacht building. Her elegant design and comfortable layout make her perfect for luxurious day trips along the coast."
+      }
     }
   ],
   es: [
@@ -317,7 +437,7 @@ export const yachtData = {
       src: "/images/yatches/13.MANBERO_1-1_yatch.jpg",
       alt: "Manbero Yacht",
       title: "Manbero Yacht",
-      description: "El mejor equilibrio entre lujo y rendimiento",
+      description: "Classic elegance meets modern luxury",
       route: "/yachts/manbero",
 
       details: {
@@ -349,7 +469,7 @@ export const yachtData = {
       src: "/images/yatches/14.SEANFINITY_3-3_yatch.jpg",
       alt: "Seanfinity Yacht",
       title: "Seanfinity Yacht",
-      description: "El mejor equilibrio entre lujo y rendimiento",
+      description: "Ultimate luxury for extended cruising",
       route: "/yachts/seanfinity",
 
       details: {
@@ -466,6 +586,126 @@ export const yachtData = {
           "Intimate gathering spaces"
         ],
         description: "Ella combina el encanto del pasado con el confort moderno. Sus espacios bien equipados y el personal atento garantizan una experiencia de yate inolvidable y de lujo."
+      }
+    },
+    {
+      id: 'mintaka',
+      src: "/Productos/Yates/Fotos Yates/MINTAKA - BAIA 80-2/MINTAKA - BAIA 80-2-1.jpg",
+      alt: "Yate Mintaka",
+      title: "Mintaka - Baia 80",
+      description: "Yate de lujo italiano que combina velocidad y elegancia",
+      details: {
+        images: Array.from({ length: 22 }, (_, i) => `/Productos/Yates/Fotos Yates/MINTAKA - BAIA 80-2/MINTAKA - BAIA 80-2-${i + 1}.jpg`),
+        specs: {
+          length: "24m",
+          capacity: "12 huéspedes",
+          crew: "2 tripulantes profesionales",
+          cabins: "3 cabinas de lujo"
+        },
+        features: [
+          "Motores de alto rendimiento",
+          "Amplia cubierta solar",
+          "Sistema de entretenimiento moderno",
+          "Equipo de deportes acuáticos",
+          "Elegante diseño italiano"
+        ],
+        description: "Mintaka es un impresionante Baia 80 que combina perfectamente el estilo italiano con el alto rendimiento. Su diseño elegante y sus potentes motores la hacen perfecta para excursiones diarias y navegación costera de lujo."
+      }
+    },
+    {
+      id: 'nona',
+      src: "/Productos/Yates/Fotos Yates/PERSHING 45 - NONA/PERSHING 45 - NONA-images-0.jpg",
+      alt: "Yate Nona",
+      title: "Nona - Pershing 45",
+      description: "Yate Pershing deportivo y elegante para experiencias emocionantes",
+      details: {
+        images: Array.from({ length: 12 }, (_, i) => `/Productos/Yates/Fotos Yates/PERSHING 45 - NONA/PERSHING 45 - NONA-images-${i + 1}.jpg`),
+        specs: {
+          length: "14m",
+          capacity: "8 huéspedes",
+          crew: "1 tripulante profesional",
+          cabins: "2 cabinas de lujo"
+        },
+        features: [
+          "Alto rendimiento",
+          "Interior elegante",
+          "Área de bronceado",
+          "Plataforma de baño",
+          "Comodidad para navegación diurna"
+        ],
+        description: "Nona es un deportivo Pershing 45 что предлагает захватывающий и комфортный опыт. Идеально подходит для ежедневных поездок и приключений по побережью, сочетая скорость с итальянским роскошеством."
+      }
+    },
+    {
+      id: 'bewitched',
+      src: "/Productos/Yates/Fotos Yates/NUMARINE 55 - BEWITCHED/NUMARINE 55 - BEWITCHED-images-0.jpg",
+      alt: "Yate Bewitched",
+      title: "Bewitched - Numarine 55",
+      description: "Yate de lujo contemporáneo con excepcional comodidad",
+      details: {
+        images: Array.from({ length: 8 }, (_, i) => `/Productos/Yates/Fotos Yates/NUMARINE 55 - BEWITCHED/NUMARINE 55 - BEWITCHED-images-${i + 1}.jpg`),
+        specs: {
+          length: "17m",
+          capacity: "10 huéspedes",
+          crew: "2 tripulantes profesionales",
+          cabins: "3 cabinas de lujo"
+        },
+        features: [
+          "Modern design",
+          "Spacious flybridge",
+          "Full entertainment system",
+          "Large swimming platform",
+          "Comfortable lounge areas"
+        ],
+        description: "Bewitched is a stunning Numarine 55 that offers the perfect blend of style and comfort. Her modern design and spacious layout make her ideal for both day trips and extended cruising."
+      }
+    },
+    {
+      id: 'byron',
+      src: "/Productos/Yates/Fotos Yates/LEOPARD 27 - BYRON/LEOPARD 27 - BYRON-images-0.jpg",
+      alt: "Yate Byron",
+      title: "Byron - Leopard 27",
+      description: "Yate de lujo de alto rendimiento con velocidad excepcional",
+      details: {
+        images: Array.from({ length: 14 }, (_, i) => `/Productos/Yates/Fotos Yates/LEOPARD 27 - BYRON/LEOPARD 27 - BYRON-images-${i + 1}.jpg`),
+        specs: {
+          length: "27m",
+          capacity: "10 huéspedes",
+          crew: "3 tripulantes profesionales",
+          cabins: "4 cabinas de lujo"
+        },
+        features: [
+          "Alto rendimiento",
+          "Interior lujoso",
+          "Múltiples cubiertas solares",
+          "Navegación de última generación",
+          "Sistema de audio premium"
+        ],
+        description: "Byron es un impresionante Leopard 27 что сочетает высокопроизводительную работу с максимальным комфортом. Его мощные двигатели и современный дизайн делают его идеальным для тех, кто ищет скорость и стиль."
+      }
+    },
+    {
+      id: 'surreal',
+      src: "/Productos/Yates/Fotos Yates/BAIA 54 - SURREAL/BAIA 54 - SURREAL-images-0.jpg",
+      alt: "Yate Surreal",
+      title: "Surreal - Baia 54",
+      description: "Elegante yate italiano con superior comodidad",
+      details: {
+        images: Array.from({ length: 9 }, (_, i) => `/Productos/Yates/Fotos Yates/BAIA 54 - SURREAL/BAIA 54 - SURREAL-images-${i + 1}.jpg`),
+        specs: {
+          length: "16m",
+          capacity: "8 huéspedes",
+          crew: "2 tripulantes profesionales",
+          cabins: "2 cabinas de lujo"
+        },
+        features: [
+          "Artesanía italiana",
+          "Diseño interior elegante",
+          "Cabina espaciosa",
+          "Sistema de sonido avanzado",
+          "Perfecta para navegación diurna"
+        ],
+        description: "Surreal es un hermoso Baia 54 что иллюстрирует итальянскую высокую квалификацию в строительстве яхт. Его красивый дизайн и комфортная расстановка делают его идеальным для ежедневных поездок по побережью."
       }
     }
   ],
@@ -701,6 +941,126 @@ export const yachtData = {
           "Intimate gathering spaces"
         ],
         description: "Ella combines timeless elegance with modern comfort. Her well-appointed spaces and attentive crew ensure an intimate and luxurious yachting experience."
+      }
+    },
+    {
+      id: 'mintaka',
+      src: "/Productos/Yates/Fotos Yates/MINTAKA - BAIA 80-2/MINTAKA - BAIA 80-2-1.jpg",
+      alt: "Яхта Mintaka",
+      title: "Mintaka - Baia 80",
+      description: "Роскошная яхта итальянской постройки, сочетающая скорость и элегантность",
+      details: {
+        images: Array.from({ length: 22 }, (_, i) => `/Productos/Yates/Fotos Yates/MINTAKA - BAIA 80-2/MINTAKA - BAIA 80-2-${i + 1}.jpg`),
+        specs: {
+          length: "24m",
+          capacity: "12 guests",
+          crew: "2 professional crew",
+          cabins: "3 luxury cabins"
+        },
+        features: [
+          "High-performance engines",
+          "Spacious sun deck",
+          "Modern entertainment system",
+          "Water sports equipment",
+          "Elegant Italian design"
+        ],
+        description: "Mintaka is a stunning Baia 80 that perfectly combines Italian style with high performance. Her sleek design and powerful engines make her perfect for day trips and coastal cruising in luxury."
+      }
+    },
+    {
+      id: 'nona',
+      src: "/Productos/Yates/Fotos Yates/PERSHING 45 - NONA/PERSHING 45 - NONA-images-0.jpg",
+      alt: "Яхта Nona",
+      title: "Nona - Pershing 45",
+      description: "Спортивная и элегантная яхта Pershing для захватывающих впечатлений",
+      details: {
+        images: Array.from({ length: 12 }, (_, i) => `/Productos/Yates/Fotos Yates/PERSHING 45 - NONA/PERSHING 45 - NONA-images${i + 1}.jpg`),
+        specs: {
+          length: "14m",
+          capacity: "8 guests",
+          crew: "1 tripulante profesional",
+          cabins: "2 cabinas de lujo"
+        },
+        features: [
+          "Alto rendimiento",
+          "Interior elegante",
+          "Área de bronceado",
+          "Plataforma de baño",
+          "Comodidad для navegación diurna"
+        ],
+        description: "Nona es un deportivo Pershing 45 что предлагает захватывающий и комфортный опыт. Идеально подходит для ежедневных поездок и приключений по побережью, сочетая скорость с итальянским роскошеством."
+      }
+    },
+    {
+      id: 'bewitched',
+      src: "/Productos/Yates/Fotos Yates/NUMARINE 55 - BEWITCHED/NUMARINE 55 - BEWITCHED-images-0.jpg",
+      alt: "Яхта Bewitched",
+      title: "Bewitched - Numarine 55",
+      description: "Современная роскошная яхта с исключительным комфортом",
+      details: {
+        images: Array.from({ length: 8   }, (_, i) => `/Productos/Yates/Fotos Yates/NUMARINE 55 - BEWITCHED/NUMARINE 55 - BEWITCHED-images-${i + 1}.jpg`),
+        specs: {
+          length: "17m",
+          capacity: "10 huéspedes",
+          crew: "2 tripulantes profesionales",
+          cabins: "3 cabinas de lujo"
+        },
+        features: [
+          "Modern design",
+          "Spacious flybridge",
+          "Full entertainment system",
+          "Large swimming platform",
+          "Comfortable lounge areas"
+        ],
+        description: "Bewitched is a stunning Numarine 55 that offers the perfect blend of style and comfort. Her modern design and spacious layout make her ideal for both day trips and extended cruising."
+      }
+    },
+    {
+      id: 'byron',
+      src: "/Productos/Yates/Fotos Yates/LEOPARD 27 - BYRON/LEOPARD 27 - BYRON-images-0.jpg",
+      alt: "Яхта Byron",
+      title: "Byron - Leopard 27",
+      description: "Высокопроизводительная роскошная яхта с исключительной скоростью",
+      details: {
+        images: Array.from({ length: 14 }, (_, i) => `/Productos/Yates/Fotos Yates/LEOPARD 27 - BYRON/LEOPARD 27 - BYRON-images-${i + 1}.jpg`),
+        specs: {
+          length: "27m",
+          capacity: "10 huéspedes",
+          crew: "3 tripulantes profesionales",
+          cabins: "4 cabinas de lujo"
+        },
+        features: [
+          "Alto rendimiento",
+          "Interior lujoso",
+          "Múltiples cubiertas solares",
+          "Navegación de última generación",
+          "Sistema de audio premium"
+        ],
+        description: "Byron es un impresionante Leopard 27 что сочетает высокопроизводительную работу с максимальным комфортом. Его мощные двигатели и современный дизайн делают его идеальным для тех, кто ищет скорость и стиль."
+      }
+    },
+    {
+      id: 'surreal',
+      src: "/Productos/Yates/Fotos Yates/BAIA 54 - SURREAL/BAIA 54 - SURREAL-images-0.jpg",
+      alt: "Яхта Surreal",
+      title: "Surreal - Baia 54",
+      description: "Элегантная яхта итальянской постройки с превосходным комфортом",
+      details: {
+        images: Array.from({ length: 9 }, (_, i) => `/Productos/Yates/Fotos Yates/BAIA 54 - SURREAL/BAIA 54 - SURREAL-images-${i + 1}.jpg`),
+        specs: {
+          length: "16m",
+          capacity: "8 huéspedes",
+          crew: "2 tripulantes profesionales",
+          cabins: "2 cabinas de lujo"
+        },
+        features: [
+          "Artesanía italiana",
+          "Diseño interior elegante",
+          "Cabina espaciosa",
+          "Sistema de sonido avanzado",
+          "Perfecta для navegación diurna"
+        ],
+        description: "Surreal es un hermoso Baia 54 что иллюстрирует итальянскую высокую квалификацию в строительстве яхт. Его красивый дизайн и комфортная расстановка делают его идеальным для ежедневных поездок по побережью."
       }
     }
   ]
@@ -965,4 +1325,451 @@ export const vehicleData = {
       description: "Испытайте идеальное сочетание мощности и элегантности с нашим новым люксовым спортивным автомобилем."
     }
   ]
-}; 
+};
+
+// Featured yachts for homepage (4 selected yachts)
+export const featuredYachts = ['inspiration', 'majestic', 'manbero', 'seanfinity'];
+
+export const villasData = {
+  en: [
+    {
+      id: 'alen',
+      title: 'Alen',
+      location: 'Ibiza',
+      description: 'An exclusive villa offering privacy and luxury in a prime location.',
+      shortDescription: 'Exclusive villa with private amenities',
+      images: [
+        '/Productos/Villas/Ibiza/ALEN/Bedroom_1.3.jpg',
+        '/Productos/Villas/Ibiza/ALEN/Bedroom_2.1.jpg'
+      ],
+      video: '/Productos/Villas/Ibiza/ALEN/Comercial video/Video Comercial Villa 6.mp4',
+      videos: [
+        '/Productos/Villas/Ibiza/ALEN/Comercial video/Video Comercial Villa 6.mp4',
+        '/Productos/Villas/Ibiza/ALEN/All spaces videos/Alén_zBathroom fro guests.MOV',
+        '/Productos/Villas/Ibiza/ALEN/All spaces videos/Alén_zBedrooms corridor.MOV'
+      ],
+      features: [
+        'Private location',
+        'Modern architecture',
+        'Outdoor dining area',
+        'Entertainment system',
+        'Landscaped gardens',
+        'Security system'
+      ],
+      amenities: {
+        bedrooms: 4,
+        bathrooms: 3,
+        capacity: 8,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'fourteen',
+      title: 'Fourteen',
+      location: 'Ibiza',
+      description: 'A contemporary masterpiece combining luxury with Mediterranean charm.',
+      shortDescription: 'Contemporary luxury with Mediterranean flair',
+      images: [
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-1.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-2.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-3.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-4.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-5.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-6.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-7.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-8.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-9.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-10.jpg',
+        
+      ],
+      video: '/Productos/Villas/Ibiza/FOURTEEN/video.mp4',
+      features: [
+        'Contemporary design',
+        'Sea views',
+        'Gourmet kitchen',
+        'Home theater',
+        'Fitness room',
+        'Wine cellar'
+      ],
+      amenities: {
+        bedrooms: 6,
+        bathrooms: 5,
+        capacity: 12,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'can-goi',
+      title: 'Can Goi',
+      location: 'Ibiza',
+      description: 'Traditional Ibizan architecture meets modern luxury living.',
+      shortDescription: 'Traditional charm with modern luxury',
+      images: [
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9205.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9299.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9330.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9321.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9420.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9464.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9517.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/z_CLUB 6.jpeg'
+      ],
+      video: '/Productos/Villas/Ibiza/CAN GOI/video.mp4',
+      features: [
+        'Traditional architecture',
+        'Private pool',
+        'Outdoor kitchen',
+        'Chill-out areas',
+        'Garden views',
+        'Sun terraces'
+      ],
+      amenities: {
+        bedrooms: 5,
+        bathrooms: 4,
+        capacity: 10,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'can-sinatra',
+      title: 'Can Sinatra',
+      location: 'Ibiza',
+      description: 'Elegant villa offering the perfect blend of luxury and comfort.',
+      shortDescription: 'Elegant luxury with comfort',
+      images: [
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-1-2.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-2-2.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-3-3.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-9.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-11.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-19-2.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-20.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-21.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-23-2.jpeg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-24.jpg',
+
+      ],
+      video: '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/video.mp4',
+      videos: [
+        '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/Long videos/Can Sinatra Video VIV IBIZA 2_Low Resolution.mp4',
+        '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/Small videos/SINATRA 10_ 1 v2.mov',
+        '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/Small videos/SINATRA 10_ 2 v2.mov',
+        '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/Small videos/SINATRA 10_ 3 v2.mov',
+      ],
+      features: [
+        'Elegant design',
+        'Infinity pool',
+        'Entertainment area',
+        'Professional kitchen',
+        'Staff quarters',
+        'Security system'
+      ],
+      amenities: {
+        bedrooms: 6,
+        bathrooms: 5,
+        capacity: 12,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    }
+  ],
+  es: [
+    {
+      id: 'alen',
+      title: 'Alen',
+      location: 'Ibiza',
+      description: 'Una villa exclusiva que ofrece privacidad y lujo en una ubicación privilegiada.',
+      shortDescription: 'Villa exclusiva con amenidades privadas',
+      images: [
+        '/Productos/Villas/Ibiza/ALEN/Bedroom_1.3.jpg',
+        '/Productos/Villas/Ibiza/ALEN/Bedroom_2.1.jpg'
+      ],
+      video: '/Productos/Villas/Ibiza/ALEN/Comercial video/Video Comercial Villa 6.mp4',
+      videos: [
+        '/Productos/Villas/Ibiza/ALEN/Comercial video/Video Comercial Villa 6.mp4',
+        '/Productos/Villas/Ibiza/ALEN/All spaces videos/Alén_zBathroom fro guests.MOV',
+        '/Productos/Villas/Ibiza/ALEN/All spaces videos/Alén_zBedrooms corridor.MOV'
+      ],
+      features: [
+        'Ubicación privada',
+        'Arquitectura moderna',
+        'Área de comedor al aire libre',
+        'Sistema de entretenimiento',
+        'Jardines paisajísticos',
+        'Sistema de seguridad'
+      ],
+      amenities: {
+        bedrooms: 4,
+        bathrooms: 3,
+        capacity: 8,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'fourteen',
+      title: 'Fourteen',
+      location: 'Ibiza',
+      description: 'Una obra maestra contemporánea que combina el lujo con el encanto mediterráneo.',
+      shortDescription: 'Lujo contemporáneo con estilo mediterráneo',
+      images: [
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-1.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-2.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-3.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-4.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-5.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-6.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-7.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-8.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-9.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-10.jpg',
+        
+      ],
+      video: '/Productos/Villas/Ibiza/FOURTEEN/video.mp4',
+      features: [
+        'Diseño contemporáneo',
+        'Vistas al mar',
+        'Cocina gourmet',
+        'Sala de cine',
+        'Sala de fitness',
+        'Bodega de vinos'
+      ],
+      amenities: {
+        bedrooms: 6,
+        bathrooms: 5,
+        capacity: 12,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'can-goi',
+      title: 'Can Goi',
+      location: 'Ibiza',
+      description: 'La arquitectura tradicional ibicenca se encuentra con el lujo moderno.',
+      shortDescription: 'Encanto tradicional con lujo moderno',
+      images: [
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9205.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9299.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9330.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9321.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9420.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9464.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9517.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/z_CLUB 6.jpeg'
+      ],
+      video: '/Productos/Villas/Ibiza/CAN GOI/video.mp4',
+      features: [
+        'Arquitectura tradicional',
+        'Piscina privada',
+        'Cocina exterior',
+        'Áreas de relax',
+        'Vistas al jardín',
+        'Terrazas solarium'
+      ],
+      amenities: {
+        bedrooms: 5,
+        bathrooms: 4,
+        capacity: 10,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'can-sinatra',
+      title: 'Can Sinatra',
+      location: 'Ibiza',
+      description: 'Elegante villa que ofrece la perfecta combinación de lujo y comodidad.',
+      shortDescription: 'Elegancia y lujo con comodidad',
+      images: [
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-1.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-2.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-3.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-4.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-5.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-6.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-7.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-8.jpg'
+      ],
+      video: '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/video.mp4',
+      features: [
+        'Diseño elegante',
+        'Piscina infinity',
+        'Área de entretenimiento',
+        'Cocina profesional',
+        'Cuartos de servicio',
+        'Sistema de seguridad'
+      ],
+      amenities: {
+        bedrooms: 6,
+        bathrooms: 5,
+        capacity: 12,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    }
+  ],
+  ru: [
+    {
+      id: 'alen',
+      title: 'Ален',
+      location: 'Ибица',
+      description: 'Эксклюзивная вилла, предлагающая уединение и роскошь в престижном месте.',
+      shortDescription: 'Эксклюзивная вилла с частными удобствами',
+      images: [
+        '/Productos/Villas/Ibiza/ALEN/Bedroom_1.3.jpg',
+        '/Productos/Villas/Ibiza/ALEN/Bedroom_2.1.jpg'
+      ],
+      video: '/Productos/Villas/Ibiza/ALEN/Comercial video/Video Comercial Villa 6.mp4',
+      videos: [
+        '/Productos/Villas/Ibiza/ALEN/Comercial video/Video Comercial Villa 6.mp4',
+        '/Productos/Villas/Ibiza/ALEN/All spaces videos/Alén_zBathroom fro guests.MOV',
+        '/Productos/Villas/Ibiza/ALEN/All spaces videos/Alén_zBedrooms corridor.MOV'
+      ],
+      features: [
+        'Уединенное расположение',
+        'Современная архитектура',
+        'Обеденная зона на открытом воздухе',
+        'Развлекательная система',
+        'Ландшафтные сады',
+        'Система безопасности'
+      ],
+      amenities: {
+        bedrooms: 4,
+        bathrooms: 3,
+        capacity: 8,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'fourteen',
+      title: 'Фортин',
+      location: 'Ибица',
+      description: 'Современный шедевр, сочетающий роскошь со средиземноморским шармом.',
+      shortDescription: 'Современная роскошь со средиземноморским стилем',
+      images: [
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-1.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-2.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-3.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-4.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-5.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-6.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-7.jpg',
+        '/Productos/Villas/Ibiza/FOURTEEN/Fourteen-8.jpg'
+      ],
+      video: '/Productos/Villas/Ibiza/FOURTEEN/video.mp4',
+      features: [
+        'Современный дизайн',
+        'Вид на море',
+        'Гурме-кухня',
+        'Домашний кинотеатр',
+        'Фитнес-зал',
+        'Винный погреб'
+      ],
+      amenities: {
+        bedrooms: 6,
+        bathrooms: 5,
+        capacity: 12,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'can-goi',
+      title: 'Кан Гои',
+      location: 'Ибица',
+      description: 'Традиционная ибицанская архитектура встречается с современной роскошью.',
+      shortDescription: 'Традиционное очарование с современной роскошью',
+      images: [
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9205.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9299.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9330.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9321.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9420.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9464.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/DSC_9517.jpg',
+        '/Productos/Villas/Ibiza/CAN GOI/z_CLUB 6.jpeg'
+      ],
+      video: '/Productos/Villas/Ibiza/CAN GOI/video.mp4',
+      features: [
+        'Традиционная архитектура',
+        'Частный бассейн',
+        'Летняя кухня',
+        'Зоны отдыха',
+        'Вид на сад',
+        'Солнечные террасы'
+      ],
+      amenities: {
+        bedrooms: 5,
+        bathrooms: 4,
+        capacity: 10,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    },
+    {
+      id: 'can-sinatra',
+      title: 'Кан Синатра',
+      location: 'Ибица',
+      description: 'Элегантная вилла, предлагающая идеальное сочетание роскоши и комфорта.',
+      shortDescription: 'Элегантная роскошь с комфортом',
+      images: [
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-1.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-2.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-3.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-4.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-5.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-6.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-7.jpg',
+        '/Productos/Villas/Ibiza/CAN SINATRA/CanSinatra-8.jpg'
+      ],
+      video: '/Productos/Villas/Ibiza/CAN SINATRA/Can Sinatra Videos/video.mp4',
+      features: [
+        'Элегантный дизайн',
+        'Бассейн-инфинити',
+        'Развлекательная зона',
+        'Профессиональная кухня',
+        'Помещения для персонала',
+        'Система безопасности'
+      ],
+      amenities: {
+        bedrooms: 6,
+        bathrooms: 5,
+        capacity: 12,
+        pool: true,
+        wifi: true,
+        parking: true,
+        airConditioning: true
+      }
+    }
+  ]
+};
+
+// Featured villas for homepage
+export const featuredVillas = ['can-sinatra', 'fourteen', 'can-goi']; 

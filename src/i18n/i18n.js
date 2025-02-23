@@ -15,7 +15,10 @@ const resources = {
           propertyManagement: "Gestión de Propiedades",
           consulting: "Consultoría Inmobiliaria",
           valuation: "Valoración de Propiedades",
-          investment: "Asesoría de Inversiones"
+          investment: "Asesoría de Inversiones",
+          drivers: "Choferes Profesionales",
+          medical: "Salud y Bienestar",
+          seabob: "SEABOB F5s"
         }
       },
       common: {
@@ -47,10 +50,10 @@ const resources = {
         viewMore: "Ver Más"
       },
       about: {
-        title: "SOBRE AURA MADE CONCIERGE",
-        description_1: "Aura Made Concierge es tu socio de confianza en experiencias de lujo y estilo de vida en Ibiza y Barcelona.",
+        title: "SOBRE CAVIAR CONCIERGE",
+        description_1: "Caviar Concierge es tu socio de confianza en experiencias de lujo y estilo de vida en Ibiza y Barcelona.",
         description_2: "Nos especializamos en servicios exclusivos y totalmente personalizados, garantizando experiencias únicas, soluciones rápidas con una sola llamada, ahorro significativo de tiempo y soporte 24/7 para todas tus necesidades diarias.",
-        description_3: "En Aura Made Concierge, elevamos el concepto de lujo con meticulosa atención al detalle, discreción y excelencia.",
+        description_3: "En Caviar Concierge, elevamos el concepto de lujo con meticulosa atención al detalle, discreción y excelencia.",
         image_left_alt: "Propiedad de Lujo Izquierda",
         image_right_alt: "Propiedad de Lujo Derecha"
       },
@@ -70,7 +73,7 @@ const resources = {
       },
       partners: {
         title: "Nuestros Colaboradores",
-        logoAlt: "{{partner}} - Colaborador de AURA MADE"
+        logoAlt: "{{partner}} - Colaborador de CAVIAR CONCIERGE"
       },
       contact: {
         title: "CONTÁCTANOS",
@@ -122,7 +125,10 @@ const resources = {
         crew: "Tripulación",
         speed: "Velocidad",
         backToYachts: "Volver a Yates",
+        viewDetails: "Ver Detalles",
         imageAlt: "{{title}} - Imagen {{number}}",
+        pageTitle: "Colección de Yates de Lujo",
+        pageDescription: "Descubra nuestra exclusiva flota de yates de lujo disponibles para alquiler en Ibiza y Barcelona.",
         details: {
           inspiration: {
             title: "Yate Inspiration",
@@ -154,7 +160,10 @@ const resources = {
         title: "EXPERIENCIAS DE LUJO",
         subtitle: "Descubre nuestra colección exclusiva de experiencias de lujo",
         yachts: {
-          title: "YATES DE LUJO"
+          title: "YATES DE LUJO",
+          viewAll: "Ver Todos los Yates",
+          pageTitle: "Colección de Yates de Lujo",
+          pageDescription: "Descubra nuestra exclusiva flota de yates de lujo disponibles para alquiler en Ibiza y Barcelona."
         },
         vehicles: {
           title: "VEHÍCULOS DE LUJO"
@@ -242,7 +251,10 @@ const resources = {
           propertyManagement: "Property Management",
           consulting: "Real Estate Consulting",
           valuation: "Property Valuation",
-          investment: "Investment Advisory"
+          investment: "Investment Advisory",
+          drivers: "Professional Drivers",
+          medical: "Medical & Wellness",
+          seabob: "SEABOB F5s"
         }
       },
       common: {
@@ -274,10 +286,10 @@ const resources = {
         viewMore: "View More"
       },
       about: {
-        title: "ABOUT AURA MADE CONCIERGE",
-        description_1: "Aura Made Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
+        title: "ABOUT CAVIAR CONCIERGE",
+        description_1: "Caviar Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
         description_2: "We specialize in exclusive, fully personalized services, ensuring unique experiences, quick solutions with just one call, significant time savings, and 24/7 support for all your daily needs.",
-        description_3: "At Aura Made Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
+        description_3: "At Caviar Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
         image_left_alt: "Luxury Estate Left",
         image_right_alt: "Luxury Estate Right"
       },
@@ -297,7 +309,7 @@ const resources = {
       },
       partners: {
         title: "Our Partners",
-        logoAlt: "{{partner}} - Partner of AURA MADE"
+        logoAlt: "{{partner}} - Partner of CAVIAR CONCIERGE"
       },
       contact: {
         title: "CONTACT US",
@@ -349,7 +361,10 @@ const resources = {
         crew: "Crew",
         speed: "Speed",
         backToYachts: "Back to Yachts",
+        viewDetails: "View Details",
         imageAlt: "{{title}} - Image {{number}}",
+        pageTitle: "Luxury Yacht Collection",
+        pageDescription: "Discover our exclusive fleet of luxury yachts available for charter in Ibiza and Barcelona.",
         details: {
           inspiration: {
             title: "Inspiration Yacht",
@@ -381,7 +396,10 @@ const resources = {
         title: "LUXURY EXPERIENCES",
         subtitle: "Discover our exclusive collection of luxury experiences",
         yachts: {
-          title: "LUXURY YACHTS"
+          title: "LUXURY YACHTS",
+          viewAll: "View All Yachts",
+          pageTitle: "Luxury Yacht Collection",
+          pageDescription: "Discover our exclusive fleet of luxury yachts available for charter in Ibiza and Barcelona."
         },
         vehicles: {
           title: "LUXURY VEHICLES"
@@ -469,7 +487,10 @@ const resources = {
           propertyManagement: "Управление Недвижимостью",
           consulting: "Консультации по Недвижимости",
           valuation: "Оценка Недвижимости",
-          investment: "Инвестиционный Консалтинг"
+          investment: "Инвестиционный Консалтинг",
+          drivers: "Профессиональные Водители",
+          medical: "Медицина и Здоровье",
+          seabob: "SEABOB F5s"
         }
       },
       common: {
@@ -501,10 +522,10 @@ const resources = {
         viewMore: "Подробнее"
       },
       about: {
-        title: "ABOUT AURA MADE CONCIERGE",
-        description_1: "Aura Made Concierge - ваш надежный партнер в сфере роскошных впечатлений и образа жизни в Ибице и Барселоне.",
+        title: "О CAVIAR CONCIERGE",
+        description_1: "Caviar Concierge - ваш надежный партнер в сфере роскошных впечатлений и образа жизни в Ибице и Барселоне.",
         description_2: "Мы специализируемся на эксклюзивных, полностью персонализированных услугах, обеспечивая уникальные впечатления, быстрые решения одним звонком, значительную экономию времени и поддержку 24/7 для всех ваших повседневных потребностей.",
-        description_3: "В Aura Made Concierge мы поднимаем концепцию роскоши на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
+        description_3: "В Caviar Concierge мы поднимаем концепцию роскоши на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
         image_left_alt: "Роскошная Недвижимость Слева",
         image_right_alt: "Роскошная Недвижимость Справа"
       },
@@ -571,7 +592,10 @@ const resources = {
         crew: "Экипаж",
         speed: "Скорость",
         backToYachts: "Назад к Яхтам",
+        viewDetails: "Подробнее",
         imageAlt: "{{title}} - Изображение {{number}}",
+        pageTitle: "Коллекция Яхт Роскоши",
+        pageDescription: "Откройте для себя нашу эксклюзивную коллекцию роскошных яхт, доступных для аренды в Ибице и Барселоне.",
         details: {
           inspiration: {
             title: "Яхта Inspiration",
@@ -603,7 +627,10 @@ const resources = {
         title: "LUXURY EXPERIENCES",
         subtitle: "Откройте для себя нашу эксклюзивную коллекцию роскошных впечатлений",
         yachts: {
-          title: "LUXURY YACHTS"
+          title: "LUXURY YACHTS",
+          viewAll: "Посмотреть все Яхты",
+          pageTitle: "Коллекция Яхт Роскоши",
+          pageDescription: "Откройте для себя нашу эксклюзивную коллекцию роскошных яхт, доступных для аренды в Ибице и Барселоне."
         },
         vehicles: {
           title: "LUXURY VEHICLES"

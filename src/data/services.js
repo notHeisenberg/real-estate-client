@@ -1,71 +1,6 @@
 export const servicesData = {
     en: [
         {
-            id: 'property-management',
-            title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
-            description: "24/7 full availability",
-            image: "/images/estates/estate_8.jpeg",
-            link: "/concierge-services",
-            bgColor: "bg-[#F8F4F1]",
-            cardBgColor: "bg-[#E8D8D0]",
-            features: [
-                "Exclusive villas",
-                "Private transfers and yacht rentals",
-                "Private chefs",
-                "Reservations at luxury restaurants and VIP access",
-                "Spa and massage services",
-                "Household staff: butlers, waiters, housekeepers, and nannies",
-                "Personalized shopping",
-                "Private event organization"
-            ]
-        },
-        {
-            id: 'consulting',
-            title: "CORPORATE EVENTS",
-            description: "We create exclusive events for companies seeking unparalleled experiences.",
-            image: "/images/estates/estate_9.jpeg",
-            link: "/corporate-events",
-            bgColor: "bg-[#F1F5F8]",
-            cardBgColor: "bg-[#D8E3ED]",
-            features: [
-                "Comprehensive event coordination",
-                "Exclusive locations",
-                "Tailor-made itineraries",
-                "Team-building experiences",
-                "Accommodation management"
-            ]
-        },
-        {
-            id: 'valuation',
-            title: "TRAVEL MANAGEMENT",
-            description: "Your dream trip starts with us. A dedicated team member will guide you through every step to ensure a flawless experience.",
-            image: "/images/estates/estate_10.jpeg",
-            link: "/travel-management",
-            bgColor: "bg-[#F4F8F1]",
-            cardBgColor: "bg-[#DCE8D5]",
-            extraText: "We take care of:",
-            features: [
-                "Designing personalized experiences based on your preferences",
-                "Exclusive access to prime locations across Spain",
-                "Full organization and management of accommodations, services, and experiences",
-                "Discover our travel categories: sun & beach, leisure, culture, gastronomy, nature, and ecotourism"
-            ]
-        },
-        {
-            id: 'investment',
-            title: "FISHING AND MARINE LIFESTYLE",
-            description: "The ultimate fishing and sailing experience in Ibiza and Barcelona.",
-            image: "/images/Fishing/fishing_1.jpeg",
-            link: "/fishing-services",
-            bgColor: "bg-[#F8F1F1]",
-            cardBgColor: "bg-[#E8D5D5]",
-            features: [
-                "Access to the most exclusive boats",
-                "Personalized service from start to finish",
-                "Complementary leisure, cultural, and nature activities"
-            ]
-        },
-        {
             id: 'drivers',
             title: 'Professional Drivers',
             description: 'Luxury chauffeur service with experienced and reliable drivers available 24/7.',
@@ -181,74 +116,37 @@ export const servicesData = {
                 'Personalized Treatment Plans',
                 'Wellness Consultations'
             ]
+        },
+        {
+            id: 'seabob',
+            title: 'SEABOB F5s ',
+            description: 'Experience the ultimate underwater adventure with our high-performance SEABOB F5s.',
+            image: '/Productos/Servicios/Seabob/Seabob.webp',
+            detailsImage: '/Productos/Servicios/Seabob/SEABOB SL 2022.jpg',
+            bgColor: 'bg-[#F1F8F8]',
+            cardBgColor: 'bg-[#E5F2F2]',
+            rates: {
+                highSeason: {
+                    period: 'High Season (July/August)',
+                    price: '300€/day'
+                },
+                lowSeason: {
+                    period: 'Low Season (Rest of the year)',
+                    price: '250€/day'
+                }
+            },
+            features: [
+                'High-performance underwater scooter',
+                'Speed up to 11 knots',
+                '50€ deposit for goggles and buoy',
+                '50% to reserve and the rest the same day of rental',
+                '85€ price fast charger for the day',
+                'Professional instruction available',
+                'Perfect for underwater exploration'
+            ]
         }
     ],
     es: [
-        {
-            id: 'property-management',
-            title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
-            description: "Disponibilidad total 24/7",
-            image: "/images/estates/estate_8.jpeg",
-            link: "/concierge-services",
-            bgColor: "bg-[#F8F4F1]",
-            cardBgColor: "bg-[#E8D8D0]",
-            features: [
-                "Villas exclusivas",
-                "Transfers privados y alquiler de yates",
-                "Chefs privados",
-                "Reservas en restaurantes de lujo y acceso VIP",
-                "Servicios de spa y masajes",
-                "Personal doméstico: mayordomos, camareros, personal de limpieza y niñeras",
-                "Compras personalizadas",
-                "Organización de eventos privados"
-            ]
-        },
-        {
-            id: 'consulting',
-            title: "CORPORATE EVENTS",
-            description: "Creamos eventos exclusivos para empresas que buscan experiencias sin igual.",
-            image: "/images/estates/estate_9.jpeg",
-            link: "/corporate-events",
-            bgColor: "bg-[#F1F5F8]",
-            cardBgColor: "bg-[#D8E3ED]",
-            features: [
-                "Coordinación integral de eventos",
-                "Ubicaciones exclusivas",
-                "Itinerarios a medida",
-                "Experiencias de team building",
-                "Gestión de alojamiento"
-            ]
-        },
-        {
-            id: 'valuation',
-            title: "TRAVEL MANAGEMENT",
-            description: "Tu viaje soñado comienza con nosotros. Un miembro dedicado del equipo te guiará en cada paso para asegurar una experiencia perfecta.",
-            image: "/images/estates/estate_10.jpeg",
-            link: "/travel-management",
-            bgColor: "bg-[#F4F8F1]",
-            cardBgColor: "bg-[#DCE8D5]",
-            extraText: "Nos encargamos de:",
-            features: [
-                "Diseñar experiencias personalizadas basadas en tus preferencias",
-                "Acceso exclusivo a ubicaciones privilegiadas en toda España",
-                "Organización y gestión completa de alojamientos, servicios y experiencias",
-                "Descubre nuestras categorías de viaje: sol y playa, ocio, cultura, gastronomía, naturaleza y ecoturismo"
-            ]
-        },
-        {
-            id: 'investment',
-            title: "FISHING AND MARINE LIFESTYLE",
-            description: "La mejor experiencia de pesca y navegación en Ibiza y Barcelona.",
-            image: "/images/Fishing/fishing_1.jpeg",
-            link: "/fishing-services",
-            bgColor: "bg-[#F8F1F1]",
-            cardBgColor: "bg-[#E8D5D5]",
-            features: [
-                "Acceso a los barcos más exclusivos",
-                "Servicio personalizado de principio a fin",
-                "Actividades complementarias de ocio, cultura y naturaleza"
-            ]
-        },
         {
             id: 'drivers',
             title: 'Conductores Profesionales',
@@ -365,74 +263,37 @@ export const servicesData = {
                 'Planes de Tratamiento Personalizados',
                 'Consultas de Bienestar'
             ]
+        },
+        {
+            id: 'seabob',
+            title: 'SEABOB F5s ',
+            description: 'Experimenta la última aventura submarina con nuestro SEABOB F5s de alto rendimiento.',
+            image: '/Productos/Servicios/Seabob/Seabob.webp',
+            detailsImage: '/Productos/Servicios/Seabob/SEABOB SL 2022.jpg',
+            bgColor: 'bg-[#F1F8F8]',
+            cardBgColor: 'bg-[#E5F2F2]',
+            rates: {
+                highSeason: {
+                    period: 'Temporada alta (Julio/Agosto)',
+                    price: '300€/día'
+                },
+                lowSeason: {
+                    period: 'Temporada baja (Resto del año)',
+                    price: '250€/día'
+                }
+            },
+            features: [
+                'Scooter submarino de alto rendimiento',
+                'Velocidad hasta 11 nudos',
+                '50€ de depósito para las gafas y la boya',
+                '50% para reservar y el resto el mismo día del alquiler',
+                '85€ precio del cargador rápido por día',
+                'Instrucción profesional disponible',
+                'Perfecto para exploración submarina'
+            ]
         }
     ],
     ru: [
-        {
-            id: 'property-management',
-            title: "CONCIERGE SERVICES IN IBIZA AND BARCELONA",
-            description: "Полная доступность 24/7",
-            image: "/images/estates/estate_8.jpeg",
-            link: "/concierge-services",
-            bgColor: "bg-[#F8F4F1]",
-            cardBgColor: "bg-[#E8D8D0]",
-            features: [
-                "Эксклюзивные виллы",
-                "Частные трансферы и аренда яхт",
-                "Частные повара",
-                "Бронирование в роскошных ресторанах и VIP-доступ",
-                "Спа и массажные услуги",
-                "Домашний персонал: дворецкие, официанты, горничные и няни",
-                "Персонализированный шопинг",
-                "Организация частных мероприятий"
-            ]
-        },
-        {
-            id: 'consulting',
-            title: "CORPORATE EVENTS",
-            description: "Мы создаем эксклюзивные мероприятия для компаний, ищущих непревзойденные впечатления.",
-            image: "/images/estates/estate_9.jpeg",
-            link: "/corporate-events",
-            bgColor: "bg-[#F1F5F8]",
-            cardBgColor: "bg-[#D8E3ED]",
-            features: [
-                "Комплексная координация мероприятий",
-                "Эксклюзивные локации",
-                "Индивидуальные маршруты",
-                "Тимбилдинг",
-                "Управление размещением"
-            ]
-        },
-        {
-            id: 'valuation',
-            title: "TRAVEL MANAGEMENT",
-            description: "Ваше путешествие мечты начинается с нас. Персональный менеджер проведет вас через каждый этап для обеспечения безупречного опыта.",
-            image: "/images/estates/estate_10.jpeg",
-            link: "/travel-management",
-            bgColor: "bg-[#F4F8F1]",
-            cardBgColor: "bg-[#DCE8D5]",
-            extraText: "Мы заботимся о:",
-            features: [
-                "Разработке персонализированных впечатлений на основе ваших предпочтений",
-                "Эксклюзивном доступе к лучшим локациям по всей Испании",
-                "Полной организации и управлении размещением, услугами и впечатлениями",
-                "Откройте для себя наши категории путешествий: пляжный отдых, досуг, культура, гастрономия, природа и экотуризм"
-            ]
-        },
-        {
-            id: 'investment',
-            title: "FISHING AND MARINE LIFESTYLE",
-            description: "Лучший опыт рыбалки и мореплавания в Ибице и Барселоне.",
-            image: "/images/Fishing/fishing_1.jpeg",
-            link: "/fishing-services",
-            bgColor: "bg-[#F8F1F1]",
-            cardBgColor: "bg-[#E8D5D5]",
-            features: [
-                "Доступ к самым эксклюзивным лодкам",
-                "Персонализированный сервис от начала до конца",
-                "Дополнительные мероприятия: досуг, культура и природа"
-            ]
-        },
         {
             id: 'drivers',
             title: 'Профессиональные Водители',
@@ -548,6 +409,34 @@ export const servicesData = {
                 'Профессиональный Медицинский Персонал',
                 'Персонализированные Планы Лечения',
                 'Велнес-Консультации'
+            ]
+        },
+        {
+            id: 'seabob',
+            title: 'SEABOB F5s ',
+            description: 'Испытайте непревзойденное подводное приключение с нашим высокопроизводительным SEABOB F5s.',
+            image: '/Productos/Servicios/Seabob/Seabob.webp',
+            detailsImage: '/Productos/Servicios/Seabob/SEABOB SL 2022.jpg',
+            bgColor: 'bg-[#F1F8F8]',
+            cardBgColor: 'bg-[#E5F2F2]',
+            rates: {
+                highSeason: {
+                    period: 'Высокий сезон (Июль/Август)',
+                    price: '300€/день'
+                },
+                lowSeason: {
+                    period: 'Низкий сезон (Остальная часть года)',
+                    price: '250€/день'
+                }
+            },
+            features: [
+                'Высокопроизводительный подводный скутер',
+                'Скорость до 11 узлов',
+                'Залог 50€ за очки и буй',
+                '50% для бронирования и остаток в день аренды',
+                '85€ стоимость быстрого зарядного устройства в день',
+                'Доступно профессиональное обучение',
+                'Идеально подходит для подводных исследований'
             ]
         }
     ]

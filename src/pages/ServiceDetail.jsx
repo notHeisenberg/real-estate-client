@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { servicesData } from '../data/services';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const ServiceDetail = () => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const currentLanguageServices = servicesData[i18n.language] || servicesData.en;
   const service = currentLanguageServices.find(s => s.id === id);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -41,19 +44,6 @@ const ServiceDetail = () => {
               {service.description}
             </p>
 
-            {/* Rates Image for Drivers Service */}
-            {service.id === 'drivers' && service.ratesImage && (
-              <div className="my-12">
-                <div className="rounded-lg overflow-hidden shadow-lg">
-                  <img
-                    src={service.ratesImage}
-                    alt="Driver Service Rates"
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-            )}
-
             {service.extraText && (
               <h2 className="text-2xl font-libre-baskerville font-light mb-6">
                 {service.extraText}
@@ -73,6 +63,36 @@ const ServiceDetail = () => {
                 ))}
               </ul>
             </div>
+
+            {/* Service Images Section */}
+            {(service.ratesImage || service.detailsImage) && (
+              <div className="my-12 space-y-8">
+                {service.ratesImage && (
+                  <div 
+                    className="flex justify-center items-center w-2/3 mx-auto rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                    onClick={() => setIsLightboxOpen(true)}
+                  >
+                    <img
+                      src={service.ratesImage}
+                      alt={`${service.title} Rates`}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                )}
+                {service.detailsImage && (
+                  <div 
+                    className="flex justify-center items-center w-2/3 mx-auto rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                    onClick={() => setIsLightboxOpen(true)}
+                  >
+                    <img
+                      src={service.detailsImage}
+                      alt={`${service.title} Details`}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Medical Service Specific Content */}
             {service.id === 'medical' && service.treatments && (
@@ -135,6 +155,18 @@ const ServiceDetail = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox for Service Images */}
+      {(service.ratesImage || service.detailsImage) && (
+        <Lightbox
+          open={isLightboxOpen}
+          close={() => setIsLightboxOpen(false)}
+          slides={[
+            ...(service.ratesImage ? [{ src: service.ratesImage }] : []),
+            ...(service.detailsImage ? [{ src: service.detailsImage }] : [])
+          ]}
+        />
+      )}
     </div>
   );
 };
