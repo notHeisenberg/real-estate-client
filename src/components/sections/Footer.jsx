@@ -43,11 +43,11 @@ const Footer = () => {
                 {t('footer.subscribe.button')}
               </button>
 
-              {isSubmitted && (
+            {isSubmitted && (
                 <p className="text-sm font-libre-caslon mt-2">
                   {t('footer.subscribe.success')}
                 </p>
-              )}
+            )}
             </form>
           </div>
 
@@ -82,7 +82,7 @@ const Footer = () => {
           <p className="font-libre-caslon">
             {t('footer.contact.copyright')}{' '}|{' '}
             <Link
-              to="/"
+              to="privacy-policy"
               className="underline hover:text-gray-300 transition-colors duration-200"
             >
               {t('footer.contact.privacyPolicy')}

@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../components/common/Navbar';
 import Footer from '../components/sections/Footer';
 import ScrollToTop from '../components/common/ScrollToTop';
+import WhatsAppButton from '../components/common/WhatsAppButton';
 import { Helmet } from 'react-helmet-async';
 
 const Root = () => {
@@ -18,6 +19,7 @@ const Root = () => {
           <Outlet />
         </main>
         <Footer />
+        <WhatsAppButton />
         <ScrollToTop />
       </div>
     </>

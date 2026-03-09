@@ -5,6 +5,7 @@ import ErrorPage from '../pages/ErrorPage';
 import YachtDetail from '../pages/YachtDetail';
 import ServiceDetail from '../pages/ServiceDetail';
 import Contact from '../components/sections/Contact';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/privacy-policy',
+        element: <PrivacyPolicy />,
       }
     ],
   },

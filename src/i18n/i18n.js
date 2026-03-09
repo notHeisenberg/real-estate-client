@@ -148,6 +148,45 @@ const resources = {
             description: "Classic design with contemporary comfort"
           }
         }
+      },
+      privacyPolicy: {
+        title: "Privacy Policy",
+        whatWeCollect: {
+          title: "What type of information do we collect?",
+          content: "We receive, collect and store any information you enter on our website or otherwise provide to us. In addition, we collect the Internet protocol (IP) address used to connect your computer to the Internet; login data, email address, password, computer and connection information and purchase history. We may use software tools to measure and collect session information, including page response times, length of visits to certain pages, page interaction information, and methods used to navigate away from the page. We also collect personally identifiable information (including names, email, password, communications), payment details (including credit card information), comments, suggestions, product reviews, recommendations and personal profile."
+        },
+        howWeCollect: {
+          title: "How do we collect information?",
+          content: "When you complete a transaction on our website, as part of the process, we collect personal information that you provide to us, such as your name, physical address and email address. Your personal information will be used only for the specific reasons stated above."
+        },
+        whyWeCollect: {
+          title: "Why do we collect such personal information?",
+          content: "We collect such personal and non-personal information for the following purposes:",
+          purposes: [
+            "To provide and operate the Services;",
+            "To provide our users with ongoing customer and technical support;",
+            "In order to contact our visitors and users with general and personalized service-related notices and promotional messages;",
+            "To create aggregate statistical data and other aggregated or inferred non-personal information, which we or our business partners may use to provide and improve our respective services;",
+            "To comply with applicable laws and regulations."
+          ]
+        },
+        howWeStore: {
+          title: "How do we store, use, share and disclose the personal information of visitors to our website?",
+          content1: "Our company is hosted on the Wix.com platform. Wix.com provides us with the online platform that allows us to sell our products and services to you. Your data may be stored through Wix.com's data storage, databases and general Wix.com applications. They store your data on secure servers behind a firewall.",
+          content2: "All direct payment gateways offered by Wix.com and used by our company adhere to the standards set by PCI-DSS administered by the PCI Security Standards Council, which is a joint effort of brands such as Visa, MasterCard, American Express and Discover. PCI-DSS requirements help ensure the secure handling of credit card information by our store and its service providers."
+        },
+        howWeCommunicate: {
+          title: "How do we communicate with visitors to our site?",
+          content: "We may contact you to notify you about your account, to troubleshoot problems with your account, resolve a dispute, collect fees or money owed, to solicit your opinions through surveys or questionnaires, to send updates about our company, or when necessary to contact you to enforce our User Agreement, applicable national laws, and any agreements we may have with you. For these purposes, we may communicate with you by email, telephone, text message and postal mail."
+        },
+        withdrawConsent: {
+          title: "How can website visitors withdraw their consent?",
+          content: "If you do not want us to process your data, please contact us at"
+        },
+        questions: {
+          title: "Questions and your contact information",
+          content: "If you wish to: access, correct, amend or delete any personal information we hold about you, you are invited to contact us at"
+        }
       }
     }
   },
@@ -306,6 +345,45 @@ const resources = {
         vehicles: {
           title: "LUXURY VEHICLES"
         }
+      },
+      privacyPolicy: {
+        title: "Política de Privacidad",
+        whatWeCollect: {
+          title: "¿Qué tipo de información recopilamos?",
+          content: "Recibimos, recopilamos y almacenamos cualquier información que ingrese en nuestro sitio web o nos proporcione de otra manera. Además, recopilamos la dirección de protocolo de Internet (IP) utilizada para conectar su computadora a Internet; datos de inicio de sesión, dirección de correo electrónico, contraseña, información de la computadora y conexión e historial de compras. Podemos utilizar herramientas de software para medir y recopilar información de la sesión, incluidos los tiempos de respuesta de la página, la duración de las visitas a determinadas páginas, la información de interacción de la página y los métodos utilizados para navegar fuera de la página. También recopilamos información de identificación personal (incluidos nombres, correo electrónico, contraseña, comunicaciones), detalles de pago (incluida la información de tarjetas de crédito), comentarios, sugerencias, reseñas de productos, recomendaciones y perfil personal."
+        },
+        howWeCollect: {
+          title: "¿Cómo recopilamos la información?",
+          content: "Cuando completa una transacción en nuestro sitio web, como parte del proceso, recopilamos la información personal que nos proporciona, como su nombre, dirección física y dirección de correo electrónico. Su información personal se utilizará solo para los fines específicos mencionados anteriormente."
+        },
+        whyWeCollect: {
+          title: "¿Por qué recopilamos dicha información personal?",
+          content: "Recopilamos dicha información personal y no personal para los siguientes propósitos:",
+          purposes: [
+            "Para proporcionar y operar los Servicios;",
+            "Para proporcionar a nuestros usuarios asistencia técnica y de cliente continua;",
+            "Para contactar a nuestros visitantes y usuarios con avisos generales y personalizados relacionados con el servicio y mensajes promocionales;",
+            "Para crear datos estadísticos agregados y otra información no personal agregada o inferida, que nosotros o nuestros socios comerciales podemos usar para proporcionar y mejorar nuestros respectivos servicios;",
+            "Para cumplir con las leyes y regulaciones aplicables."
+          ]
+        },
+        howWeStore: {
+          title: "¿Cómo almacenamos, usamos, compartimos y divulgamos la información personal de los visitantes de nuestro sitio web?",
+          content1: "Nuestra empresa está alojada en la plataforma Wix.com. Wix.com nos proporciona la plataforma en línea que nos permite venderle nuestros productos y servicios. Sus datos pueden almacenarse a través del almacenamiento de datos de Wix.com, bases de datos y aplicaciones generales de Wix.com. Almacenan sus datos en servidores seguros detrás de un firewall.",
+          content2: "Todas las pasarelas de pago directo ofrecidas por Wix.com y utilizadas por nuestra empresa se adhieren a los estándares establecidos por PCI-DSS administrados por el PCI Security Standards Council, que es un esfuerzo conjunto de marcas como Visa, MasterCard, American Express y Discover. Los requisitos de PCI-DSS ayudan a garantizar el manejo seguro de la información de tarjetas de crédito por parte de nuestra tienda y sus proveedores de servicios."
+        },
+        howWeCommunicate: {
+          title: "¿Cómo nos comunicamos con los visitantes del sitio?",
+          content: "Podemos contactarlo para notificarle sobre su cuenta, resolver problemas con su cuenta, resolver una disputa, cobrar tarifas o dinero adeudado, solicitar sus opiniones a través de encuestas o cuestionarios, enviar actualizaciones sobre nuestra empresa o cuando sea necesario contactarlo para hacer cumplir nuestro Acuerdo de Usuario, las leyes nacionales aplicables y cualquier acuerdo que podamos tener con usted. Para estos fines, podemos comunicarnos con usted por correo electrónico, teléfono, mensajes de texto y correo postal."
+        },
+        withdrawConsent: {
+          title: "¿Cómo pueden los visitantes del sitio web retirar su consentimiento?",
+          content: "Si no desea que procesemos sus datos, contáctenos en"
+        },
+        questions: {
+          title: "Preguntas e información de contacto",
+          content: "Si desea: acceder, corregir, modificar o eliminar cualquier información personal que tengamos sobre usted, lo invitamos a contactarnos en"
+        }
       }
     }
   },
@@ -458,6 +536,45 @@ const resources = {
         },
         vehicles: {
           title: "LUXURY VEHICLES"
+        }
+      },
+      privacyPolicy: {
+        title: "Политика конфиденциальности",
+        whatWeCollect: {
+          title: "Какую информацию мы собираем?",
+          content: "Мы получаем, собираем и храним любую информацию, которую вы вводите на нашем веб-сайте или предоставляете нам иным образом. Кроме того, мы собираем IP-адрес, используемый для подключения вашего компьютера к Интернету; данные для входа, адрес электронной почты, пароль, информацию о компьютере и соединении, а также историю покупок. Мы можем использовать программные инструменты для измерения и сбора информации о сеансе, включая время отклика страницы, продолжительность посещений определенных страниц, информацию о взаимодействии со страницей и методы, используемые для перехода с страницы. Мы также собираем личную информацию (включая имена, электронную почту, пароль, сообщения), платежные данные (включая информацию о кредитных картах), комментарии, предложения, отзывы о продуктах, рекомендации и личный профиль."
+        },
+        howWeCollect: {
+          title: "Как мы собираем информацию?",
+          content: "Когда вы совершаете транзакцию на нашем веб-сайте, в рамках процесса мы собираем личную информацию, которую вы нам предоставляете, такую как ваше имя, физический адрес и адрес электронной почты. Ваша личная информация будет использоваться только для указанных выше целей."
+        },
+        whyWeCollect: {
+          title: "Почему мы собираем такую личную информацию?",
+          content: "Мы собираем такую личную и неличную информацию для следующих целей:",
+          purposes: [
+            "Для предоставления и управления Услугами;",
+            "Для предоставления нашим пользователям постоянной клиентской и технической поддержки;",
+            "Для связи с нашими посетителями и пользователями с общими и персонализированными уведомлениями об услугах и рекламными сообщениями;",
+            "Для создания агрегированных статистических данных и другой агрегированной или выведенной неличной информации, которую мы или наши деловые партнеры можем использовать для предоставления и улучшения наших соответствующих услуг;",
+            "Для соблюдения применимых законов и правил."
+          ]
+        },
+        howWeStore: {
+          title: "Как мы храним, используем, передаем и раскрываем личную информацию посетителей нашего веб-сайта?",
+          content1: "Наша компания размещена на платформе Wix.com. Wix.com предоставляет нам онлайн-платформу, которая позволяет нам продавать вам наши продукты и услуги. Ваши данные могут храниться через хранилище данных Wix.com, базы данных и общие приложения Wix.com. Они хранят ваши данные на защищенных серверах за брандмауэром.",
+          content2: "Все прямые платежные шлюзы, предлагаемые Wix.com и используемые нашей компанией, соответствуют стандартам PCI-DSS, управляемым Советом по стандартам безопасности PCI, который является совместным усилием таких брендов, как Visa, MasterCard, American Express и Discover. Требования PCI-DSS помогают обеспечить безопасную обработку информации о кредитных картах нашим магазином и его поставщиками услуг."
+        },
+        howWeCommunicate: {
+          title: "Как мы общаемся с посетителями сайта?",
+          content: "Мы можем связаться с вами, чтобы уведомить вас о вашей учетной записи, устранить проблемы с вашей учетной записью, разрешить спор, собрать платежи или причитающиеся деньги, запросить ваши мнения через опросы или анкеты, отправить обновления о нашей компании или когда необходимо связаться с вами для обеспечения соблюдения нашего Пользовательского соглашения, применимых национальных законов и любых соглашений, которые мы можем иметь с вами. Для этих целей мы можем связаться с вами по электронной почте, телефону, текстовым сообщениям и почте."
+        },
+        withdrawConsent: {
+          title: "Как посетители веб-сайта могут отозвать свое согласие?",
+          content: "Если вы не хотите, чтобы мы обрабатывали ваши данные, свяжитесь с нами по адресу"
+        },
+        questions: {
+          title: "Вопросы и контактная информация",
+          content: "Если вы хотите: получить доступ, исправить, изменить или удалить любую личную информацию, которую мы храним о вас, приглашаем вас связаться с нами по адресу"
         }
       }
     }
