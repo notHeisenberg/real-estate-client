@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { servicesData } from '../data/services';
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
 const ServiceDetail = () => {
   const { id } = useParams();
   const { t, i18n } = useTranslation();
   const currentLanguageServices = servicesData[i18n.language] || servicesData.en;
   const service = currentLanguageServices.find(s => s.id === id);
+  const [isLightboxOpen, setIsLightboxOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -61,6 +64,79 @@ const ServiceDetail = () => {
               </ul>
             </div>
 
+            {/* Service Images Section */}
+            {(service.ratesImage || service.detailsImage) && (
+              <div className="my-12 space-y-8">
+                {service.ratesImage && (
+                  <div 
+                    className="flex justify-center items-center w-2/3 mx-auto rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                    onClick={() => setIsLightboxOpen(true)}
+                  >
+                    <img
+                      src={service.ratesImage}
+                      alt={`${service.title} Rates`}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                )}
+                {service.detailsImage && (
+                  <div 
+                    className="flex justify-center items-center w-2/3 mx-auto rounded-lg overflow-hidden shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
+                    onClick={() => setIsLightboxOpen(true)}
+                  >
+                    <img
+                      src={service.detailsImage}
+                      alt={`${service.title} Details`}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Medical Service Specific Content */}
+            {service.id === 'medical' && service.treatments && (
+              <div className="mt-12">
+                {/* IV Drips Section */}
+                <div className="mb-16">
+                  <h2 className="text-4xl font-libre-baskerville font-light mb-8">IV Drip Treatments</h2>
+                  <div className="space-y-6">
+                    {service.treatments.ivDrips.map((drip, index) => (
+                      <div key={index} className="border-b border-gray-200 pb-6">
+                        <div className="flex justify-between items-start">
+                          <h3 className="text-xl font-bold">{drip.name}</h3>
+                          <span className="text-xl">{drip.price}</span>
+                        </div>
+                        <p className="text-gray-600 mt-2">{drip.components}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Shots Section */}
+                <div className="mb-16">
+                  <h2 className="text-4xl font-libre-baskerville font-light mb-8">Vitamin Shots</h2>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {service.treatments.shots.map((shot, index) => (
+                      <div key={index} className="flex justify-between items-center p-4 bg-gray-50">
+                        <span className="text-lg">{shot.name}</span>
+                        <span className="text-lg font-semibold">{shot.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Notes Section */}
+                {service.treatments.notes && (
+                  <div className="mt-8 p-4 bg-gray-50">
+                    {service.treatments.notes.map((note, index) => (
+                      <p key={index} className="text-sm text-gray-600">{note}</p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
             {/* Contact Section */}
             <div className="text-center mt-12">
               <h3 className="text-2xl font-libre-baskerville font-light mb-6">
@@ -79,6 +155,18 @@ const ServiceDetail = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox for Service Images */}
+      {(service.ratesImage || service.detailsImage) && (
+        <Lightbox
+          open={isLightboxOpen}
+          close={() => setIsLightboxOpen(false)}
+          slides={[
+            ...(service.ratesImage ? [{ src: service.ratesImage }] : []),
+            ...(service.detailsImage ? [{ src: service.detailsImage }] : [])
+          ]}
+        />
+      )}
     </div>
   );
 };

@@ -85,7 +85,7 @@ const Footer = () => {
               to="privacy-policy"
               className="underline hover:text-gray-300 transition-colors duration-200"
             >
-              {t('footer.contact.privacyPolicy')}
+              {t('footer.contact.serviceContract')}
             </Link>
           </p>
         </div>

@@ -3,6 +3,242 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 const resources = {
+  es: {
+    translation: {
+      navbar: {
+        home: "Inicio",
+        services: "Servicios",
+        blog: "Blog",
+        contact: "Contacto",
+        viewAllServices: "Ver Todos los Servicios",
+        serviceLinks: {
+          propertyManagement: "Gestión de Propiedades",
+          consulting: "Consultoría Inmobiliaria",
+          valuation: "Valoración de Propiedades",
+          investment: "Asesoría de Inversiones",
+          drivers: "Choferes Profesionales",
+          medical: "Salud y Bienestar",
+          seabob: "SEABOB F5s"
+        }
+      },
+      common: {
+        seeMore: "Ver Más"
+      },
+      footer: {
+        subscribe: {
+          title: "Suscríbete para Actualizaciones",
+          placeholder: "Ingresa tu correo electrónico aquí",
+          button: "Suscribirse",
+          success: "¡Gracias por suscribirte!"
+        },
+        contact: {
+          address: "Su dirección, C/ Colon, 12, 46004 Valencia, España",
+          tel: "+34 657 20 68 01",
+          mail: "infoauramade@gmail.com",
+          copyright: "Por Inscale Media ©2025",
+          privacyPolicy: "Política de privacidad",
+          serviceContract: "Contrato de Servicios"
+        }
+      },
+      services: {
+        title: "SERVICIOS A TU MEDIDA",
+        description: "Nuestro equipo está siempre disponible para brindarte asistencia personalizada y soluciones que cumplan con tus más altas expectativas."
+      },
+      experience: {
+        title: "DISFRUTA DE UNA EXPERIENCIA ÚNICA",
+        description: "Nos apasiona ofrecer servicios de lujo y hacer realidad todas tus necesidades con excelencia y dedicación.",
+        viewMore: "Ver Más"
+      },
+      about: {
+        title: "SOBRE CAVIAR CONCIERGE",
+        description_1: "Caviar Concierge es tu socio de confianza en experiencias de lujo y estilo de vida en Ibiza y Barcelona.",
+        description_2: "Nos especializamos en servicios exclusivos y totalmente personalizados, garantizando experiencias únicas, soluciones rápidas con una sola llamada, ahorro significativo de tiempo y soporte 24/7 para todas tus necesidades diarias.",
+        description_3: "En Caviar Concierge, elevamos el concepto de lujo con meticulosa atención al detalle, discreción y excelencia.",
+        image_left_alt: "Propiedad de Lujo Izquierda",
+        image_right_alt: "Propiedad de Lujo Derecha"
+      },
+      villaRentals: {
+        title: "TU ESTILO DE VIDA, SIN PREOCUPACIONES",
+        subtitle: "¿Sueñas con una villa impresionante para tus vacaciones?",
+        description: "Descubre nuestra selección exclusiva de villas premium en Ibiza, Barcelona y Marbella, donde el lujo y el confort se encuentran en cada detalle.",
+        serviceDescription: "Nuestro servicio de conserjería está diseñado para superar expectativas, ofreciendo soporte personalizado, eficiente y de máxima calidad para que disfrutes de tu experiencia sin preocupaciones.",
+        serviceDescription2: "Nos ocupamos de cada detalle de tu estancia, permitiéndote aprovechar al máximo tu tiempo sin estrés ni inconvenientes.",
+        seeMore: "Ver Más"
+      },
+      ibizaInsider: {
+        title: "IBIZA INSIDER",
+        description: "Consejos y Referencias Mensuales para Disfrutar del Estilo de Vida de Lujo en IBIZA. Descubre las Experiencias Más Exclusivas de la Isla.",
+        seeMore: "Ver Más",
+        imageAlt: "Estilo de Vida de Lujo en IBIZA"
+      },
+      partners: {
+        title: "Nuestros Colaboradores",
+        logoAlt: "{{partner}} - Colaborador de CAVIAR CONCIERGE"
+      },
+      contact: {
+        title: "CONTÁCTANOS",
+        backgroundAlt: "Fondo de Estilo de Vida de Lujo",
+        address: {
+          line1: "Su dirección, C/ Colon, 12,",
+          line2: "46004 Valencia, España",
+          email: "infoauramade@gmail.com",
+          tel: "Tel. | Whatsapp: +34 657 20 68 01"
+        },
+        social: {
+          facebook: "Síguenos en Facebook",
+          instagram: "Síguenos en Instagram"
+        },
+        form: {
+          name: "Nombre *",
+          email: "Correo electrónico *",
+          phone: "Teléfono",
+          subject: "Asunto",
+          message: "Mensaje",
+          send: "Enviar",
+          sending: "Enviando...",
+          success: "¡Éxito! Mensaje recibido.",
+          error: "Error al enviar el mensaje. Por favor, inténtelo de nuevo."
+        }
+      },
+      conciergeServices: {
+        title: "SERVICIOS DE CONSERJERÍA EN IBIZA Y BARCELONA",
+        description: "Disponibilidad total 24/7",
+        features: [
+          "Villas exclusivas",
+          "Transfers privados y alquiler de yates",
+          "Chefs privados",
+          "Reservas en restaurantes de lujo y acceso VIP",
+          "Servicios de spa y masajes",
+          "Personal doméstico: mayordomos, camareros, personal de limpieza y niñeras",
+          "Compras personalizadas",
+          "Organización de eventos privados"
+        ],
+        footer: "Un servicio de conserjería totalmente personalizado para ti."
+      },
+      yacht: {
+        overview: "Descripción General",
+        features: "Características",
+        gallery: "Galería",
+        specifications: "Especificaciones",
+        length: "Longitud",
+        capacity: "Capacidad",
+        crew: "Tripulación",
+        speed: "Velocidad",
+        backToYachts: "Volver a Yates",
+        viewDetails: "Ver Detalles",
+        imageAlt: "{{title}} - Imagen {{number}}",
+        pageTitle: "Colección de Yates de Lujo",
+        pageDescription: "Descubra nuestra exclusiva flota de yates de lujo disponibles para alquiler en Ibiza y Barcelona.",
+        details: {
+          inspiration: {
+            title: "Yate Inspiration",
+            description: "Experimenta el lujo en el mar con nuestro yate insignia"
+          },
+          majestic: {
+            title: "Yate Majestic",
+            description: "Elegancia y comodidad combinadas en perfecta armonía"
+          },
+          manbero: {
+            title: "Yate Manbero",
+            description: "Sofisticación moderna y excelencia marítima"
+          },
+          seanfinity: {
+            title: "Yate Seanfinity",
+            description: "Donde el lujo se encuentra con las posibilidades infinitas"
+          },
+          autumn: {
+            title: "Yate Autumn",
+            description: "Sofisticación moderna en el agua"
+          },
+          ella: {
+            title: "Yate Ella",
+            description: "Diseño clásico con comodidad contemporánea"
+          }
+        }
+      },
+      luxuryExperiences: {
+        title: "EXPERIENCIAS DE LUJO",
+        subtitle: "Descubre nuestra colección exclusiva de experiencias de lujo",
+        yachts: {
+          title: "YATES DE LUJO",
+          viewAll: "Ver Todos los Yates",
+          pageTitle: "Colección de Yates de Lujo",
+          pageDescription: "Descubra nuestra exclusiva flota de yates de lujo disponibles para alquiler en Ibiza y Barcelona."
+        },
+        vehicles: {
+          title: "VEHÍCULOS DE LUJO"
+        }
+      },
+      medical: {
+        ivDripTitle: "Tratamientos de Suero IV",
+        vitaminShotsTitle: "Inyecciones de Vitaminas",
+        servicesInclude: "Nuestros Servicios Incluyen"
+      },
+      contract: {
+        title: "CONTRATO DE COMISIÓN DE SERVICIOS",
+        between: "Entre",
+        and: "Y",
+        providerParty: "De una parte, {{name}}, con domicilio en {{address}}, y con NIF/CIF {{nif}}, en adelante, el PROVEEDOR.",
+        beneficiaryParty: "De otra parte, {{name}}, con domicilio en {{address}}, y con NIF {{nif}}, en adelante, el BENEFICIARIO.",
+        agreement: "Ambas partes acuerdan celebrar el presente Contrato de Comisión de Servicios, que se regirá por las siguientes cláusulas:",
+        clausesTitle: "CLÁUSULAS",
+        firstClause: {
+          title: "Primera. Objeto del Contrato",
+          content: "El PROVEEDOR encarga al BENEFICIARIO la prestación de servicios de intermediación y promoción en la contratación de servicios vacacionales, tales como alquiler de coches, barcos, viviendas vacacionales y otros servicios relacionados."
+        },
+        secondClause: {
+          title: "Segunda. Duración del Contrato",
+          content: "Este contrato entrará en vigor el día {{date}} y tendrá una duración de {{duration}} renovable automáticamente, salvo que cualquiera de las partes notifique por escrito su voluntad de no renovar con una antelación mínima de {{noticeDays}} días antes de la finalización del mismo."
+        },
+        thirdClause: {
+          title: "Tercera. Obligaciones del Beneficiario",
+          intro: "El BENEFICIARIO se compromete a:",
+          obligations: {
+            first: "Promover los servicios vacacionales ofrecidos por el PROVEEDOR a potenciales clientes.",
+            second: "Facilitar el cierre de acuerdos entre los clientes y el PROVEEDOR para el alquiler de los bienes o servicios vacacionales.",
+            third: "Informar al PROVEEDOR de las contrataciones y ventas realizadas, proporcionando los datos necesarios para su correcta facturación."
+          }
+        },
+        fourthClause: {
+          title: "Cuarta. Obligaciones del Proveedor",
+          intro: "El PROVEEDOR se compromete a:",
+          obligations: {
+            first: "Facilitar al BENEFICIARIO toda la información y recursos necesarios para la promoción de los servicios vacacionales.",
+            second: "Aceptar y cumplir los contratos de servicios vacacionales gestionados por el BENEFICIARIO.",
+            third: "Pagar la comisión correspondiente según lo pactado en este contrato."
+          }
+        },
+        fifthClause: {
+          title: "Quinta. Comisión",
+          commission: "El BENEFICIARIO recibirá una comisión por cada contrato de alquiler de servicios vacacionales gestionado con éxito. El porcentaje de la comisión será del {{percentage}}% sobre el valor total de cada contrato o transacción efectuada con éxito.",
+          payment: "El pago de la comisión se realizará en un plazo de {{days}} días desde la fecha de la transacción, mediante transferencia bancaria a la cuenta indicada por el BENEFICIARIO."
+        },
+        sixthClause: {
+          title: "Sexta. Confidencialidad",
+          content: "Ambas partes se comprometen a mantener la confidencialidad de la información proporcionada por la otra parte en virtud de este contrato y a no divulgarla a terceros sin el consentimiento expreso por escrito."
+        },
+        seventhClause: {
+          title: "Séptima. Resolución",
+          intro: "Este contrato podrá ser resuelto en los siguientes casos:",
+          reasons: {
+            first: "Por mutuo acuerdo entre las partes.",
+            second: "Por incumplimiento de cualquiera de las partes de las obligaciones establecidas en el presente contrato.",
+            third: "Por imposibilidad sobrevenida de cumplir el objeto del contrato."
+          }
+        },
+        eighthClause: {
+          title: "Octava. Jurisdicción",
+          content: "Para la resolución de cualquier controversia derivada de este contrato, las partes se someten a los juzgados y tribunales de {{location}}, renunciando expresamente a cualquier otro fuero que pudiera corresponderles."
+        },
+        closing: "Y en prueba de conformidad, firman ambas partes el presente contrato en dos ejemplares y a un solo efecto, en {{location}}, a {{date}}.",
+        signatures: "FIRMAS:",
+        providerName: "{{name}}",
+        providerTitle: "(PROVEEDOR)",
+        beneficiaryName: "{{name}}",
+        beneficiaryTitle: "(BENEFICIARIO)"
+      }
+    }
+  },
   en: {
     translation: {
       navbar: {
@@ -15,7 +251,10 @@ const resources = {
           propertyManagement: "Property Management",
           consulting: "Real Estate Consulting",
           valuation: "Property Valuation",
-          investment: "Investment Advisory"
+          investment: "Investment Advisory",
+          drivers: "Professional Drivers",
+          medical: "Medical & Wellness",
+          seabob: "SEABOB F5s"
         }
       },
       common: {
@@ -29,11 +268,12 @@ const resources = {
           success: "Thanks for submitting!"
         },
         contact: {
-          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
-          tel: "+34 653 57 45 59",
+          address: "Su dirección, C/ Colon, 12, 46004 Valencia, España",
+          tel: "+34 657 20 68 01",
           mail: "infoauramade@gmail.com",
           copyright: "By Inscale Media ©2025",
-          privacyPolicy: "Privacy policy"
+          privacyPolicy: "Privacy policy",
+          serviceContract: "Service Contract"
         }
       },
       services: {
@@ -46,10 +286,10 @@ const resources = {
         viewMore: "View More"
       },
       about: {
-        title: "ABOUT AURA MADE CONCIERGE",
-        description_1: "Aura Made Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
+        title: "ABOUT CAVIAR CONCIERGE",
+        description_1: "Caviar Concierge is your trusted partner in luxury experiences and lifestyle in Ibiza and Barcelona.",
         description_2: "We specialize in exclusive, fully personalized services, ensuring unique experiences, quick solutions with just one call, significant time savings, and 24/7 support for all your daily needs.",
-        description_3: "At Aura Made Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
+        description_3: "At Caviar Concierge, we elevate the concept of luxury with meticulous attention to detail, discretion, and excellence.",
         image_left_alt: "Luxury Estate Left",
         image_right_alt: "Luxury Estate Right"
       },
@@ -69,16 +309,16 @@ const resources = {
       },
       partners: {
         title: "Our Partners",
-        logoAlt: "{{partner}} - Partner of AURA MADE"
+        logoAlt: "{{partner}} - Partner of CAVIAR CONCIERGE"
       },
       contact: {
         title: "CONTACT US",
         backgroundAlt: "Luxury Lifestyle Background",
         address: {
-          line1: "Ctra. Cala Llonga, s/n,",
-          line2: "07849 Cala Llonga, Ibiza",
+          line1: "Su dirección, C/ Colon, 12,",
+          line2: "46004 Valencia, España",
           email: "infoauramade@gmail.com",
-          tel: "Tel. | Whatsapp: +34 653 57 45 59"
+          tel: "Tel. | Whatsapp: +34 657 20 68 01"
         },
         social: {
           facebook: "Follow us on Facebook",
@@ -121,7 +361,10 @@ const resources = {
         crew: "Crew",
         speed: "Speed",
         backToYachts: "Back to Yachts",
+        viewDetails: "View Details",
         imageAlt: "{{title}} - Image {{number}}",
+        pageTitle: "Luxury Yacht Collection",
+        pageDescription: "Discover our exclusive fleet of luxury yachts available for charter in Ibiza and Barcelona.",
         details: {
           inspiration: {
             title: "Inspiration Yacht",
@@ -338,9 +581,12 @@ const resources = {
       },
       luxuryExperiences: {
         title: "LUXURY EXPERIENCES",
-        subtitle: "Descubre nuestra colección exclusiva de experiencias de lujo",
+        subtitle: "Discover our exclusive collection of luxury experiences",
         yachts: {
-          title: "LUXURY YACHTS"
+          title: "LUXURY YACHTS",
+          viewAll: "View All Yachts",
+          pageTitle: "Luxury Yacht Collection",
+          pageDescription: "Discover our exclusive fleet of luxury yachts available for charter in Ibiza and Barcelona."
         },
         vehicles: {
           title: "LUXURY VEHICLES"
@@ -399,7 +645,10 @@ const resources = {
           propertyManagement: "Управление Недвижимостью",
           consulting: "Консультации по Недвижимости",
           valuation: "Оценка Недвижимости",
-          investment: "Инвестиционный Консалтинг"
+          investment: "Инвестиционный Консалтинг",
+          drivers: "Профессиональные Водители",
+          medical: "Медицина и Здоровье",
+          seabob: "SEABOB F5s"
         }
       },
       common: {
@@ -413,11 +662,12 @@ const resources = {
           success: "Спасибо за подписку!"
         },
         contact: {
-          address: "Ctra. Cala Llonga, s/n, 07849 Cala Llonga, Ibiza",
-          tel: "+34 653 57 45 59",
+          address: "Su dirección, C/ Colon, 12, 46004 Valencia, España",
+          tel: "+34 657 20 68 01",
           mail: "infoauramade@gmail.com",
           copyright: "От Inscale Media ©2025",
-          privacyPolicy: "Политика конфиденциальности"
+          privacyPolicy: "Политика конфиденциальности",
+          serviceContract: "Договор на Услуги"
         }
       },
       services: {
@@ -430,10 +680,10 @@ const resources = {
         viewMore: "Подробнее"
       },
       about: {
-        title: "ABOUT AURA MADE CONCIERGE",
-        description_1: "Aura Made Concierge - ваш надежный партнер в сфере роскошных впечатлений и образа жизни в Ибице и Барселоне.",
+        title: "О CAVIAR CONCIERGE",
+        description_1: "Caviar Concierge - ваш надежный партнер в сфере роскошных впечатлений и образа жизни в Ибице и Барселоне.",
         description_2: "Мы специализируемся на эксклюзивных, полностью персонализированных услугах, обеспечивая уникальные впечатления, быстрые решения одним звонком, значительную экономию времени и поддержку 24/7 для всех ваших повседневных потребностей.",
-        description_3: "В Aura Made Concierge мы поднимаем концепцию роскоши на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
+        description_3: "В Caviar Concierge мы поднимаем концепцию роскоши на новый уровень, уделяя пристальное внимание деталям, проявляя деликатность и стремясь к совершенству.",
         image_left_alt: "Роскошная Недвижимость Слева",
         image_right_alt: "Роскошная Недвижимость Справа"
       },
@@ -454,10 +704,10 @@ const resources = {
         title: "СВЯЖИТЕСЬ С НАМИ",
         backgroundAlt: "Фон Роскошного Образа Жизни",
         address: {
-          line1: "Ctra. Cala Llonga, s/n,",
-          line2: "07849 Cala Llonga, Ibiza",
+          line1: "Su dirección, C/ Colon, 12,",
+          line2: "46004 Valencia, España",
           email: "infoauramade@gmail.com",
-          tel: "Тел. | Whatsapp: +34 653 57 45 59"
+          tel: "Тел. | Whatsapp: +34 657 20 68 01"
         },
         social: {
           facebook: "Следите за нами на Facebook",
@@ -500,7 +750,10 @@ const resources = {
         crew: "Экипаж",
         speed: "Скорость",
         backToYachts: "Назад к Яхтам",
+        viewDetails: "Подробнее",
         imageAlt: "{{title}} - Изображение {{number}}",
+        pageTitle: "Коллекция Яхт Роскоши",
+        pageDescription: "Откройте для себя нашу эксклюзивную коллекцию роскошных яхт, доступных для аренды в Ибице и Барселоне.",
         details: {
           inspiration: {
             title: "Яхта Inspiration",
@@ -532,7 +785,10 @@ const resources = {
         title: "LUXURY EXPERIENCES",
         subtitle: "Откройте для себя нашу эксклюзивную коллекцию роскошных впечатлений",
         yachts: {
-          title: "LUXURY YACHTS"
+          title: "LUXURY YACHTS",
+          viewAll: "Посмотреть все Яхты",
+          pageTitle: "Коллекция Яхт Роскоши",
+          pageDescription: "Откройте для себя нашу эксклюзивную коллекцию роскошных яхт, доступных для аренды в Ибице и Барселоне."
         },
         vehicles: {
           title: "LUXURY VEHICLES"
@@ -586,9 +842,9 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: 'es',
     interpolation: {
-      escapeValue: false,
+      escapeValue: false
     },
     detection: {
       order: ['localStorage', 'navigator'],

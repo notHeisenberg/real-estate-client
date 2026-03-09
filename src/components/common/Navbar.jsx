@@ -35,6 +35,21 @@ const Navbar = () => {
       id: 'investment',
       onClick: () => scrollToService('investment')
     },
+    {
+      name:  t('navbar.serviceLinks.drivers'),
+      id: 'drivers',
+      onClick: () => scrollToService('drivers')
+    },
+    {
+      name: t('navbar.serviceLinks.medical'),
+      id: 'medical',
+      onClick: () => scrollToService('medical')
+    },
+    {
+      name: t('navbar.serviceLinks.seabob'),
+      id: 'seabob',
+      onClick: () => scrollToService('seabob')
+    }
   ];
 
   const scrollToService = (serviceId) => {
@@ -98,40 +113,32 @@ const Navbar = () => {
     { 
       name: t('navbar.contact'), 
       onClick: scrollToContact,
-      className: "relative text-gray-400 hover:text-[#034079] font-medium transition-colors duration-500 group"
+      className: "relative text-gray-700 hover:text-[#034079] font-medium transition-colors duration-500 group"
     }
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full h-28 lg:h-32 z-50 transition-all duration-500 transform ${
+      className={`fixed top-0 w-full h-32 lg:h-32 z-50 transition-all duration-500 transform ${
         visible ? 'translate-y-0' : '-translate-y-full'
       } ${
         scrolled
           ? 'bg-transparent backdrop-blur-md shadow-lg'
-          : 'bg-white/95 backdrop-blur-sm'
+          : 'bg-black/40 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
 
-        <div className="flex items-center justify-between h-28 lg:h-32 space-x-10 ">
+        <div className="flex items-center justify-around w-full md:w-auto h-28 lg:h-32 space-x-10 ">
           {/* Logo and Website Name */}
           <div className="flex items-center gap-1 flex-shrink-0">
-            <img
-              src="/images/Logo_cccc.svg"
-              alt="Logo"
-              className="h-24 w-24 rounded-full object-cover hover:scale-110 transition-all duration-300"
-            />
-            <Link to="/" className="flex items-center space-x-3 text-[#034079] hover:text-[#034079]/60 transition-all duration-500 font-system">
-              <p className="flex flex-col items-center text-2xl font-semibold w-44 text-center">
-                Aura Made
-                <span className="text-sm font-semibold mt-1">
-                  Luxury consierge service
-                </span>
-              </p>
+            <Link to="/" className="flex items-center">
+              <img
+                src="/images/main_logo.png"
+                alt="Caviar Concierge"
+                className="h-36 w-36 object-cover hover:scale-110 transition-all duration-300"
+              />
             </Link>
-
-
           </div>
 
           {/* Mobile Menu Button */}
@@ -155,7 +162,7 @@ const Navbar = () => {
                 item.isServices ? (
                   <ServicesHoverCard key="services">
                     <h1
-                      className="relative text-gray-400 hover:text-[#034079] font-medium transition-colors duration-500 group cursor-pointer"
+                      className="relative text-gray-700 hover:text-[#034079] font-medium transition-colors duration-500 group cursor-pointer"
                     >
                       {t('navbar.services')}
 
@@ -175,7 +182,7 @@ const Navbar = () => {
                   <Link
                     key={item.name}
                     to={item.path}
-                    className="relative text-gray-400 hover:text-[#034079] font-medium transition-colors duration-500 group"
+                    className="relative text-gray-700 hover:text-[#034079] font-medium transition-colors duration-500 group"
                   >
                     {item.name}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#034079] transition-all duration-500 group-hover:w-full" />
@@ -200,13 +207,13 @@ const Navbar = () => {
             : 'max-h-0 opacity-0 invisible'
         }`}
       >
-        <div className="px-4 pt-2 pb-4 space-y-2 bg-white/95 backdrop-blur-sm shadow-lg">
+        <div className="px-20 pt-2 pb-4 space-y-2 bg-black/60 backdrop-blur-sm shadow-lg">
           {navItems.map((item) => (
             item.isServices ? (
               <div key="services" className="block">
                 <h1
                   onClick={() => setServiceMenuOpen(!serviceMenuOpen)}
-                  className="w-full flex items-center justify-between text-gray-400 hover:text-[#034079] transition-all duration-500  font-medium py-1.5"
+                  className="w-full flex items-center justify-between text-white hover:text-[#034079] transition-all duration-500  font-medium py-1.5"
                 >
                   <span>{t('navbar.services')}</span>
                   {serviceMenuOpen ? (
@@ -225,7 +232,7 @@ const Navbar = () => {
                     <h1
                       key={service.name}
                       onClick={service.onClick}
-                      className="block w-full text-left text-sm text-gray-400 hover:text-[#034079] transition-all duration-500 py-2"
+                      className="block w-full text-left text-sm text-white hover:text-[#034079] transition-all duration-500 py-2"
                     >
                       {service.name}
                     </h1>
@@ -236,7 +243,7 @@ const Navbar = () => {
               <h1
                 key={item.name}
                 onClick={item.onClick}
-                className="block w-full text-left text-gray-400 hover:text-[#034079] transition-all duration-500 font-medium py-1.5"
+                className="block w-full text-left text-white hover:text-[#034079] transition-all duration-500 font-medium py-1.5"
               >
                 {item.name}
               </h1>
@@ -245,14 +252,14 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block text-gray-400 hover:text-[#034079] transition-all duration-500 font-medium py-1.5"
+                className="block text-white hover:text-[#034079] transition-all duration-500 font-medium py-1.5"
               >
                 {item.name}
               </Link>
             )
           ))}
           {/* Language Switcher in Mobile Menu */}
-          <div className="pt-1 border-t border-gray-200">
+          <div className="pt-1 border-t border-white">
             <LanguageSwitcher />
           </div>
         </div>

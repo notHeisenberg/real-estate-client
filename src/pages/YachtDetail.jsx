@@ -31,7 +31,7 @@ const YachtDetail = () => {
   };
 
   const handleBackClick = () => {
-    navigate('/');
+    navigate('/yachts');
 
     setTimeout(() => {
       const yachtsSection = document.querySelector('#luxury-experiences');

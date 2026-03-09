@@ -24,6 +24,18 @@ const ServicesHoverCard = ({ children }) => {
     {
       name: t('navbar.serviceLinks.investment'),
       id: 'investment'
+      },
+    {
+      name: t('navbar.serviceLinks.drivers'),
+      id: 'drivers'
+    },
+    {
+      name: t('navbar.serviceLinks.medical'),
+      id: 'medical'
+    },
+    {
+      name: t('navbar.serviceLinks.seabob'),
+      id: 'seabob'
     }
   ];
 

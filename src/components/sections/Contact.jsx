@@ -89,25 +89,25 @@ const Contact = () => {
             <p>{t('contact.address.tel')}</p>
           </div>
 
-          {/* Social Media Links */}
-          <div className="flex justify-center gap-2 py-6">
+          {/* Social Links */}
+          <div className="flex items-center gap-4 mt-6  mx-auto w-full justify-center">
             <a
-              href="https://www.facebook.com/profile.php?id=61572981633022"
+              href="https://www.facebook.com/share/18ZTa39KMG/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent p-2 rounded-full transition-colors"
-              aria-label={t('contact.social.facebook')}
+              className="text-blue-300 hover:text-gray-400 transition-colors duration-300"
             >
-              <FaFacebook className="w-6 h-6 text-white hover:text-blue-300 transition-colors" />
+              <span className="sr-only">{t('contact.social.facebook')}</span>
+              <FaFacebook className="h-6 w-6" />
             </a>
             <a
-              href="https://www.instagram.com/aura_made_ibiza/"
+              href="https://www.instagram.com/caviarconcierge2025?utm_source=qr&igsh=MTQwbXl5MnkwMjVsOA=="
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-transparent p-2 rounded-full transition-colors"
-              aria-label={t('contact.social.instagram')}
+              className="text-red-200 hover:text-red-400 transition-colors duration-300"
             >
-              <FaInstagram className="w-6 h-6 text-white hover:text-rose-300 transition-colors" />
+              <span className="sr-only">{t('contact.social.instagram')}</span>
+              <FaInstagram className="h-6 w-6" />
             </a>
           </div>
         </div>
